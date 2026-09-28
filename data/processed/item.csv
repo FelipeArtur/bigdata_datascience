@@ -1,0 +1,1428 @@
+item_id,nome,preco_unitario,descricao
+1001,Botas,300,25 de Velocidade de Movimento
+1004,Amuleto da Fada,200,50% de Regeneração de Mana base
+1006,Pérola do Rejuvenescimento,300,100% de Regeneração de Vida base
+1011,Cinto do Gigante,900,350 de Vida
+1018,Capa da Agilidade,600,15% de Chance de Acerto Crítico
+1026,Varinha Explosiva,850,45 de Poder de Habilidade
+1027,Cristal de Safira,300,300 de Mana
+1028,Cristal de Rubi,400,150 de Vida
+1029,Couraça de Pano,300,15 de Armadura
+1031,Cota de Malha,800,40 de Armadura
+1033,Manto Anula-Magia,400,20 de Resistência Mágica
+1036,Espada Longa,350,10 de Dano de Ataque
+1037,Picareta,875,25 de Dano de Ataque
+1038,Espada G. p. C.,1300,40 de Dano de Ataque
+1042,Adaga,250,10% de Velocidade de Ataque
+1043,Arco Recurvo,700,"15% de Velocidade de Ataque
+
+Ferroada
+Os ataques causam 15 de Dano Físico adicional ao contato."
+1052,Tomo Amplificador,400,20 de Poder de Habilidade
+1053,Cetro Vampírico,900,"15 de Dano de Ataque
+7% de Roubo de Vida"
+1054,Escudo de Doran,450,"110 de Vida
+
+Foco Definitivo
+Restaura 4 de Vida a cada 5s.
+Após sofrer dano de um Campeão, restaura Vida ao longo de 8s.
+
+Ajudinha
+Ataques causam 5 de Dano Físico adicional a tropas."
+1055,Lâmina de Doran,450,"10 de Dano de Ataque
+80 de Vida
+2.5% de Vampirismo Universal"
+1056,Anel de Doran,400,"18 de Poder de Habilidade
+90 de Vida
+
+Drenar
+Restaura 1 de Mana por segundo, aumentado para 2 de Mana por segundo por 5s após causar dano a um Campeão inimigo. Caso você não possa receber Mana, cura em 45% do mesmo valor.
+
+Ajudinha
+Os ataques causam 5 de Dano Físico adicional a tropas."
+1057,Capa Negatron,850,45 de Resistência Mágica
+1058,Bastão Desnecessariamente Grande,1200,65 de Poder de Habilidade
+1082,Lacre Sombrio,350,"15 de Poder de Habilidade
+50 de Vida
+
+Glória
+Abates concedem Glória, até um máximo de 10. Perde 5 de Glória ao morrer.
+Recebe 4 de Poder de Habilidade por acúmulo de Glória."
+1083,Abatedora,450,"7 de Dano de Ataque
+
+Ceifar
+Restaura 3 de Vidaao contato.
+Abater uma tropa concede 1 de ouro, até um máximo de 100. Atingir o limite concede mais 350 de ouro."
+1086,Arco de Doran,400,"8 de Dano de Ataque
+15% de Velocidade de Ataque
+1.5% de Vampirismo Universal"
+1101,Filhote de Garrabrasa,450,"Companheiros da Selva
+Invoca um Garrabrasa para ajudar você contra monstros.
+
+O companheiro cresce conforme você caça mais monstros, fortalecendo seu Golpear. Ao crescer completamente, ele cumpre a missão da selva e imbui esporadicamente seu próximo Ataque ou Habilidade para queimar inimigos e causar Lentidão a eles. Abater monstros grandes ativa esse efeito imediatamente."
+1102,Cria de Andabrisas,450,"Companheiros da Selva
+Invoca um Andabrisas para ajudar você contra monstros.
+
+O companheiro cresce conforme você caça mais monstros, fortalecendo seu Golpear. Ao crescer completamente, ele cumpre a missão da selva e concede Velocidade de Movimento ao entrar em um arbusto, que aumenta ao abater monstros grandes."
+1103,Broto de Esmagamusgo,450,"Companheiros da Selva
+Invoca um Esmagamusgo para ajudar você contra monstros.
+
+O companheiro cresce conforme você caça mais monstros, fortalecendo seu Golpear. Ao crescer completamente, ele cumpre a missão da selva e concede um Escudo quando fora de combate e ao abater monstros grandes."
+1105,Broto de Esmagamusgo,450,"Companheiros da Selva
+Invoca um Esmagamusgo para ajudar você contra monstros.
+
+O companheiro cresce conforme você caça mais monstros, fortalecendo seu Golpear. Ao crescer completamente, ele cumpre a missão da selva e concede um Escudo quando fora de combate e ao abater monstros grandes."
+1106,Cria de Andabrisas,450,"Companheiros da Selva
+Invoca um Andabrisas para ajudar você contra monstros.
+
+O companheiro cresce conforme você caça mais monstros, fortalecendo seu Golpear. Ao crescer completamente, ele cumpre a missão da selva e concede Velocidade de Movimento ao entrar em um arbusto, que aumenta ao abater monstros grandes."
+1107,Filhote de Garrabrasa,450,"Companheiros da Selva
+Invoca um Garrabrasa para ajudar você contra monstros.
+
+O companheiro cresce conforme você caça mais monstros, fortalecendo seu Golpear. Ao crescer completamente, ele cumpre a missão da selva e imbui esporadicamente seu próximo Ataque ou Habilidade para queimar inimigos e causar Lentidão a eles. Abater monstros grandes ativa esse efeito imediatamente."
+1120,Elmo de Doran,450,"150 de Vida
+8 de Armadura
+8 de Resistência Mágica
+
+Ajudinha
+Os ataques causam 5 de Dano Físico adicional a tropas."
+2003,Poção de Vida,50,"Consumir
+Restaura 120 de Vida ao longo de 15s."
+2019,Sigilo de Aço,1100,"15 de Dano de Ataque
+30 de Armadura"
+2020,Brutalizador,1337,"25 de Dano de Ataque
+10 de Aceleração de Habilidade
+5 de Letalidade"
+2021,Tunelizador,1150,"15 de Dano de Ataque
+250 de Vida"
+2022,Partícula Brilhante,250,5 de Aceleração de Habilidade
+2031,Poção com Refil,150,"Ativo (2 cargas)
+Restaura 100 de Vida ao longo de 12s.
+Recarrega ao visitar a loja."
+2051,Berrante do Guardião,950,"150 de Vida
+
+Recuperação: restaura 20 de Vida a cada 5s.Impassível: bloqueia 15 de dano sofrido de Ataques e Habilidades de Campeões (25% de eficácia contra Habilidades de dano ao longo do tempo)."
+2055,Sentinela de Controle,75,"Consumir
+Posiciona uma Sentinela de Controle que concede visão e revela Sentinelas Invisíveis inimigas, armadilhas e inimigos Camuflados."
+2065,Hino Bélico de Shurelya,2200,"50 de Poder de Habilidade
+15 de Aceleração de Habilidade
+4% de Velocidade de Movimento
+125% de Regeneração de Mana base
+
+Discurso Inspirador
+Concede aos aliados próximos 30% de Velocidade de Movimento por 4s."
+2138,Elixir de Ferro,500,"Consumir
+Concede 300 de Vida, 25% de Tenacidade e aumenta o tamanho por 3min. Enquanto ativo, você deixa um rastro atrás de você que aumenta em 15% a Velocidade de Movimento dos Campeões aliados."
+2139,Elixir da Feitiçaria,500,"Consumir
+Concede 50 de Poder de Habilidade e 15% de Regeneração de Mana por 3min. Enquanto ativo, causar dano a um Campeão ou torre causa 25 de Dano Verdadeiro adicional (5s contra Campeões)."
+2140,Elixir da Ira,500,"Consumir
+Concede 30 de Dano de Ataque e 12% de Vampirismo Físico contra Campeões por 3min."
+2141,Suco de Chapéu,300,Faz bem pra cabeça.Ativo – Consumir: Este suco não faz nada.
+2420,Armaguarda da Caçadora,1600,"40 de Poder de Habilidade
+25 de Armadura
+
+Tempo Paralisado (uso único)
+Entra em Estase por 2.5s."
+2421,Armaguarda Despedaçada,1600,"40 de Poder de Habilidade
+25 de Armadura
+
+Tempo Estilhaçado
+A Armaguarda está quebrada, mas ainda pode ser aprimorada.
+
+Após quebrar uma Armaguarda, a loja venderá apenas Armaguarda Despedaçada."
+2501,Armadura Sangrenta do Suserano,3300,"30 de Dano de Ataque
+550 de Vida
+
+Tirania
+Recebe 2.5% da sua Vida adicional como Dano de Ataque.
+
+Retaliação
+Recebe até 12% de Dano de Ataque aumentado com base no percentual de Vida perdida."
+2502,Desespero Eterno,2800,"400 de Vida
+50 de Armadura
+15 de Aceleração de Habilidade
+
+Angústia
+Enquanto estiver em combate contra Campeões, a cada 4s, causa Dano Mágico a Campeões inimigos próximos e cura 250% do dano causado."
+2503,Tocha de Chamas Negras,2800,"80 de Poder de Habilidade
+600 de Mana
+20 de Aceleração de Habilidade
+
+Labareda Nefasta
+Habilidades de dano causam Dano Mágico adicional por 3s.
+
+Chamas Negras
+Para cada Campeão inimigo, monstro grande ou monstro épico afetado pela sua Labareda Nefasta, recebe 4% de Poder de Habilidade."
+2504,Rookern Lamúrico,2900,"400 de Vida
+80 de Resistência Mágica
+100% de Regeneração de Vida base
+
+Perdição dos Magos
+Depois de não sofrer Dano Mágico por 15s, recebe um Escudo Mágico."
+2508,Cinzas do Destino,900,"30 de Poder de Habilidade
+
+Inflamar
+Habilidades de dano causam 15 de Dano Mágico adicional ao longo de 3s.
+Causa 45 de Dano Mágico adicional contra monstros."
+2510,Aurora e Crepúsculo,3100,"300 de Vida
+60 de Poder de Habilidade
+20 de Aceleração de Habilidade
+20% de Velocidade de Ataque
+
+Lâmina Arcana (0s)
+Após usar uma habilidade, seu próximo ataque causa 0 de Dano Mágico adicional, cura você em 0 ao contato e então aplica efeitos ao contato uma vez a mais."
+2512,Dardos de Caça-Demônios,2650,"45% de Velocidade de Ataque
+25% de Chance de Acerto Crítico
+4% de Velocidade de Movimento
+
+Vigília Noturna
+Recebe 30 de Aceleração da Habilidade Ultimate.
+
+Barragem de Abertura
+Depois de conjurar sua ultimate, seus próximos 3 ataques básicos recebem 50% de Velocidade de Ataque + Acerto Crítico de 80% do seu dano de Acerto Crítico normal por 8s. Se algum ataque já for um Acerto Crítico, em vez disso, ele causa 15% de Dano Verdadeiro adicional."
+2517,Fome Eterna,3100,"65 de Dano de Ataque
+5% de Vampirismo Universal
+20% de Tenacidade
+
+Fome
+Recebe Aceleração de Habilidade com base no seu DdA adicional.
+
+Banquete
+Quando um Campeão a quem você causou dano recentemente é abatido, recebe Vampirismo Universal por um período moderado."
+2520,Quebra-Bastião,3000,"55 de Dano de Ataque
+22 de Letalidade
+15 de Aceleração de Habilidade
+
+Investida Esculpida (0s)
+Causar dano de habilidade a um Campeão ou monstro épico causa 0 de Dano Verdadeiro adicional.
+
+Sabotagem
+Abater um Campeão até 3s após você causar dano a ele concede Sabotagem por 90s. Enquanto você tiver Sabotagem, seu próximo ataque contra um monstro épico ou torre causará 0 de Dano Verdadeiro adicional ao longo de 3s."
+2522,Concretizador,2800,"90 de Poder de Habilidade
+300 de Mana
+10 de Aceleração de Habilidade
+
+Mana Concretizado (0s)
+Por 8s, seu Mana é Fortalecido. Enquanto Fortalecido, suas habilidades custam 100% de Mana a mais, você recebe 0 de dano de habilidade, Escudo e cura aumentados e os Tempos de Recarga das habilidades básicas avançam 30% mais rápido."
+2523,Hexótica C44,2800,"55 de Dano de Ataque
+25% de Chance de Acerto Crítico
+
+Magnificação
+Causa até 10% de dano a mais com Ataques com base na distância que seu inimigo está de você (dano máximo a 500 de alcance).
+
+Mira Arcana
+Quando um Campeão a quem você tenha causado dano nos últimos 3s for abatido, recebe 100 de Alcance de Ataque adicional por 8s."
+2524,Bandocanos,2300,"200 de Vida
+15 de Aceleração de Habilidade
+20 de Armadura
+20 de Resistência Mágica
+
+Fanfarra
+Causar Lentidão ou Imobilizar um Campeão inimigo concede Fanfarra por 0s. Fanfarra concede 20 de Velocidade de Movimento. Enquanto tiver Fanfarra, aliados próximos, incluindo você, recebem 0 de Velocidade de Ataque."
+2525,Couraça Protoplasmática,2600,"600 de Vida
+20 de Aceleração de Habilidade
+
+Salva-Vidas (0s)
+Ao sofrer dano suficiente para reduzir sua Vida a menos de 30%, você recebe 0 de Vida máxima por 5s, depois cura 0 de Vida ao longo da duração. Enquanto regenera Vida, você recebe 15% de aumento de Tamanho, 10% de Velocidade de Movimento e 25% de Tenacidade."
+2526,Tiara Sussurrante,2250,"200 de Vida
+8% de Cura e Resistência do Escudo
+75% de Regeneração de Mana base
+300 de Mana
+
+Harmonia
+Recebe 0% de Potência de Escudo e Cura.
+
+Fluxo de Mana (8s, máx. de 5 cargas)
+Acertar Habilidades concede 4 de Mana máximo (dobrado contra Campeões).
+Transforma-se em Diadema de Canções com 360 de Mana máximo."
+3003,Cajado do Arcanjo,2900,"70 de Poder de Habilidade
+600 de Mana
+25 de Aceleração de Habilidade
+
+Fascínio
+Recebe Poder de Habilidade equivalente a 1% do Mana adicional.
+
+Fluxo de Mana (8s, máximo de 5 cargas)
+Acertar Habilidades concede 5 de Mana máximo (dobrado contra Campeões).
+Transforma-se em Abraço de Seraph com 360 de Mana máximo."
+3004,Manamune,2900,"35 de Dano de Ataque
+500 de Mana
+15 de Aceleração de Habilidade
+
+Fascínio
+Recebe 0 de Dano de Ataque adicional.
+
+Fluxo de Mana (8s, máximo de 4 cargas)
+Acertar Ataques e Habilidades concede 3 de Mana máximo (dobrado contra Campeões).
+Transforma-se em Muramana com 360 de Mana máximo."
+3006,Grevas do Berserker,1100,"30% de Velocidade de Ataque
+45 de Velocidade de Movimento"
+3008,Grevas Vorazes,1000,"45 de Velocidade de Movimento
+4% de Vampirismo Universal
+
+Eliminar
+Recebe 0.6% de Vampirismo Universal ao eliminar um Campeão. Acumula até 10 vezes."
+3009,Botas da Rapidez,1000,"55 de Velocidade de Movimento
+
+Pés Velozes
+Reduz a eficácia dos efeitos de Lentidão em 25%."
+3020,Sapatos do Feiticeiro,1100,"12 de Penetração Mágica
+45 de Velocidade de Movimento"
+3024,Broquel Glacial,900,"25 de Armadura
+300 de Mana
+10 de Aceleração de Habilidade"
+3026,Anjo Guardião,3200,"55 de Dano de Ataque
+45 de Armadura
+
+Renascimento
+Ao sofrer dano letal, restaura 50% da Vida base e 100% do Mana máximo após 4s de Estase."
+3031,Gume do Infinito,3500,"75 de Dano de Ataque
+25% de Chance de Acerto Crítico
+30% de Dano de Acerto Crítico"
+3032,Flechatroz de Yun Tal,3000,"50 de Dano de Ataque
+45% de Velocidade de Ataque
+0% de Chance de Acerto Crítico
+
+Praticar e Matar
+Ao Atacar, recebe Chance de Acerto Crítico permanentemente, até 25%.
+
+Agitação
+Ao Atacar um Campeão inimigo, recebe 30% de Velocidade de Ataque por 6s (30s de Tempo de Recarga).
+Ataques reduzem esse Tempo de Recarga em 1s, e Acertos Críticos em 2s."
+3033,Lembrete Mortal,3000,"35 de Dano de Ataque
+30% de Penetração de Armadura
+25% de Chance de Acerto Crítico
+
+Feridas Dolorosas
+Causar Dano Físico aplica 40% de Ferimentos a Campeões inimigos por 3s."
+3035,Último Sussurro,1450,"20 de Dano de Ataque
+18% de Penetração de Armadura"
+3036,Lembranças do Lorde Dominik,3300,"35 de Dano de Ataque
+35% de Penetração de Armadura
+25% de Chance de Acerto Crítico
+
+Mata-Gigantes
+Causa até 15% de dano adicional a Campeões com base na Vida adicional deles. Adicional de dano máximo atingido com 1500 de Vida adicional."
+3041,Ladrão de Almas de Mejai,1500,"20 de Poder de Habilidade
+100 de Vida
+
+Glória
+Abates concedem Glória, até um máximo de 25. Perde 10 de Glória ao morrer.
+Recebe 5 de Poder de Habilidade por acúmulo de Glória e 10% de Velocidade de Movimento com 10 ou mais acúmulos de Glória."
+3044,Fago,1100,"15 de Dano de Ataque
+200 de Vida
+
+Fúria
+Ataques concedem Velocidade de Movimento por 2s."
+3046,Dançarina Fantasma,2650,"65% de Velocidade de Ataque
+25% de Chance de Acerto Crítico
+10% de Velocidade de Movimento
+
+Valsa Espectral
+Recebe efeito Fantasma."
+3047,Botas Galvanizadas de Aço,1200,"25 de Armadura
+45 de Velocidade de Movimento
+
+Barricada
+Reduz o dano sofrido de Ataques em 10%."
+3050,Convergência de Zeke,2200,"300 de Vida
+25 de Armadura
+25 de Resistência Mágica
+10 de Aceleração de Habilidade
+
+Tempestade do Raio de Gelo
+Conjurar sua ultimate invoca uma tempestade ao seu redor por 5s. A tempestade causa 30 de Dano Mágico por segundo e 30% de Lentidão a Campeões inimigos."
+3051,Machado Termestre,1200,"20 de Dano de Ataque
+20% de Velocidade de Ataque"
+3053,Sinal de Sterak,3200,"400 de Vida
+20% de Tenacidade
+
+Garras Caçadoras
+Recebe Dano de Ataque adicional.
+
+Salva-Vidas
+Ao sofrer dano que reduziria sua Vida a menos de 30%, concede um Escudo que decai por 4.5s."
+3057,Fulgor,900,"10 de Aceleração de Habilidade
+
+Lâmina Arcana
+Após usar uma Habilidade, seu próximo Ataque causa Dano Físico adicional ao contato."
+3065,Semblante Espiritual,2700,"400 de Vida
+50 de Resistência Mágica
+10 de Aceleração de Habilidade
+100% de Regeneração de Vida base
+
+Vitalidade Imensurável
+Curas e Escudos em você são aumentados em 25%."
+3066,Couraça Lunar Alada,800,"200 de Vida
+4% de Velocidade de Movimento"
+3067,Gema Ardente,800,"200 de Vida
+10 de Aceleração de Habilidade"
+3068,Égide de Fogo Solar,2800,"350 de Vida
+50 de Armadura
+10 de Aceleração de Habilidade
+
+Imolar
+Depois de causar ou sofrer qualquer dano, você causa Dano Mágico por segundo a inimigos próximos por 3s."
+3070,Lágrima da Deusa,400,"240 de Mana
+
+Fluxo de Mana (8s, máximo de 4 cargas)
+Acertar Habilidades concede 3 de Mana máximo (dobrado contra Campeões), até 360.
+
+Ajudinha
+Ataques causam 5 de Dano Físico adicional a tropas."
+3071,Cutelo Negro,3000,"45 de Dano de Ataque
+400 de Vida
+20 de Aceleração de Habilidade
+
+Talhar
+Causar Dano Físico a Campeões reduz a Armadura do alvo em 6% por 6s (acumula 5x).
+
+Fervor
+Causar Dano Físico concede 0 de Velocidade de Movimento por 2s."
+3072,Sedenta por Sangue,3400,"80 de Dano de Ataque
+15% de Roubo de Vida
+
+Ícor-escudo
+Converte a cura excedente do Roubo de Vida em um Escudo."
+3073,Hexoplaca Experimental,3000,"40 de Dano de Ataque
+20% de Velocidade de Ataque
+450 de Vida
+
+Hexcarregado
+Recebe 30 de Aceleração da Habilidade Ultimate.
+
+Turbo
+Depois de conjurar sua ultimate, recebe 0% de Velocidade de Ataque e 0% de Velocidade de Movimento por 8s."
+3074,Hidra Raivosa,3300,"65 de Dano de Ataque
+15 de Aceleração de Habilidade
+12% de Roubo de Vida
+
+Fenda
+Ataques causam Dano Físico a inimigos próximos.Crescente Raivosa
+Causa Dano Físico a inimigos ao seu redor.
+Seu Roubo de Vida se aplica a esse dano."
+3075,Armadura de Espinhos,2450,"150 de Vida
+75 de Armadura
+
+Espinhos
+Ao ser atingido por um Ataque, causa Dano Mágico ao atacante e aplica 40% de Ferimentos por 3s se ele for um Campeão."
+3076,Colete Espinhoso,800,"30 de Armadura
+
+Espinhos
+Ao ser atingido por um Ataque, causa 0 de Dano Mágico ao atacante e aplica 40% de Ferimentos por 3s se ele for um Campeão."
+3077,Tiamat,1200,"25 de Dano de Ataque
+
+Fenda
+Ataques causam Dano Físico a inimigos próximos.
+Crescente
+Causa Dano Físico a inimigos ao seu redor."
+3078,Força da Trindade,3333,"36 de Dano de Ataque
+30% de Velocidade de Ataque
+333 de Vida
+15 de Aceleração de Habilidade
+
+Lâmina Arcana
+Após usar uma Habilidade, seu próximo Ataque causa Dano Físico adicional ao contato.
+
+Apressar
+Ataques concedem 20 de Velocidade de Movimento por 2s."
+3082,Carapaça do Vigia,1000,"40 de Armadura
+
+Duro como Pedra
+Reduz o dano sofrido de Ataques."
+3083,Armadura de Warmog,3100,"1000 de Vida
+100% de Regeneração de Vida base
+
+Coração de Warmog
+Caso você tenha 2000 de Vida adicional e não tenha sofrido dano nos últimos 8s, restaura 0 de Vida por segundo.
+
+Vitalidade de Warmog
+Recebe Vida adicional equivalente a 12% da sua Vida de itens (0)."
+3084,Coração de Aço,3000,"900 de Vida
+100% de Regeneração de Vida base
+
+Consumo Colossal (0s) por alvo
+Se um Campeão inimigo permanecer próximo por alguns segundos, seu próximo Ataque contra ele causará 70 mais 6% da sua Vida máxima como Dano Físico adicional e concederá 10% do dano como Vida máxima.
+
+Golias
+Para cada 1000 de Vida máxima, recebe 3% de aumento de tamanho, chegando a até 30%."
+3085,Furacão de Runaan,2650,"40% de Velocidade de Ataque
+25% de Chance de Acerto Crítico
+5% de Velocidade de Movimento
+
+Fúria do Vento
+Ataques disparam projéteis em 2 inimigos adicionais próximos ao alvo.
+Cada projétil causa Dano Físico e aplica efeitos ao contato."
+3086,Zelo,1200,"15% de Velocidade de Ataque
+15% de Chance de Acerto Crítico
+4% de Velocidade de Movimento"
+3087,Faca de Statikk,3000,"45 de Dano de Ataque
+45 de Poder de Habilidade
+30% de Velocidade de Ataque
+4% de Velocidade de Movimento
+
+Eletrocentelha
+Seus Ataques Energizados disparam uma cadeia de relâmpagos, aplicando efeitos ao contato e causando Dano Mágico aos alvos próximos.
+
+Eletrochoque
+Ataques básicos concedem acúmulos de Energizado adicionais."
+3089,Capuz da Morte de Rabadon,3500,"130 de Poder de Habilidade
+
+Apogeu Mágico
+Aumenta o Poder de Habilidade total em 30%."
+3091,Limite da Razão,2800,"50% de Velocidade de Ataque
+45 de Resistência Mágica
+20% de Tenacidade
+
+Duelo
+Seus Ataques causam Dano Mágico adicional ao contato."
+3094,Canhão Fumegante,2650,"35% de Velocidade de Ataque
+25% de Chance de Acerto Crítico
+4% de Velocidade de Movimento
+
+Atirador de Elite
+Seu Ataque Energizado causa 40 de Dano Mágico adicional e recebe 35% de Alcance de Ataque adicional."
+3095,Chuva de Canivete,3200,"50 de Dano de Ataque
+25% de Velocidade de Ataque
+25% de Chance de Acerto Crítico
+
+Energizado
+Mover-se e Atacar gera um Ataque Energizado.
+
+Raio
+Seu Ataque Energizado causa 0 de Dano Mágico adicional e concede 45% de Velocidade de Movimento por 1.5s."
+3100,Perdição de Lich,2900,"100 de Poder de Habilidade
+6% de Velocidade de Movimento
+10 de Aceleração de Habilidade
+
+Lâmina Arcana
+Após usar uma Habilidade, seu próximo Ataque causa Dano Mágico adicional ao contato."
+3102,Véu da Banshee,3000,"105 de Poder de Habilidade
+40 de Resistência Mágica
+
+Anular
+Concede um Escudo de Feitiço que bloqueia a próxima Habilidade inimiga."
+3107,Redenção,2300,"30 de Poder de Habilidade
+15 de Aceleração de Habilidade
+100% de Regeneração de Mana base
+10% de Cura e Resistência do Escudo
+
+Intervenção
+Depois de 2,5s, restaura 150 - 350 da Vida das unidades aliadas e causa 10% da Vida máxima como Dano Verdadeiro a Campeões inimigos."
+3108,Códex Demoníaco,850,"25 de Poder de Habilidade
+10 de Aceleração de Habilidade"
+3109,Juramento do Cavaleiro,2300,"200 de Vida
+40 de Armadura
+10 de Aceleração de Habilidade
+100% de Regeneração de Vida base
+
+Sacrifício
+Enquanto seu aliado Digno estiver próximo, você sofre 14% do dano sofrido por ele e se cura em 12% do dano causado por ele a Campeões.Pacto (0s)
+Designa um aliado como Digno."
+3110,Coração Congelado,2500,"75 de Armadura
+400 de Mana
+20 de Aceleração de Habilidade
+
+Carícia do Inverno
+Reduz a Velocidade de Ataque dos Campeões próximos em 20%."
+3111,Passos de Mercúrio,1250,"20 de Resistência Mágica
+45 de Velocidade de Movimento
+30% de Tenacidade"
+3112,Orbe do Guardião,950,"50 de Poder de Habilidade
+150 de Vida
+
+Recuperação: restaura 10 de Mana a cada 5s. Caso você não possa receber Mana, restaura 15 de Vida."
+3113,Cintilação Etérea,900,"30 de Poder de Habilidade
+4% de Velocidade de Movimento"
+3114,Ídolo Proibido,600,"50% de Regeneração de Mana base
+8% de Cura e Resistência do Escudo"
+3115,Dente de Na'Shor,2900,"80 de Poder de Habilidade
+50% de Velocidade de Ataque
+15 de Aceleração de Habilidade
+
+Mordida Icathiana
+Seus Ataques causam Dano Mágico adicional ao contato."
+3116,Cetro de Cristal de Rylai,2600,"65 de Poder de Habilidade
+400 de Vida
+
+Geada
+Habilidades de dano também causam 30% de Lentidão aos inimigos por 1s."
+3118,Malevolência,2700,"90 de Poder de Habilidade
+600 de Mana
+15 de Aceleração de Habilidade
+
+Escárnio
+Recebe 20 de Aceleração de Habilidade da Ultimate.
+
+Névoa Odiosa
+Causar dano a um Campeão com sua Ultimate queima o chão abaixo dele por 3s, causando Dano Mágico por segundo e reduzindo-lhe a Resistência Mágica."
+3119,Aproximação Invernal,2400,"550 de Vida
+500 de Mana
+15 de Aceleração de Habilidade
+
+Fascínio
+Recebe 0 de Vida.
+
+Fluxo de Mana (8s, máximo de 4 cargas)
+Acertar Ataques e Habilidades concede 3 de Mana máximo (dobrado contra Campeões).
+Transforma-se em Fimbulwinter com 360 de Mana máximo."
+3123,Chamado do Carrasco,800,"15 de Dano de Ataque
+
+Feridas Dolorosas
+Causar Dano Físico a Campeões aplica 40% de Ferimentos por 3s."
+3124,Lâmina da Fúria de Guinsoo,3000,"30 de Dano de Ataque
+30 de Poder de Habilidade
+25% de Velocidade de Ataque
+
+Ira
+Ataques causam 30 de Dano Mágico adicional ao contato.
+
+Golpe Fervente
+Ataques concedem 8% de Velocidade de Ataque por 4s (acumula 4x).
+Enquanto estiver com o máximo de acúmulos, cada terceiro Ataque aplica efeitos ao contato duas vezes."
+3133,Martelo de Guerra de Caulfield,1050,"20 de Dano de Ataque
+10 de Aceleração de Habilidade"
+3134,Punhal Serrilhado,1000,"20 de Dano de Ataque
+10 de Letalidade"
+3135,Cajado do Vazio,3000,"95 de Poder de Habilidade
+40% de Penetração Mágica"
+3137,Criptoflora,3000,"75 de Poder de Habilidade
+30% de Penetração Mágica
+20 de Aceleração de Habilidade
+
+Vida na Morte
+Quando um Campeão a quem você tenha causado dano nos últimos 3s for abatido, uma explosão de cura se propagará do cadáver."
+3139,Cimitarra Mercurial,3200,"50 de Dano de Ataque
+35 de Resistência Mágica
+10% de Roubo de Vida
+
+ATIVOS
+Mercúrio
+Remove todos os efeitos negativos de Controle de Grupo (exceto Arremesso ao ar) e concede Velocidade de Movimento."
+3140,Bandana de Mercúrio,1300,"30 de Resistência Mágica
+
+Mercúrio
+Remove todos os efeitos de Controle de Grupo (exceto Arremesso ao ar)."
+3142,Lâmina Fantasma de Youmuu,2800,"55 de Dano de Ataque
+18 de Letalidade
+4% de Velocidade de Movimento
+
+Assombrar
+Recebe 0 de Velocidade de Movimento fora de combate.
+
+Passo Espectral
+Recebe Velocidade de Movimento e efeito Fantasma por 0s."
+3143,Presságio de Randuin,2700,"350 de Vida
+75 de Armadura
+
+Resiliência
+Sofre 30% a menos de dano de Acertos Críticos.
+Humildade
+Causa 70% de Lentidão a inimigos próximos por 2s."
+3144,Estilingue do Patrulheiro,600,"20% de Velocidade de Ataque
+
+Tiro Certeiro
+Causar dano a um Campeão causa Dano Mágico adicional.
+Ataques reduzem o Tempo de Recarga em 1s."
+3145,Alternador Hextec,1100,"45 de Poder de Habilidade
+
+Entusiasmo
+Causar dano a um Campeão causa Dano Mágico adicional."
+3146,Pistola Laminar Hextec,3000,"80 de Poder de Habilidade
+40 de Dano de Ataque
+10% de Vampirismo Universal
+
+ATIVOS (0s)
+Disparo Elétrico
+Dá um choque no Campeão-alvo inimigo, causando 0 de Dano Mágico e 25% de Lentidão por 1.5s."
+3147,Máscara Assustadora,1300,"30 de Poder de Habilidade
+200 de Vida
+
+Loucura
+Para cada segundo em combate contra Campeões inimigos, causa 2% de dano adicional, com limite de 6%."
+3152,Explocinturão Hextec,2650,"60 de Poder de Habilidade
+350 de Vida
+20 de Aceleração de Habilidade
+
+Supersônico
+Avança na direção-alvo, disparando projéteis que causam Dano Mágico."
+3153,Espada do Rei Destruído,3200,"40 de Dano de Ataque
+25% de Velocidade de Ataque
+10% de Roubo de Vida
+
+Gume da Névoa
+Ataques causam uma porcentagem da Vida atual do inimigo como Dano Físico adicional ao contato.
+
+Sombras da Tirania
+Atacar um Campeão 3 vezes causa 30% de Lentidão por 1s."
+3155,Hexdrinker,1300,"25 de Dano de Ataque
+25 de Resistência Mágica
+
+Salva-Vidas
+Ao sofrer Dano Mágico suficiente para reduzir sua Vida a menos de 30%, recebe um Escudo contra Dano Mágico por 2.5s."
+3156,Mandíbula de Malmortius,3100,"60 de Dano de Ataque
+15 de Aceleração de Habilidade
+40 de Resistência Mágica
+
+Salva-Vidas
+Ao sofrer Dano Mágico suficiente para reduzir sua Vida a menos de 30%, recebe um Escudo contra Dano Mágico por 3s e 10% de Vampirismo Universal até o fim do combate."
+3157,Ampulheta de Zhonya,3250,"105 de Poder de Habilidade
+50 de Armadura
+
+Tempo Paralisado
+Entra em Estase por 2.5s."
+3158,Botas Ionianas da Lucidez,900,"10 de Aceleração de Habilidade
+45 de Velocidade de Movimento
+
+Perspicácia Ioniana
+Recebe 10 de Aceleração de Feitiços de Invocador."
+3161,Lança de Shojin,3100,"45 de Dano de Ataque
+450 de Vida
+
+Força Dracônica
+Recebe 25 de Aceleração de Habilidade Básica.
+
+Determinação Concentrada
+Causar dano com Habilidades aumenta o dano de Habilidade e o dano da Passiva do seu Campeão em 3% por 6s (acumula 4x)."
+3165,Morellonomicon,2850,"75 de Poder de Habilidade
+350 de Vida
+15 de Aceleração de Habilidade
+
+Feridas Dolorosas
+Causar Dano Mágico a Campeões aplica 40% de Ferimento por 3s."
+3168,Caminho Imortal,1000,"45 de Velocidade de Movimento
+4% de Vampirismo Universal
+
+Eliminar
+Recebe 0.6% de Vampirismo Universal ao eliminar um Campeão. Acumula até 10 vezes.
+
+Hoje e Sempre
+Enquanto está com mais da metade da Vida, causa 4% de dano aumentado.
+
+Enquanto está com menos da metade da Vida, recebe mais 12% de cura, Escudo e Regeneração."
+3170,Marcha Célere,1000,"65 de Velocidade de Movimento
+
+Pés Velozes
+Reduz a eficácia dos efeitos de Lentidão em 25%.
+
+Fervor Noxiano
+Recebe 5% da sua Velocidade de Movimento como Força Adaptativa."
+3171,Lucidez Escarlate,900,"20 de Aceleração de Habilidade
+45 de Velocidade de Movimento
+
+Perspicácia Ioniana
+Recebe 20 de Aceleração de Feitiço de Invocador.
+
+Aceleração Noxiana
+Fortalecer ou proteger aliados com Habilidades, causar dano a Campeões inimigos com Habilidades ou conjurar um Feitiço de Invocador concede 0 de Velocidade de Movimento por 4s.
+
+Aceleração Noxiana só pode ser acionada uma vez por conjuração de Habilidade."
+3172,Grevas Bélicas,1100,"45% de Velocidade de Ataque
+45 de Velocidade de Movimento
+5% de Roubo de Vida"
+3173,Esmagadores Acorrentados,1250,"25 de Resistência Mágica
+45 de Velocidade de Movimento
+30% de Tenacidade
+
+Persistência Noxiana (0s)
+Depois de sofrer Dano Mágico de um Campeão, recebe 0 de Escudo contra Dano Mágico por 5s."
+3174,Mobilização Blindada,1200,"35 de Armadura
+45 de Velocidade de Movimento
+
+Barricada
+Reduz o dano sofrido de Ataques em 10%.
+
+Vigor Noxiano (0s)
+Depois de sofrer Dano Físico de um Campeão, recebe 0 de Escudo contra Dano Físico por 5s."
+3175,Sapatos Enfeitiçados,1100,"20 de Penetração Mágica
+8% de Penetração Mágica
+45 de Velocidade de Movimento"
+3177,Lâmina do Guardião,950,"30 de Dano de Ataque
+150 de Vida
+15 de Aceleração de Habilidade"
+3179,Glaive Sombria,2800,"60 de Dano de Ataque
+18 de Letalidade
+15 de Aceleração de Habilidade
+
+Predador Noturno
+Após ficar oculto para inimigos por um breve período, seu próximo Ataque contra um Campeão causa Dano Verdadeiro adicional.
+
+Blecaute
+Quando você estiver perto de armadilhas ou Sentinelas Invisíveis inimigas, elas serão reveladas por um breve período. Ao revelar sentinelas, seus Ataques causam dano adicional a elas."
+3181,Quebracascos,3000,"40 de Dano de Ataque
+500 de Vida
+4% de Velocidade de Movimento
+
+Marujo
+Todo quinto Ataque contra Campeões e monstros épicos causa Dano Físico adicional, aumentado contra estruturas.
+
+Invasão Pirata
+Tropas de cerco e supertropas aliadas próximas recebem Armadura e Resistência Mágica."
+3184,Martelo do Guardião,950,"25 de Dano de Ataque
+150 de Vida
+5% de Roubo de Vida"
+3190,Medalhão dos Solari de Ferro,2200,"200 de Vida
+30 de Armadura
+30 de Resistência Mágica
+10 de Aceleração de Habilidade
+
+Devoção
+Concede a aliados próximos 290 - 360 de Escudo, e esse valor decai ao longo de 2.5s."
+3211,Capuz do Espectro,1250,"200 de Vida
+35 de Resistência Mágica
+100% de Regeneração de Vida base"
+3222,Bênção de Mikael,2300,"250 de Vida
+100% de Regeneração de Mana base
+12% de Cura e Resistência do Escudo
+15 de Aceleração de Habilidade
+
+Purificar
+Remove todos os efeitos de Controle de Grupo de um Campeão aliado (exceto Arremesso ao Ar e Supressão) e restaura 100 - 250 de Vida."
+3302,Terminus,3000,"30 de Dano de Ataque
+35% de Velocidade de Ataque
+
+Sombra
+Ataques causam 0 de Dano Mágico adicional ao contato.
+
+Justaposição
+Alterna entre Luz e Sombra ao atacar Campeões: Ataques de Luz concedem Armadura e Resistência Mágica por 5s. Ataques de Sombra concedem 10% de Penetração de Armadura e Penetração Mágica por 5s."
+3330,Efígie do Espantalho,0,"Não pode ser vendido
+
+Ativo – Amuleto: Posiciona uma efígie que dura 0s e aparece exatamente como Fiddlesticks para os inimigos. Armazena uma carga a cada 0s, com um máximo de 2 cargas.
+
+A efígie será ativada quando Campeões inimigos se aproximarem, simulando uma ação aleatória. Depois disso, ela se destruirá."
+3340,Sentinela Invisível,0,"Ativo (210s - 90s, máximo de 2 cargas)
+Posiciona uma Sentinela Invisível que concede visão por 90s - 120s."
+3363,Alteração Vidente,0,"Ativo (198s - 99s)
+Revela uma área distante por 2s e deixa uma Sentinela que expira ao avistar um Campeão inimigo."
+3364,Lente do Oráculo,0,"Ativo (160s - 100s, máximo de 2 cargas)
+Revela Sentinelas Invisíveis inimigas e armadilhas ao seu redor por 8s."
+3504,Turíbulo Ardente,2200,"45 de Poder de Habilidade
+10% de Cura e Resistência do Escudo
+125% de Regeneração de Mana base
+4% de Velocidade de Movimento
+
+Santificar
+Curar um aliado ou conceder-lhe Escudo fortalece vocês dois por 6s, concedendo 25% de Velocidade de Ataque e 20 de Dano Mágico ao contato."
+3508,Colhedor de Essência,3050,"50 de Dano de Ataque
+20 de Aceleração de Habilidade
+25% de Chance de Acerto Crítico
+
+Lâmina Arcana
+Após usar uma habilidade, seu próximo ataque causa Dano Físico adicional e concede Mana ao contato."
+3599,Lança Negra da Kalista,0,"Ativo – Consumir: Vincula-se a um aliado até o fim da partida, o que os torna aliados em Juramento. O Juramento fortalece tanto você quanto o aliado quando estiverem próximos."
+3600,Lança Negra da Kalista,0,"Ativo – Consumir: Vincula-se a um aliado até o fim da partida, o que os torna aliados em Juramento. O Juramento fortalece tanto você quanto o aliado quando estiverem próximos.
+
+Necessária para utilizar a ultimate da Kalista."
+3742,Couraça do Defunto,2900,"350 de Vida
+55 de Armadura
+4% de Velocidade de Movimento
+
+Naufrágio
+Enquanto estiver se movendo, acumula até 20 de Velocidade de Movimento adicional. Seu próximo Ataque descarrega a Velocidade de Movimento acumulada para causar Dano Físico adicional.
+
+Inafundável
+Reduz a eficácia de efeitos de Lentidão em 15%."
+3748,Hidra Titânica,3300,"40 de Dano de Ataque
+600 de Vida
+
+Fenda
+Ataques causam Dano Físico ao contato e atingem os inimigos atrás do alvo.
+Crescente Titânica
+Fortalece sua próxima Fenda para causar Dano Físico adicional ao contato, além de Dano Físico adicional aos inimigos atrás do alvo."
+3801,Braçadeira Cristalina,800,"200 de Vida
+100% de Regeneração de Vida base"
+3802,Capítulo Perdido,1200,"40 de Poder de Habilidade
+300 de Mana
+10 de Aceleração de Habilidade
+
+Iluminar
+Subir de nível restaura 20% do Mana máximo ao longo de 3s."
+3803,Catalisador das Eras,1300,"300 de Vida
+375 de Mana
+
+Eternidade
+Restaura 10% do dano sofrido de Campeões em forma de Mana.
+Conjurar uma Habilidade cura 25% do Mana gasto."
+3814,Limiar da Noite,3000,"50 de Dano de Ataque
+15 de Letalidade
+250 de Vida
+
+Anular
+Concede um Escudo de Feitiço que bloqueia a próxima Habilidade inimiga."
+3865,Atlas Mundial,400,
+3869,Oposição Celestial,400,"200 de Vida
+75% de Regeneração de Vida base
+75% de Regeneração de Mana base
+9 de ouro a cada 10s
+
+Bênção da Montanha
+Reduz o dano sofrido por Campeões por 2s após sofrer dano de um Campeão. Quando o efeito termina, causa 50% de Lentidão a inimigos próximos por 1.5s.
+
+Ativo (4 cargas)
+Posiciona uma Sentinela Invisível que concede visão."
+3870,Criassonhos,400,"200 de Vida
+75% de Regeneração de Vida base
+75% de Regeneração de Mana base
+9 de ouro a cada 10s
+
+Criassonhos
+Conceder cura ou Escudo a um aliado sopra Bolhas do Sonho em direção a ele por 3s. O próximo Ataque dele causará Dano Mágico adicional ao contato e o próximo dano sofrido por ele será reduzido.
+
+Ativo (4 cargas)
+Posiciona uma Sentinela Invisível que concede visão."
+3871,Invadomínio de Zaz'Zak,400,"200 de Vida
+75% de Regeneração de Vida base
+75% de Regeneração de Mana base
+9 de ouro a cada 10s
+
+Explosão do Vazio
+Causar dano de Habilidade a um Campeão provoca uma explosão que causa Dano Mágico.
+
+Ativo (4 cargas)
+Posiciona uma Sentinela Invisível que concede visão."
+3876,Trenó do Solstício,400,"200 de Vida
+75% de Regeneração de Vida base
+75% de Regeneração de Mana base
+9 de ouro a cada 10s
+
+Passeio de Trenó
+Causar Lentidão a um Campeão inimigo ou Imobilizá-lo próximo a aliados restaura Vida e concede 20% de Velocidade de Movimento que decai ao longo de 2.5s para você e para um aliado próximo.
+
+Ativo (4 cargas)
+Posiciona uma Sentinela Invisível que concede visão."
+3877,Canção de Sangue,400,"200 de Vida
+75% de Regeneração de Vida base
+75% de Regeneração de Mana base
+9 de ouro a cada 10s
+
+Lâmina Arcana
+Após usar uma Habilidade, seu próximo Ataque causa Dano Físico adicional ao contato. Se o alvo for um Campeão, ele sofrerá dano aumentado por 4s.
+
+Ativo (4 cargas)
+Posiciona uma Sentinela Invisível que concede visão."
+3916,Orbe do Oblívio,800,"25 de Poder de Habilidade
+
+Feridas Dolorosas
+Causar Dano Mágico a Campeões aplica 40% de Ferimento por 3s."
+4005,Mandato Imperial,2400,"60 de Poder de Habilidade
+15 de Aceleração de Habilidade
+150% de Regeneração de Mana base
+
+Controle
+Recebe 20 de Aceleração de Habilidade para suas habilidades com efeitos de Imobilização.
+
+Comando
+Ao Imobilizar um Campeão inimigo, você aplica uma marca que o deixa 7% Vulnerável por 4s."
+4401,Força da Natureza,2800,"400 de Vida
+55 de Resistência Mágica
+4% de Velocidade de Movimento
+
+Impassível
+Recebe 70 de Resistência Mágica e 6% de Velocidade de Movimento adicional depois de sofrer Dano Mágico de Campeões 8x."
+4628,Foco do Horizonte,2700,"75 de Poder de Habilidade
+25 de Aceleração de Habilidade
+
+Hiperdisparo
+Causar Dano de Habilidade a Campeões a 600 de alcance ou mais irá Revelá-los por 6s.
+
+Foco
+Quando Hiperdisparo é acionado, Revela todos os demais Campeões inimigos em até 1400 de alcance por 3s."
+4629,Ímpeto Cósmico,3000,"70 de Poder de Habilidade
+350 de Vida
+25 de Aceleração de Habilidade
+4% de Velocidade de Movimento
+
+Dança Enfeitiçada
+Causar Dano Mágico ou Dano Verdadeiro a Campeões concede Velocidade de Movimento por 4s."
+4630,Joia da Ruína,1100,"25 de Poder de Habilidade
+13% de Penetração Mágica"
+4632,Barreira Verdejante,1600,"40 de Poder de Habilidade
+25 de Resistência Mágica
+
+Anular
+Concede um Escudo de Feitiço que bloqueia a próxima Habilidade inimiga."
+4633,Criafendas,3100,"70 de Poder de Habilidade
+350 de Vida
+15 de Aceleração de Habilidade
+
+Corrupção do Vazio
+Para cada segundo em combate contra Campeões inimigos, causa 2% de dano adicional, com limite de 8%. Com força máxima, recebe Vampirismo Universal.
+
+Infusão do Vazio
+Recebe 2% da sua Vida adicional como Poder de Habilidade."
+4642,Espelho de Bandópolis,900,"20 de Poder de Habilidade
+100% de Regeneração de Mana base
+10 de Aceleração de Habilidade"
+4645,Chama Sombria,3200,"110 de Poder de Habilidade
+15 de Penetração Mágica
+
+Floregris
+Dano Mágico e Dano Verdadeiro causam Acertos Críticos a inimigos com menos de 40% de Vida, causando 20% de dano aumentado."
+4646,Ápice da Tempestade,2800,"90 de Poder de Habilidade
+15 de Penetração Mágica
+6% de Velocidade de Movimento
+
+Invasor da Tempestade
+Causar dano equivalente a 25% da Vida máxima de um Campeão dentro de 2.5s aplica Dilúvio a ele.
+
+Dilúvio
+Depois de 2s, causa Dano Mágico. Se o alvo morrer antes que Dilúvio seja acionado, causa dano a inimigos próximos."
+6333,Dança da Morte,3300,"60 de Dano de Ataque
+50 de Armadura
+15 de Aceleração de Habilidade
+
+Dor Ignorada
+Uma porcentagem do dano sofrido é causada a você ao longo de 3s.
+
+Desafiar
+Ao eliminar um Campeão inimigo a quem você tenha causado dano nos últimos 3s, purifica o restante do dano de Dor Ignorada e restaura Vida ao longo de 2s."
+6609,Serrespada Quimiopunk,3000,"45 de Dano de Ataque
+450 de Vida
+15 de Aceleração de Habilidade
+
+Cisalhar
+Causar Dano Físico aplica 40% de Ferimentos a Campeões inimigos por 3s."
+6610,Céu Dividido,3100,"40 de Dano de Ataque
+400 de Vida
+10 de Aceleração de Habilidade
+
+Golpe de Lumescudo
+Seu primeiro Ataque contra um Campeão causa Acerto Crítico e restaura Vida."
+6616,Cajado Aquafluxo,2250,"35 de Poder de Habilidade
+10% de Cura e Resistência do Escudo
+125% de Regeneração de Mana base
+10 de Aceleração de Habilidade
+
+Corredeira
+Conceder cura ou Escudo a um aliado concede a vocês dois 40 de Poder de Habilidade e 15 de Aceleração de Habilidade por 6s."
+6617,Regenerador de Pedra Lunar,2200,"25 de Poder de Habilidade
+200 de Vida
+20 de Aceleração de Habilidade
+125% de Regeneração de Mana base
+
+Graça Estrelada
+Curar um aliado ou conceder Escudo a ele ativa um efeito em cadeia em outro aliado (menos em si), curando-o em 30% ou concedendo a ele um Escudo de 35% do valor original."
+6620,Ecos de Helia,2200,"35 de Poder de Habilidade
+200 de Vida
+20 de Aceleração de Habilidade
+125% de Regeneração de Mana base
+
+Sifão da Alma
+Recebe 30% do dano pré-mitigação causado a Campeões como Cargas de Alma. Conceder curas ou Escudos a um aliado consome todas as Cargas de Alma para restaurar Vida."
+6621,Auronúcleo,2500,"45 de Poder de Habilidade
+16% de Cura e Resistência do Escudo
+100% de Regeneração de Mana base
+
+Primeira Luz
+Recebe 2% de cura e Resistência do Escudo e 10 de Poder de Habilidade a cada 100% de Regeneração de Mana base."
+6631,Quebrapassos,3300,"40 de Dano de Ataque
+25% de Velocidade de Ataque
+450 de Vida
+
+Fenda
+Ataques causam Dano Físico a inimigos próximos.
+Onda de Choque Estonteante
+Causa Dano Físico e 35% de Lentidão a inimigos próximos.
+Recebe 35% de Velocidade de Movimento que decai ao longo do tempo a cada Campeão atingido por 3s."
+6653,Tormento de Liandry,3000,"60 de Poder de Habilidade
+300 de Vida
+
+Tormento
+Habilidades de dano queimam inimigos em 2% da Vida máxima como Dano Mágico por segundo durante 3s.
+
+Sofrimento
+Para cada segundo em combate com Campeões inimigos, causa 2% de dano adicional, até um máximo de 6%."
+6655,Eco de Luden,2750,"100 de Poder de Habilidade
+600 de Mana
+10 de Aceleração de Habilidade
+
+Eco
+Habilidades de dano lançam 6 Ecos que causam Dano Mágico adicional ao alvo e a inimigos próximos. Ecos restantes atingem o alvo primeiro, causando 20% de dano."
+6657,Bastão das Eras,2600,"45 de Poder de Habilidade
+350 de Vida
+500 de Mana
+
+Atemporal
+Este item ganha 10 de Vida, 30 de Mana e 3 de Poder de Habilidade a cada 60s até 10 vezes. Com o máximo de acúmulos, recebe um nível.
+
+Eternidade
+Sofrer dano de Campeões restaura 10% do dano como Mana.
+Conjurar uma Habilidade cura o equivalente a 25% do Mana gasto."
+6660,Brasa de Bami,900,"150 de Vida
+5 de Aceleração de Habilidade
+
+Imolar
+Depois de causar ou sofrer qualquer dano, você causa Dano Mágico a inimigos próximos por 3s."
+6662,Manopla dos Glacinatas,2900,"300 de Vida
+50 de Armadura
+15 de Aceleração de Habilidade
+
+Lâmina Arcana
+Depois de usar uma Habilidade, seu próximo Ataque causará Dano Físico adicional ao contato e criará um campo congelado por 2s, causando Lentidão."
+6664,Resplendor Vazio,2800,"400 de Vida
+40 de Resistência Mágica
+10 de Aceleração de Habilidade
+100% de Regeneração de Vida base
+
+Imolar
+Depois de causar ou sofrer qualquer dano, você causa Dano Mágico por segundo a inimigos próximos por 3s.
+
+Desolar
+Abater um inimigo causa Dano Mágico ao redor dele"
+6665,"Jak'Sho, o Inconstante",3200,"350 de Vida
+45 de Armadura
+45 de Resistência Mágica
+
+Resiliência do Vazio
+Depois de 5s de combate contra Campeões, aumenta sua Armadura e Resistência Mágica adicionais em 30% até o fim do combate."
+6670,Aljava Vespertina,1300,"15 de Dano de Ataque
+20% de Chance de Acerto Crítico"
+6672,Mata-Cráquens,3000,"45 de Dano de Ataque
+40% de Velocidade de Ataque
+4% de Velocidade de Movimento
+
+Derrubar
+Cada terceiro Ataque causa Dano Físico adicional ao contato, aumentado com base na Vida perdida do alvo."
+6673,Arco-escudo Imortal,3000,"55 de Dano de Ataque
+25% de Chance de Acerto Crítico
+
+Salva-Vidas
+Ao sofrer dano suficiente para reduzir sua Vida a menos de 30%, recebe um Escudo por 3s."
+6675,Adaga Oscilante Navori,2650,"40% de Velocidade de Ataque
+25% de Chance de Acerto Crítico
+4% de Velocidade de Movimento
+
+Transcendência
+Ataques reduzem os Tempos de Recarga das Habilidades básicas em 15% do Tempo de Recarga restante."
+6676,A Coletora,3000,"50 de Dano de Ataque
+10 de Letalidade
+25% de Chance de Acerto Crítico
+
+Morte
+Seu dano executa Campeões com menos de 5% de Vida.
+
+Abrupta
+Abates de Campeões concedem 25 de ouro adicional."
+6690,Retriz,775,"15 de Dano de Ataque
+4% de Velocidade de Movimento"
+6692,Eclipse,2900,"60 de Dano de Ataque
+15 de Aceleração de Habilidade
+
+Lua Sempre Crescente
+Atingir um Campeão com 2 Ataques ou Habilidades separados dentro de 2s concede ao usuário um Escudo por 2s."
+6694,Rancor de Serylda,3000,"45 de Dano de Ataque
+35% de Penetração de Armadura
+15 de Aceleração de Habilidade
+
+Frio Agonizante
+Habilidades de dano causam 30% de Lentidão a inimigos com menos de 50% de Vida por 1s."
+6695,Presa da Serpente,2500,"55 de Dano de Ataque
+15 de Letalidade
+
+Ceifador de Escudos
+Causar dano a um Campeão inimigo reduz em 0% Escudos que ele receba por 3s.
+Se ele ainda não tiver sido afetado por Ceifador de Escudos, reduz os Escudos recebidos em 0%."
+6696,Arco do Axioma,2750,"55 de Dano de Ataque
+18 de Letalidade
+20 de Aceleração de Habilidade
+
+Fluxo
+Quando um Campeão a quem você tenha causado dano nos últimos 3s for abatido, restaura parte do Tempo de Recarga total da ultimate do usuário."
+6697,Húbris,2800,"55 de Dano de Ataque
+18 de Letalidade
+10 de Aceleração de Habilidade
+
+Eminência
+Quando um Campeão a quem você tenha causado dano nos últimos 3s for abatido, recebe 12 de Dano de Ataque mais 3 por Campeão abatido por 90s."
+6698,Hidra Profana,2850,"55 de Dano de Ataque
+18 de Letalidade
+10 de Aceleração de Habilidade
+
+Fenda
+Ataques causam Dano Físico a inimigos próximos.
+
+Fenda Herege
+Causa Dano Físico ao seu redor."
+6699,Cicloespada Voltaica,3000,"55 de Dano de Ataque
+10 de Letalidade
+10 de Aceleração de Habilidade
+
+Galvanizar
+Causar dano a Campeões inimigos com uma habilidade ativa Energizado se o efeito estiver pronto.
+
+Firmamento
+Seu Ataque Energizado causa % da Vida atual do alvo como Dano Físico adicional e concede a você Letalidade adicional por 4s."
+8010,Maldição Sanguinária,2900,"65 de Poder de Habilidade
+400 de Vida
+15 de Aceleração de Habilidade
+
+Decadência Vil
+Causar Dano Mágico com habilidades ou passivas a Campeões reduz a Resistência Mágica deles em 7.5% por 6s (acumula 4x)."
+8020,Máscara Abissal,2650,"350 de Vida
+45 de Resistência Mágica
+15 de Aceleração de Habilidade
+
+Destroçar
+Campeões inimigos próximos sofrem 12% a mais de Dano Mágico."
+322065,Hino Bélico de Shurelya,2600,"65 de Poder de Habilidade
+15 de Aceleração de Habilidade
+6% de Velocidade de Movimento
+150% de Regeneração de Mana base
+
+Discurso Inspirador
+Concede aos aliados próximos 30% de Velocidade de Movimento por 4s."
+322526,Tiara Sussurrante,2250,"200 de Vida
+8% de Cura e Resistência do Escudo
+75% de Regeneração de Mana base
+300 de Mana
+
+Harmonia
+Recebe 0% de Potência de Escudo e Cura.
+
+Fluxo de Mana (8s, máx. de 5 cargas)
+Acertar Habilidades concede 4 de Mana máximo (dobrado contra Campeões).
+Transforma-se em Diadema de Canções com 360 de Mana máximo."
+323003,Cajado do Arcanjo,2900,"70 de Poder de Habilidade
+600 de Mana
+25 de Aceleração de Habilidade
+
+Fascínio
+Recebe Poder de Habilidade equivalente a 1% do Mana adicional.
+
+Fluxo de Mana (8s, máximo de 5 cargas)
+Acertar Habilidades concede 9.5 de Mana máximo (dobrado contra Campeões).
+Transforma-se em Abraço de Seraph com 360 de Mana máximo."
+323004,Manamune,2900,"35 de Dano de Ataque
+500 de Mana
+15 de Aceleração de Habilidade
+
+Fascínio
+Recebe 0 de Dano de Ataque adicional.
+
+Fluxo de Mana (8s, máximo de 4 cargas)
+Acertar Ataques e Habilidades concede 6.5 de Mana máximo (dobrado contra Campeões).
+Transforma-se em Muramana com 360 de Mana máximo."
+323050,Convergência de Zeke,2300,"350 de Vida
+30 de Armadura
+30 de Resistência Mágica
+10 de Aceleração de Habilidade
+
+Tempestade do Raio de Gelo
+Conjurar sua ultimate invoca uma tempestade ao seu redor por 5s. A tempestade causa 30 de Dano Mágico por segundo e 30% de Lentidão a Campeões inimigos."
+323070,Lágrima da Deusa,400,"240 de Mana
+
+Fluxo de Mana (8s, máximo de 4 cargas)
+Acertar Habilidades concede 6.5 de Mana máximo (dobrado contra Campeões), até 360.
+
+Ajudinha
+Ataques causam 5 de Dano Físico adicional a tropas."
+323075,Armadura de Espinhos,2650,"200 de Vida
+85 de Armadura
+
+Espinhos
+Ao ser atingido por um Ataque, causa Dano Mágico ao atacante e aplica 40% de Ferimentos por 3s se ele for um Campeão."
+323107,Redenção,2800,"30 de Poder de Habilidade
+15 de Aceleração de Habilidade
+100% de Regeneração de Mana base
+10% de Cura e Resistência do Escudo
+
+Intervenção
+Depois de 2,5s, restaura 150 - 350 da Vida das unidades aliadas e causa 10% da Vida máxima como Dano Verdadeiro a Campeões inimigos."
+323109,Juramento do Cavaleiro,2900,"300 de Vida
+50 de Armadura
+10 de Aceleração de Habilidade
+150% de Regeneração de Vida base
+
+Sacrifício
+Enquanto seu aliado Digno estiver próximo, você sofre 14% do dano sofrido por ele e se cura em 12% do dano causado por ele a Campeões.Pacto (0s)
+Designa um aliado como Digno."
+323110,Coração Congelado,2700,"75 de Armadura
+500 de Mana
+25 de Aceleração de Habilidade
+
+Carícia do Inverno
+Reduz a Velocidade de Ataque dos Campeões próximos em 20%."
+323119,Aproximação Invernal,2400,"550 de Vida
+500 de Mana
+15 de Aceleração de Habilidade
+
+Fascínio
+Recebe 0 de Vida.
+
+Fluxo de Mana (8s, máximo de 4 cargas)
+Acertar Ataques e Habilidades concede 6.5 de Mana máximo (dobrado contra Campeões).
+Transforma-se em Fimbulwinter com 360 de Mana máximo."
+323190,Medalhão dos Solari de Ferro,2600,"250 de Vida
+30 de Armadura
+30 de Resistência Mágica
+10 de Aceleração de Habilidade
+
+Devoção
+Concede a aliados próximos 290 - 360 de Escudo, e esse valor decai ao longo de 2.5s."
+323222,Bênção de Mikael,2800,"400 de Vida
+100% de Regeneração de Mana base
+15% de Cura e Resistência do Escudo
+15 de Aceleração de Habilidade
+
+Purificar
+Remove todos os efeitos de Controle de Grupo de um Campeão aliado (exceto Arremesso ao Ar e Supressão) e restaura 100 - 250 de Vida."
+323504,Turíbulo Ardente,2600,"55 de Poder de Habilidade
+10% de Cura e Resistência do Escudo
+150% de Regeneração de Mana base
+6% de Velocidade de Movimento
+
+Santificar
+Curar um aliado ou conceder-lhe Escudo fortalece vocês dois por 6s, concedendo 25% de Velocidade de Ataque e 20 de Dano Mágico ao contato."
+324005,Mandato Imperial,2400,"65 de Poder de Habilidade
+15 de Aceleração de Habilidade
+150% de Regeneração de Mana base
+
+Controle
+Recebe 20 de Aceleração de Habilidade para suas habilidades com efeitos de Imobilização.
+
+Comando
+Ao Imobilizar um Campeão inimigo, você aplica uma marca que o deixa 7% Vulnerável por 4s."
+326616,Cajado Aquafluxo,2600,"45 de Poder de Habilidade
+10% de Cura e Resistência do Escudo
+150% de Regeneração de Mana base
+10 de Aceleração de Habilidade
+
+Corredeira
+Conceder cura ou Escudo a um aliado concede a vocês dois 40 de Poder de Habilidade e 15 de Aceleração de Habilidade por 6s."
+326617,Regenerador de Pedra Lunar,2900,"35 de Poder de Habilidade
+400 de Vida
+20 de Aceleração de Habilidade
+150% de Regeneração de Mana base
+
+Graça Estrelada
+Curar um aliado ou conceder Escudo a ele ativa um efeito em cadeia em outro aliado (menos em si), curando-o em 30% ou concedendo a ele um Escudo de 35% do valor original."
+326620,Ecos de Helia,2600,"35 de Poder de Habilidade
+250 de Vida
+20 de Aceleração de Habilidade
+150% de Regeneração de Mana base
+
+Sifão da Alma
+Recebe 30% do dano pré-mitigação causado a Campeões como Cargas de Alma. Conceder curas ou Escudos a um aliado consome todas as Cargas de Alma para restaurar Vida."
+326621,Auronúcleo,2900,"50 de Poder de Habilidade
+20% de Cura e Resistência do Escudo
+150% de Regeneração de Mana base
+
+Primeira Luz
+Recebe 2% de cura e Resistência do Escudo e 10 de Poder de Habilidade a cada 100% de Regeneração de Mana base."
+326657,Bastão das Eras,2600,"45 de Poder de Habilidade
+350 de Vida
+500 de Mana
+
+Atemporal
+Este item ganha 10 de Vida, 30 de Mana e 3 de Poder de Habilidade a cada 60s até 10 vezes. Com o máximo de acúmulos, recebe um nível.
+
+Eternidade
+Sofrer dano de Campeões restaura 10% do dano como Mana.
+Conjurar uma Habilidade cura o equivalente a 25% do Mana gasto."
+328020,Máscara Abissal,2850,"350 de Vida
+50 de Resistência Mágica
+15 de Aceleração de Habilidade
+
+Destroçar
+Campeões inimigos próximos sofrem 12% a mais de Dano Mágico."
+663039,Acerto de Contas de Atma,2500,"500 de Vida
+20% de Chance de Acerto Crítico
+
+Monumental
+Recebe 0-30% de Chance de Acerto Crítico que escala com sua Vida adicional."
+663056,Coroa do Rei Demoníaco,2500,"Supremacia
+Aumenta Vida, Armadura, Resistência Mágica, Dano de Ataque, Poder de Habilidade, Velocidade de Ataque e Aceleração de Habilidade em 20%, que aumenta em 0% por eliminação e em -3% por morte após a aquisição do item."
+663058,Escudo de Rocha Fundida,2500,"250 de Vida
+80 de Armadura
+
+Inabalável como a Terra
+Aumenta sua Armadura em 20% e concede Chance de Bloqueio com base na sua Armadura."
+663059,Manto da Noite Estrelada,2500,"250 de Vida
+60 de Resistência Mágica
+
+Inesgotável como as Estrelas
+Aumenta sua Resistência Mágica em 10%. Reduz todo o dano sofrido de fontes que não sejam ataques básicos em uma porcentagem, escalando com sua Resistência Mágica até 25%."
+663060,Espada do Divino,2500,"90 de Força Adaptativa
+50% de Chance de Acerto Crítico
+
+Trucidar
+Cada Acerto Crítico causa Dano de Acerto Crítico adicional aleatório, escalando até 50% da sua Chance de Acerto Crítico."
+663064,Talismã da Ascensão de Veigar,900,"Recebe 100% de experiência adicional
+
+Não concede atributos e não pode ser vendido...
+
+Mas vale a pena se você chegar ao nível 30."
+663146,Pistola Laminar Hextec,2500,"90 de Poder de Habilidade
+45 de Dano de Ataque
+15% de Vampirismo Universal
+
+ATIVOS (0s)
+Disparo Elétrico
+Dá um choque no Campeão-alvo inimigo, causando 0 de Dano Mágico e 40% de Lentidão por 2s."
+663172,Zéfiro,2500,"40% de Velocidade de Ataque
+8% de Velocidade de Movimento
+25 de Aceleração de Habilidade
+20% de Tenacidade
+
+Tal Qual o Vento
+Recebe 5% de Velocidade de Movimento ao contato por 6s, acumulando até 25% de Velocidade de Movimento."
+663193,Placa Gargolítica,2500,"55 de Armadura
+55 de Resistência Mágica
+10 de Aceleração de Habilidade
+8% de Velocidade de Movimento
+
+Ativo – Inquebrável: recebe um Escudo que decai e cresce em tamanho."
+664011,Espada da Alvorada Florescente,2500,"35 de Poder de Habilidade
+150 de Vida
+10% de Cura e Resistência do Escudo
+10 de Aceleração de Habilidade
+
+Efervescência
+Recebe +1% de Velocidade de Ataque a cada 1% de Resistência do Escudo e Cura que você tiver.
+
+Refrescância
+ao contato, cura o Campeão aliado com a Vida mais baixa que está perto de você em 0 de Vida."
+664644,Coroa da Rainha Despedaçada,2500,"65 de Poder de Habilidade
+250 de Vida
+600 de Mana
+15 de Aceleração de Habilidade
+
+Proteção
+Você recebe Proteção e sofre 40% a menos de dano de Campeões. A Proteção permanece por 3s depois de sofrer dano de Campeões. (0s).
+
+O Tempo de Recarga do item é reiniciado ao sofrer dano de Campeões."
+667101,Lâmina do Apostador,2500,"55 de Força Adaptativa
+10 de Aceleração de Habilidade
+15 de Letalidade
+15 de Penetração Mágica
+15% de Velocidade de Movimento
+
+Ganhando Tempo
+Eliminações de Campeões enquanto usa a Lâmina do Apostador atrasam a chegada do Veigar Chefão da Condenação em mais 10s. Morrer enquanto porta a Lâmina acelera a chegada dele em 10s (mas você não perderá tempo após a marca dos 14:30 minutos de partida).
+
+Aposta Redobrada
+Eliminações de Campeões geram um acúmulo, cada qual concedendo 10 de ouro adicional por abate. Você também sofre 5% a mais de dano por acúmulo. Perde todos os acúmulos ao morrer."
+667109,Crueldade,2500,"60 de Poder de Habilidade
+25 de Armadura
+25 de Resistência Mágica
+
+Testemunhe a Queda
+Ao Imobilizar ou Prender ao chão um Campeão inimigo, invoca um cometa sobre ele. O cometa atinge o alvo após 1s, causando 0 de Dano Mágico adicional na área. O efeito tem um Tempo de Recarga de 6s por alvo por conjuração."
+667112,Comecarne,2500,"55 de Força Adaptativa
+500 de Vida
+
+Carne Despedaçada
+Causar dano fragmenta 3 de Armadura e Resistência Mágica por 5s, acumulando até 10 vezes. A aplicação de acúmulos tem 1s de Tempo de Recarga por Habilidade.
+
+Canibalizar
+Ao eliminar um Campeão, rouba 10% dos atributos e do tamanho dele pelo resto da rodada."
+667666,A Coletora,3000,"50 de Dano de Ataque
+10 de Letalidade
+25% de Chance de Acerto Crítico
+
+Morte
+Seu dano executa Campeões com menos de 5% de Vida.
+
+Abrupta
+Abates de Campeões concedem 25 de ouro adicional."
