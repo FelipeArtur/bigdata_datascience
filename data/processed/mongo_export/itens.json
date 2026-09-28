@@ -1,0 +1,3122 @@
+[
+  {
+    "_id": 1001,
+    "item_id": 1001,
+    "nome": "Botas",
+    "preco_unitario": 300,
+    "descricao": "25 de Velocidade de Movimento",
+    "categorias": [
+      "Boots"
+    ]
+  },
+  {
+    "_id": 1004,
+    "item_id": 1004,
+    "nome": "Amuleto da Fada",
+    "preco_unitario": 200,
+    "descricao": "50% de Regeneração de Mana base",
+    "categorias": [
+      "ManaRegen"
+    ]
+  },
+  {
+    "_id": 1006,
+    "item_id": 1006,
+    "nome": "Pérola do Rejuvenescimento",
+    "preco_unitario": 300,
+    "descricao": "100% de Regeneração de Vida base",
+    "categorias": [
+      "HealthRegen"
+    ]
+  },
+  {
+    "_id": 1011,
+    "item_id": 1011,
+    "nome": "Cinto do Gigante",
+    "preco_unitario": 900,
+    "descricao": "350 de Vida",
+    "categorias": [
+      "Health"
+    ]
+  },
+  {
+    "_id": 1018,
+    "item_id": 1018,
+    "nome": "Capa da Agilidade",
+    "preco_unitario": 600,
+    "descricao": "15% de Chance de Acerto Crítico",
+    "categorias": [
+      "CriticalStrike"
+    ]
+  },
+  {
+    "_id": 1026,
+    "item_id": 1026,
+    "nome": "Varinha Explosiva",
+    "preco_unitario": 850,
+    "descricao": "45 de Poder de Habilidade",
+    "categorias": [
+      "SpellDamage"
+    ]
+  },
+  {
+    "_id": 1027,
+    "item_id": 1027,
+    "nome": "Cristal de Safira",
+    "preco_unitario": 300,
+    "descricao": "300 de Mana",
+    "categorias": [
+      "Mana"
+    ]
+  },
+  {
+    "_id": 1028,
+    "item_id": 1028,
+    "nome": "Cristal de Rubi",
+    "preco_unitario": 400,
+    "descricao": "150 de Vida",
+    "categorias": [
+      "Health"
+    ]
+  },
+  {
+    "_id": 1029,
+    "item_id": 1029,
+    "nome": "Couraça de Pano",
+    "preco_unitario": 300,
+    "descricao": "15 de Armadura",
+    "categorias": [
+      "Armor"
+    ]
+  },
+  {
+    "_id": 1031,
+    "item_id": 1031,
+    "nome": "Cota de Malha",
+    "preco_unitario": 800,
+    "descricao": "40 de Armadura",
+    "categorias": [
+      "Armor"
+    ]
+  },
+  {
+    "_id": 1033,
+    "item_id": 1033,
+    "nome": "Manto Anula-Magia",
+    "preco_unitario": 400,
+    "descricao": "20 de Resistência Mágica",
+    "categorias": [
+      "SpellBlock"
+    ]
+  },
+  {
+    "_id": 1036,
+    "item_id": 1036,
+    "nome": "Espada Longa",
+    "preco_unitario": 350,
+    "descricao": "10 de Dano de Ataque",
+    "categorias": [
+      "Damage",
+      "Lane"
+    ]
+  },
+  {
+    "_id": 1037,
+    "item_id": 1037,
+    "nome": "Picareta",
+    "preco_unitario": 875,
+    "descricao": "25 de Dano de Ataque",
+    "categorias": [
+      "Damage"
+    ]
+  },
+  {
+    "_id": 1038,
+    "item_id": 1038,
+    "nome": "Espada G. p. C.",
+    "preco_unitario": 1300,
+    "descricao": "40 de Dano de Ataque",
+    "categorias": [
+      "Damage"
+    ]
+  },
+  {
+    "_id": 1042,
+    "item_id": 1042,
+    "nome": "Adaga",
+    "preco_unitario": 250,
+    "descricao": "10% de Velocidade de Ataque",
+    "categorias": [
+      "AttackSpeed"
+    ]
+  },
+  {
+    "_id": 1043,
+    "item_id": 1043,
+    "nome": "Arco Recurvo",
+    "preco_unitario": 700,
+    "descricao": "15% de Velocidade de Ataque\n\nFerroada\nOs ataques causam 15 de Dano Físico adicional ao contato.",
+    "categorias": [
+      "AttackSpeed",
+      "OnHit"
+    ]
+  },
+  {
+    "_id": 1052,
+    "item_id": 1052,
+    "nome": "Tomo Amplificador",
+    "preco_unitario": 400,
+    "descricao": "20 de Poder de Habilidade",
+    "categorias": [
+      "SpellDamage"
+    ]
+  },
+  {
+    "_id": 1053,
+    "item_id": 1053,
+    "nome": "Cetro Vampírico",
+    "preco_unitario": 900,
+    "descricao": "15 de Dano de Ataque\n7% de Roubo de Vida",
+    "categorias": [
+      "Damage",
+      "LifeSteal"
+    ]
+  },
+  {
+    "_id": 1054,
+    "item_id": 1054,
+    "nome": "Escudo de Doran",
+    "preco_unitario": 450,
+    "descricao": "110 de Vida\n\nFoco Definitivo\nRestaura 4 de Vida a cada 5s.\nApós sofrer dano de um Campeão, restaura Vida ao longo de 8s.\n\nAjudinha\nAtaques causam 5 de Dano Físico adicional a tropas.",
+    "categorias": [
+      "Health",
+      "HealthRegen",
+      "Lane"
+    ]
+  },
+  {
+    "_id": 1055,
+    "item_id": 1055,
+    "nome": "Lâmina de Doran",
+    "preco_unitario": 450,
+    "descricao": "10 de Dano de Ataque\n80 de Vida\n2.5% de Vampirismo Universal",
+    "categorias": [
+      "Health",
+      "Damage",
+      "LifeSteal",
+      "SpellVamp",
+      "Lane"
+    ]
+  },
+  {
+    "_id": 1056,
+    "item_id": 1056,
+    "nome": "Anel de Doran",
+    "preco_unitario": 400,
+    "descricao": "18 de Poder de Habilidade\n90 de Vida\n\nDrenar\nRestaura 1 de Mana por segundo, aumentado para 2 de Mana por segundo por 5s após causar dano a um Campeão inimigo. Caso você não possa receber Mana, cura em 45% do mesmo valor.\n\nAjudinha\nOs ataques causam 5 de Dano Físico adicional a tropas.",
+    "categorias": [
+      "Health",
+      "Lane",
+      "ManaRegen",
+      "SpellDamage"
+    ]
+  },
+  {
+    "_id": 1057,
+    "item_id": 1057,
+    "nome": "Capa Negatron",
+    "preco_unitario": 850,
+    "descricao": "45 de Resistência Mágica",
+    "categorias": [
+      "SpellBlock"
+    ]
+  },
+  {
+    "_id": 1058,
+    "item_id": 1058,
+    "nome": "Bastão Desnecessariamente Grande",
+    "preco_unitario": 1200,
+    "descricao": "65 de Poder de Habilidade",
+    "categorias": [
+      "SpellDamage"
+    ]
+  },
+  {
+    "_id": 1082,
+    "item_id": 1082,
+    "nome": "Lacre Sombrio",
+    "preco_unitario": 350,
+    "descricao": "15 de Poder de Habilidade\n50 de Vida\n\nGlória\nAbates concedem Glória, até um máximo de 10. Perde 5 de Glória ao morrer.\nRecebe 4 de Poder de Habilidade por acúmulo de Glória.",
+    "categorias": [
+      "Health",
+      "SpellDamage",
+      "Lane"
+    ]
+  },
+  {
+    "_id": 1083,
+    "item_id": 1083,
+    "nome": "Abatedora",
+    "preco_unitario": 450,
+    "descricao": "7 de Dano de Ataque\n\nCeifar\nRestaura 3 de Vidaao contato.\nAbater uma tropa concede 1 de ouro, até um máximo de 100. Atingir o limite concede mais 350 de ouro.",
+    "categorias": [
+      "Damage",
+      "OnHit",
+      "Lane"
+    ]
+  },
+  {
+    "_id": 1086,
+    "item_id": 1086,
+    "nome": "Arco de Doran",
+    "preco_unitario": 400,
+    "descricao": "8 de Dano de Ataque\n15% de Velocidade de Ataque\n1.5% de Vampirismo Universal",
+    "categorias": [
+      "Damage",
+      "AttackSpeed",
+      "SpellVamp",
+      "Lane"
+    ]
+  },
+  {
+    "_id": 1101,
+    "item_id": 1101,
+    "nome": "Filhote de Garrabrasa",
+    "preco_unitario": 450,
+    "descricao": "Companheiros da Selva\nInvoca um Garrabrasa para ajudar você contra monstros.\n\nO companheiro cresce conforme você caça mais monstros, fortalecendo seu Golpear. Ao crescer completamente, ele cumpre a missão da selva e imbui esporadicamente seu próximo Ataque ou Habilidade para queimar inimigos e causar Lentidão a eles. Abater monstros grandes ativa esse efeito imediatamente.",
+    "categorias": [
+      "Jungle"
+    ]
+  },
+  {
+    "_id": 1102,
+    "item_id": 1102,
+    "nome": "Cria de Andabrisas",
+    "preco_unitario": 450,
+    "descricao": "Companheiros da Selva\nInvoca um Andabrisas para ajudar você contra monstros.\n\nO companheiro cresce conforme você caça mais monstros, fortalecendo seu Golpear. Ao crescer completamente, ele cumpre a missão da selva e concede Velocidade de Movimento ao entrar em um arbusto, que aumenta ao abater monstros grandes.",
+    "categorias": [
+      "Jungle"
+    ]
+  },
+  {
+    "_id": 1103,
+    "item_id": 1103,
+    "nome": "Broto de Esmagamusgo",
+    "preco_unitario": 450,
+    "descricao": "Companheiros da Selva\nInvoca um Esmagamusgo para ajudar você contra monstros.\n\nO companheiro cresce conforme você caça mais monstros, fortalecendo seu Golpear. Ao crescer completamente, ele cumpre a missão da selva e concede um Escudo quando fora de combate e ao abater monstros grandes.",
+    "categorias": [
+      "Jungle"
+    ]
+  },
+  {
+    "_id": 1105,
+    "item_id": 1105,
+    "nome": "Broto de Esmagamusgo",
+    "preco_unitario": 450,
+    "descricao": "Companheiros da Selva\nInvoca um Esmagamusgo para ajudar você contra monstros.\n\nO companheiro cresce conforme você caça mais monstros, fortalecendo seu Golpear. Ao crescer completamente, ele cumpre a missão da selva e concede um Escudo quando fora de combate e ao abater monstros grandes.",
+    "categorias": [
+      "Jungle"
+    ]
+  },
+  {
+    "_id": 1106,
+    "item_id": 1106,
+    "nome": "Cria de Andabrisas",
+    "preco_unitario": 450,
+    "descricao": "Companheiros da Selva\nInvoca um Andabrisas para ajudar você contra monstros.\n\nO companheiro cresce conforme você caça mais monstros, fortalecendo seu Golpear. Ao crescer completamente, ele cumpre a missão da selva e concede Velocidade de Movimento ao entrar em um arbusto, que aumenta ao abater monstros grandes.",
+    "categorias": [
+      "Jungle"
+    ]
+  },
+  {
+    "_id": 1107,
+    "item_id": 1107,
+    "nome": "Filhote de Garrabrasa",
+    "preco_unitario": 450,
+    "descricao": "Companheiros da Selva\nInvoca um Garrabrasa para ajudar você contra monstros.\n\nO companheiro cresce conforme você caça mais monstros, fortalecendo seu Golpear. Ao crescer completamente, ele cumpre a missão da selva e imbui esporadicamente seu próximo Ataque ou Habilidade para queimar inimigos e causar Lentidão a eles. Abater monstros grandes ativa esse efeito imediatamente.",
+    "categorias": [
+      "Jungle"
+    ]
+  },
+  {
+    "_id": 1120,
+    "item_id": 1120,
+    "nome": "Elmo de Doran",
+    "preco_unitario": 450,
+    "descricao": "150 de Vida\n8 de Armadura\n8 de Resistência Mágica\n\nAjudinha\nOs ataques causam 5 de Dano Físico adicional a tropas.",
+    "categorias": [
+      "Health",
+      "SpellBlock",
+      "Armor",
+      "Lane"
+    ]
+  },
+  {
+    "_id": 2003,
+    "item_id": 2003,
+    "nome": "Poção de Vida",
+    "preco_unitario": 50,
+    "descricao": "Consumir\nRestaura 120 de Vida ao longo de 15s.",
+    "categorias": [
+      "HealthRegen",
+      "Consumable",
+      "Lane",
+      "Jungle"
+    ]
+  },
+  {
+    "_id": 2019,
+    "item_id": 2019,
+    "nome": "Sigilo de Aço",
+    "preco_unitario": 1100,
+    "descricao": "15 de Dano de Ataque\n30 de Armadura",
+    "categorias": [
+      "Armor",
+      "Damage"
+    ]
+  },
+  {
+    "_id": 2020,
+    "item_id": 2020,
+    "nome": "Brutalizador",
+    "preco_unitario": 1337,
+    "descricao": "25 de Dano de Ataque\n10 de Aceleração de Habilidade\n5 de Letalidade",
+    "categorias": [
+      "Damage",
+      "CooldownReduction",
+      "ArmorPenetration"
+    ]
+  },
+  {
+    "_id": 2021,
+    "item_id": 2021,
+    "nome": "Tunelizador",
+    "preco_unitario": 1150,
+    "descricao": "15 de Dano de Ataque\n250 de Vida",
+    "categorias": [
+      "Health",
+      "Damage"
+    ]
+  },
+  {
+    "_id": 2022,
+    "item_id": 2022,
+    "nome": "Partícula Brilhante",
+    "preco_unitario": 250,
+    "descricao": "5 de Aceleração de Habilidade",
+    "categorias": [
+      "CooldownReduction"
+    ]
+  },
+  {
+    "_id": 2031,
+    "item_id": 2031,
+    "nome": "Poção com Refil",
+    "preco_unitario": 150,
+    "descricao": "Ativo (2 cargas)\nRestaura 100 de Vida ao longo de 12s.\nRecarrega ao visitar a loja.",
+    "categorias": [
+      "HealthRegen",
+      "Consumable",
+      "Active",
+      "Lane",
+      "Jungle"
+    ]
+  },
+  {
+    "_id": 2051,
+    "item_id": 2051,
+    "nome": "Berrante do Guardião",
+    "preco_unitario": 950,
+    "descricao": "150 de Vida\n\nRecuperação: restaura 20 de Vida a cada 5s.Impassível: bloqueia 15 de dano sofrido de Ataques e Habilidades de Campeões (25% de eficácia contra Habilidades de dano ao longo do tempo).",
+    "categorias": [
+      "Health",
+      "HealthRegen",
+      "Lane"
+    ]
+  },
+  {
+    "_id": 2055,
+    "item_id": 2055,
+    "nome": "Sentinela de Controle",
+    "preco_unitario": 75,
+    "descricao": "Consumir\nPosiciona uma Sentinela de Controle que concede visão e revela Sentinelas Invisíveis inimigas, armadilhas e inimigos Camuflados.",
+    "categorias": [
+      "Consumable",
+      "Lane",
+      "Stealth",
+      "Vision"
+    ]
+  },
+  {
+    "_id": 2065,
+    "item_id": 2065,
+    "nome": "Hino Bélico de Shurelya",
+    "preco_unitario": 2200,
+    "descricao": "50 de Poder de Habilidade\n15 de Aceleração de Habilidade\n4% de Velocidade de Movimento\n125% de Regeneração de Mana base\n\nDiscurso Inspirador\nConcede aos aliados próximos 30% de Velocidade de Movimento por 4s.",
+    "categorias": [
+      "SpellDamage",
+      "ManaRegen",
+      "Active",
+      "CooldownReduction",
+      "NonbootsMovement",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 2138,
+    "item_id": 2138,
+    "nome": "Elixir de Ferro",
+    "preco_unitario": 500,
+    "descricao": "Consumir\nConcede 300 de Vida, 25% de Tenacidade e aumenta o tamanho por 3min. Enquanto ativo, você deixa um rastro atrás de você que aumenta em 15% a Velocidade de Movimento dos Campeões aliados.",
+    "categorias": [
+      "Health",
+      "Consumable",
+      "NonbootsMovement",
+      "Tenacity"
+    ]
+  },
+  {
+    "_id": 2139,
+    "item_id": 2139,
+    "nome": "Elixir da Feitiçaria",
+    "preco_unitario": 500,
+    "descricao": "Consumir\nConcede 50 de Poder de Habilidade e 15% de Regeneração de Mana por 3min. Enquanto ativo, causar dano a um Campeão ou torre causa 25 de Dano Verdadeiro adicional (5s contra Campeões).",
+    "categorias": [
+      "Consumable",
+      "ManaRegen",
+      "SpellDamage"
+    ]
+  },
+  {
+    "_id": 2140,
+    "item_id": 2140,
+    "nome": "Elixir da Ira",
+    "preco_unitario": 500,
+    "descricao": "Consumir\nConcede 30 de Dano de Ataque e 12% de Vampirismo Físico contra Campeões por 3min.",
+    "categorias": [
+      "Consumable",
+      "Damage",
+      "LifeSteal",
+      "SpellVamp"
+    ]
+  },
+  {
+    "_id": 2141,
+    "item_id": 2141,
+    "nome": "Suco de Chapéu",
+    "preco_unitario": 300,
+    "descricao": "Faz bem pra cabeça.Ativo – Consumir: Este suco não faz nada.",
+    "categorias": [
+      "Damage",
+      "Consumable"
+    ]
+  },
+  {
+    "_id": 2420,
+    "item_id": 2420,
+    "nome": "Armaguarda da Caçadora",
+    "preco_unitario": 1600,
+    "descricao": "40 de Poder de Habilidade\n25 de Armadura\n\nTempo Paralisado (uso único)\nEntra em Estase por 2.5s.",
+    "categorias": [
+      "Armor",
+      "SpellDamage",
+      "Active"
+    ]
+  },
+  {
+    "_id": 2421,
+    "item_id": 2421,
+    "nome": "Armaguarda Despedaçada",
+    "preco_unitario": 1600,
+    "descricao": "40 de Poder de Habilidade\n25 de Armadura\n\nTempo Estilhaçado\nA Armaguarda está quebrada, mas ainda pode ser aprimorada.\n\nApós quebrar uma Armaguarda, a loja venderá apenas Armaguarda Despedaçada.",
+    "categorias": [
+      "Diversos"
+    ]
+  },
+  {
+    "_id": 2501,
+    "item_id": 2501,
+    "nome": "Armadura Sangrenta do Suserano",
+    "preco_unitario": 3300,
+    "descricao": "30 de Dano de Ataque\n550 de Vida\n\nTirania\nRecebe 2.5% da sua Vida adicional como Dano de Ataque.\n\nRetaliação\nRecebe até 12% de Dano de Ataque aumentado com base no percentual de Vida perdida.",
+    "categorias": [
+      "Health",
+      "Damage"
+    ]
+  },
+  {
+    "_id": 2502,
+    "item_id": 2502,
+    "nome": "Desespero Eterno",
+    "preco_unitario": 2800,
+    "descricao": "400 de Vida\n50 de Armadura\n15 de Aceleração de Habilidade\n\nAngústia\nEnquanto estiver em combate contra Campeões, a cada 4s, causa Dano Mágico a Campeões inimigos próximos e cura 250% do dano causado.",
+    "categorias": [
+      "Health",
+      "Armor",
+      "CooldownReduction",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 2503,
+    "item_id": 2503,
+    "nome": "Tocha de Chamas Negras",
+    "preco_unitario": 2800,
+    "descricao": "80 de Poder de Habilidade\n600 de Mana\n20 de Aceleração de Habilidade\n\nLabareda Nefasta\nHabilidades de dano causam Dano Mágico adicional por 3s.\n\nChamas Negras\nPara cada Campeão inimigo, monstro grande ou monstro épico afetado pela sua Labareda Nefasta, recebe 4% de Poder de Habilidade.",
+    "categorias": [
+      "SpellDamage",
+      "Mana",
+      "CooldownReduction",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 2504,
+    "item_id": 2504,
+    "nome": "Rookern Lamúrico",
+    "preco_unitario": 2900,
+    "descricao": "400 de Vida\n80 de Resistência Mágica\n100% de Regeneração de Vida base\n\nPerdição dos Magos\nDepois de não sofrer Dano Mágico por 15s, recebe um Escudo Mágico.",
+    "categorias": [
+      "Health",
+      "SpellBlock",
+      "HealthRegen"
+    ]
+  },
+  {
+    "_id": 2508,
+    "item_id": 2508,
+    "nome": "Cinzas do Destino",
+    "preco_unitario": 900,
+    "descricao": "30 de Poder de Habilidade\n\nInflamar\nHabilidades de dano causam 15 de Dano Mágico adicional ao longo de 3s.\nCausa 45 de Dano Mágico adicional contra monstros.",
+    "categorias": [
+      "SpellDamage"
+    ]
+  },
+  {
+    "_id": 2510,
+    "item_id": 2510,
+    "nome": "Aurora e Crepúsculo",
+    "preco_unitario": 3100,
+    "descricao": "300 de Vida\n60 de Poder de Habilidade\n20 de Aceleração de Habilidade\n20% de Velocidade de Ataque\n\nLâmina Arcana (0s)\nApós usar uma habilidade, seu próximo ataque causa 0 de Dano Mágico adicional, cura você em 0 ao contato e então aplica efeitos ao contato uma vez a mais.",
+    "categorias": [
+      "Health",
+      "AttackSpeed",
+      "SpellDamage",
+      "OnHit",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 2512,
+    "item_id": 2512,
+    "nome": "Dardos de Caça-Demônios",
+    "preco_unitario": 2650,
+    "descricao": "45% de Velocidade de Ataque\n25% de Chance de Acerto Crítico\n4% de Velocidade de Movimento\n\nVigília Noturna\nRecebe 30 de Aceleração da Habilidade Ultimate.\n\nBarragem de Abertura\nDepois de conjurar sua ultimate, seus próximos 3 ataques básicos recebem 50% de Velocidade de Ataque + Acerto Crítico de 80% do seu dano de Acerto Crítico normal por 8s. Se algum ataque já for um Acerto Crítico, em vez disso, ele causa 15% de Dano Verdadeiro adicional.",
+    "categorias": [
+      "CriticalStrike",
+      "AttackSpeed",
+      "NonbootsMovement",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 2517,
+    "item_id": 2517,
+    "nome": "Fome Eterna",
+    "preco_unitario": 3100,
+    "descricao": "65 de Dano de Ataque\n5% de Vampirismo Universal\n20% de Tenacidade\n\nFome\nRecebe Aceleração de Habilidade com base no seu DdA adicional.\n\nBanquete\nQuando um Campeão a quem você causou dano recentemente é abatido, recebe Vampirismo Universal por um período moderado.",
+    "categorias": [
+      "Damage",
+      "LifeSteal",
+      "SpellVamp",
+      "Tenacity",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 2520,
+    "item_id": 2520,
+    "nome": "Quebra-Bastião",
+    "preco_unitario": 3000,
+    "descricao": "55 de Dano de Ataque\n22 de Letalidade\n15 de Aceleração de Habilidade\n\nInvestida Esculpida (0s)\nCausar dano de habilidade a um Campeão ou monstro épico causa 0 de Dano Verdadeiro adicional.\n\nSabotagem\nAbater um Campeão até 3s após você causar dano a ele concede Sabotagem por 90s. Enquanto você tiver Sabotagem, seu próximo ataque contra um monstro épico ou torre causará 0 de Dano Verdadeiro adicional ao longo de 3s.",
+    "categorias": [
+      "Damage",
+      "ArmorPenetration",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 2522,
+    "item_id": 2522,
+    "nome": "Concretizador",
+    "preco_unitario": 2800,
+    "descricao": "90 de Poder de Habilidade\n300 de Mana\n10 de Aceleração de Habilidade\n\nMana Concretizado (0s)\nPor 8s, seu Mana é Fortalecido. Enquanto Fortalecido, suas habilidades custam 100% de Mana a mais, você recebe 0 de dano de habilidade, Escudo e cura aumentados e os Tempos de Recarga das habilidades básicas avançam 30% mais rápido.",
+    "categorias": [
+      "SpellDamage",
+      "Mana",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 2523,
+    "item_id": 2523,
+    "nome": "Hexótica C44",
+    "preco_unitario": 2800,
+    "descricao": "55 de Dano de Ataque\n25% de Chance de Acerto Crítico\n\nMagnificação\nCausa até 10% de dano a mais com Ataques com base na distância que seu inimigo está de você (dano máximo a 500 de alcance).\n\nMira Arcana\nQuando um Campeão a quem você tenha causado dano nos últimos 3s for abatido, recebe 100 de Alcance de Ataque adicional por 8s.",
+    "categorias": [
+      "Damage",
+      "CriticalStrike"
+    ]
+  },
+  {
+    "_id": 2524,
+    "item_id": 2524,
+    "nome": "Bandocanos",
+    "preco_unitario": 2300,
+    "descricao": "200 de Vida\n15 de Aceleração de Habilidade\n20 de Armadura\n20 de Resistência Mágica\n\nFanfarra\nCausar Lentidão ou Imobilizar um Campeão inimigo concede Fanfarra por 0s. Fanfarra concede 20 de Velocidade de Movimento. Enquanto tiver Fanfarra, aliados próximos, incluindo você, recebem 0 de Velocidade de Ataque.",
+    "categorias": [
+      "Health",
+      "SpellBlock",
+      "Armor",
+      "AttackSpeed",
+      "NonbootsMovement",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 2525,
+    "item_id": 2525,
+    "nome": "Couraça Protoplasmática",
+    "preco_unitario": 2600,
+    "descricao": "600 de Vida\n20 de Aceleração de Habilidade\n\nSalva-Vidas (0s)\nAo sofrer dano suficiente para reduzir sua Vida a menos de 30%, você recebe 0 de Vida máxima por 5s, depois cura 0 de Vida ao longo da duração. Enquanto regenera Vida, você recebe 15% de aumento de Tamanho, 10% de Velocidade de Movimento e 25% de Tenacidade.",
+    "categorias": [
+      "Health",
+      "NonbootsMovement",
+      "Tenacity",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 2526,
+    "item_id": 2526,
+    "nome": "Tiara Sussurrante",
+    "preco_unitario": 2250,
+    "descricao": "200 de Vida\n8% de Cura e Resistência do Escudo\n75% de Regeneração de Mana base\n300 de Mana\n\nHarmonia\nRecebe 0% de Potência de Escudo e Cura.\n\nFluxo de Mana (8s, máx. de 5 cargas)\nAcertar Habilidades concede 4 de Mana máximo (dobrado contra Campeões).\nTransforma-se em Diadema de Canções com 360 de Mana máximo.",
+    "categorias": [
+      "Health",
+      "Mana",
+      "ManaRegen"
+    ]
+  },
+  {
+    "_id": 3003,
+    "item_id": 3003,
+    "nome": "Cajado do Arcanjo",
+    "preco_unitario": 2900,
+    "descricao": "70 de Poder de Habilidade\n600 de Mana\n25 de Aceleração de Habilidade\n\nFascínio\nRecebe Poder de Habilidade equivalente a 1% do Mana adicional.\n\nFluxo de Mana (8s, máximo de 5 cargas)\nAcertar Habilidades concede 5 de Mana máximo (dobrado contra Campeões).\nTransforma-se em Abraço de Seraph com 360 de Mana máximo.",
+    "categorias": [
+      "SpellDamage",
+      "Mana",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 3004,
+    "item_id": 3004,
+    "nome": "Manamune",
+    "preco_unitario": 2900,
+    "descricao": "35 de Dano de Ataque\n500 de Mana\n15 de Aceleração de Habilidade\n\nFascínio\nRecebe 0 de Dano de Ataque adicional.\n\nFluxo de Mana (8s, máximo de 4 cargas)\nAcertar Ataques e Habilidades concede 3 de Mana máximo (dobrado contra Campeões).\nTransforma-se em Muramana com 360 de Mana máximo.",
+    "categorias": [
+      "Damage",
+      "Mana",
+      "CooldownReduction",
+      "OnHit",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 3006,
+    "item_id": 3006,
+    "nome": "Grevas do Berserker",
+    "preco_unitario": 1100,
+    "descricao": "30% de Velocidade de Ataque\n45 de Velocidade de Movimento",
+    "categorias": [
+      "AttackSpeed",
+      "Boots"
+    ]
+  },
+  {
+    "_id": 3008,
+    "item_id": 3008,
+    "nome": "Grevas Vorazes",
+    "preco_unitario": 1000,
+    "descricao": "45 de Velocidade de Movimento\n4% de Vampirismo Universal\n\nEliminar\nRecebe 0.6% de Vampirismo Universal ao eliminar um Campeão. Acumula até 10 vezes.",
+    "categorias": [
+      "LifeSteal",
+      "SpellVamp",
+      "Boots"
+    ]
+  },
+  {
+    "_id": 3009,
+    "item_id": 3009,
+    "nome": "Botas da Rapidez",
+    "preco_unitario": 1000,
+    "descricao": "55 de Velocidade de Movimento\n\nPés Velozes\nReduz a eficácia dos efeitos de Lentidão em 25%.",
+    "categorias": [
+      "Boots"
+    ]
+  },
+  {
+    "_id": 3020,
+    "item_id": 3020,
+    "nome": "Sapatos do Feiticeiro",
+    "preco_unitario": 1100,
+    "descricao": "12 de Penetração Mágica\n45 de Velocidade de Movimento",
+    "categorias": [
+      "Boots",
+      "MagicPenetration"
+    ]
+  },
+  {
+    "_id": 3024,
+    "item_id": 3024,
+    "nome": "Broquel Glacial",
+    "preco_unitario": 900,
+    "descricao": "25 de Armadura\n300 de Mana\n10 de Aceleração de Habilidade",
+    "categorias": [
+      "Armor",
+      "Mana",
+      "CooldownReduction",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 3026,
+    "item_id": 3026,
+    "nome": "Anjo Guardião",
+    "preco_unitario": 3200,
+    "descricao": "55 de Dano de Ataque\n45 de Armadura\n\nRenascimento\nAo sofrer dano letal, restaura 50% da Vida base e 100% do Mana máximo após 4s de Estase.",
+    "categorias": [
+      "Armor",
+      "Damage"
+    ]
+  },
+  {
+    "_id": 3031,
+    "item_id": 3031,
+    "nome": "Gume do Infinito",
+    "preco_unitario": 3500,
+    "descricao": "75 de Dano de Ataque\n25% de Chance de Acerto Crítico\n30% de Dano de Acerto Crítico",
+    "categorias": [
+      "CriticalStrike",
+      "Damage"
+    ]
+  },
+  {
+    "_id": 3032,
+    "item_id": 3032,
+    "nome": "Flechatroz de Yun Tal",
+    "preco_unitario": 3000,
+    "descricao": "50 de Dano de Ataque\n45% de Velocidade de Ataque\n0% de Chance de Acerto Crítico\n\nPraticar e Matar\nAo Atacar, recebe Chance de Acerto Crítico permanentemente, até 25%.\n\nAgitação\nAo Atacar um Campeão inimigo, recebe 30% de Velocidade de Ataque por 6s (30s de Tempo de Recarga).\nAtaques reduzem esse Tempo de Recarga em 1s, e Acertos Críticos em 2s.",
+    "categorias": [
+      "Damage",
+      "CriticalStrike",
+      "AttackSpeed"
+    ]
+  },
+  {
+    "_id": 3033,
+    "item_id": 3033,
+    "nome": "Lembrete Mortal",
+    "preco_unitario": 3000,
+    "descricao": "35 de Dano de Ataque\n30% de Penetração de Armadura\n25% de Chance de Acerto Crítico\n\nFeridas Dolorosas\nCausar Dano Físico aplica 40% de Ferimentos a Campeões inimigos por 3s.",
+    "categorias": [
+      "Damage",
+      "CriticalStrike",
+      "ArmorPenetration"
+    ]
+  },
+  {
+    "_id": 3035,
+    "item_id": 3035,
+    "nome": "Último Sussurro",
+    "preco_unitario": 1450,
+    "descricao": "20 de Dano de Ataque\n18% de Penetração de Armadura",
+    "categorias": [
+      "ArmorPenetration",
+      "Damage"
+    ]
+  },
+  {
+    "_id": 3036,
+    "item_id": 3036,
+    "nome": "Lembranças do Lorde Dominik",
+    "preco_unitario": 3300,
+    "descricao": "35 de Dano de Ataque\n35% de Penetração de Armadura\n25% de Chance de Acerto Crítico\n\nMata-Gigantes\nCausa até 15% de dano adicional a Campeões com base na Vida adicional deles. Adicional de dano máximo atingido com 1500 de Vida adicional.",
+    "categorias": [
+      "Damage",
+      "CriticalStrike",
+      "ArmorPenetration"
+    ]
+  },
+  {
+    "_id": 3041,
+    "item_id": 3041,
+    "nome": "Ladrão de Almas de Mejai",
+    "preco_unitario": 1500,
+    "descricao": "20 de Poder de Habilidade\n100 de Vida\n\nGlória\nAbates concedem Glória, até um máximo de 25. Perde 10 de Glória ao morrer.\nRecebe 5 de Poder de Habilidade por acúmulo de Glória e 10% de Velocidade de Movimento com 10 ou mais acúmulos de Glória.",
+    "categorias": [
+      "Health",
+      "SpellDamage",
+      "NonbootsMovement"
+    ]
+  },
+  {
+    "_id": 3044,
+    "item_id": 3044,
+    "nome": "Fago",
+    "preco_unitario": 1100,
+    "descricao": "15 de Dano de Ataque\n200 de Vida\n\nFúria\nAtaques concedem Velocidade de Movimento por 2s.",
+    "categorias": [
+      "Health",
+      "Damage",
+      "NonbootsMovement"
+    ]
+  },
+  {
+    "_id": 3046,
+    "item_id": 3046,
+    "nome": "Dançarina Fantasma",
+    "preco_unitario": 2650,
+    "descricao": "65% de Velocidade de Ataque\n25% de Chance de Acerto Crítico\n10% de Velocidade de Movimento\n\nValsa Espectral\nRecebe efeito Fantasma.",
+    "categorias": [
+      "CriticalStrike",
+      "AttackSpeed",
+      "NonbootsMovement"
+    ]
+  },
+  {
+    "_id": 3047,
+    "item_id": 3047,
+    "nome": "Botas Galvanizadas de Aço",
+    "preco_unitario": 1200,
+    "descricao": "25 de Armadura\n45 de Velocidade de Movimento\n\nBarricada\nReduz o dano sofrido de Ataques em 10%.",
+    "categorias": [
+      "Armor",
+      "Boots"
+    ]
+  },
+  {
+    "_id": 3050,
+    "item_id": 3050,
+    "nome": "Convergência de Zeke",
+    "preco_unitario": 2200,
+    "descricao": "300 de Vida\n25 de Armadura\n25 de Resistência Mágica\n10 de Aceleração de Habilidade\n\nTempestade do Raio de Gelo\nConjurar sua ultimate invoca uma tempestade ao seu redor por 5s. A tempestade causa 30 de Dano Mágico por segundo e 30% de Lentidão a Campeões inimigos.",
+    "categorias": [
+      "Health",
+      "SpellBlock",
+      "Armor",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 3051,
+    "item_id": 3051,
+    "nome": "Machado Termestre",
+    "preco_unitario": 1200,
+    "descricao": "20 de Dano de Ataque\n20% de Velocidade de Ataque",
+    "categorias": [
+      "Damage",
+      "AttackSpeed"
+    ]
+  },
+  {
+    "_id": 3053,
+    "item_id": 3053,
+    "nome": "Sinal de Sterak",
+    "preco_unitario": 3200,
+    "descricao": "400 de Vida\n20% de Tenacidade\n\nGarras Caçadoras\nRecebe Dano de Ataque adicional.\n\nSalva-Vidas\nAo sofrer dano que reduziria sua Vida a menos de 30%, concede um Escudo que decai por 4.5s.",
+    "categorias": [
+      "Health",
+      "Damage",
+      "Tenacity"
+    ]
+  },
+  {
+    "_id": 3057,
+    "item_id": 3057,
+    "nome": "Fulgor",
+    "preco_unitario": 900,
+    "descricao": "10 de Aceleração de Habilidade\n\nLâmina Arcana\nApós usar uma Habilidade, seu próximo Ataque causa Dano Físico adicional ao contato.",
+    "categorias": [
+      "OnHit",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 3065,
+    "item_id": 3065,
+    "nome": "Semblante Espiritual",
+    "preco_unitario": 2700,
+    "descricao": "400 de Vida\n50 de Resistência Mágica\n10 de Aceleração de Habilidade\n100% de Regeneração de Vida base\n\nVitalidade Imensurável\nCuras e Escudos em você são aumentados em 25%.",
+    "categorias": [
+      "Health",
+      "SpellBlock",
+      "HealthRegen",
+      "CooldownReduction",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 3066,
+    "item_id": 3066,
+    "nome": "Couraça Lunar Alada",
+    "preco_unitario": 800,
+    "descricao": "200 de Vida\n4% de Velocidade de Movimento",
+    "categorias": [
+      "Health",
+      "NonbootsMovement"
+    ]
+  },
+  {
+    "_id": 3067,
+    "item_id": 3067,
+    "nome": "Gema Ardente",
+    "preco_unitario": 800,
+    "descricao": "200 de Vida\n10 de Aceleração de Habilidade",
+    "categorias": [
+      "Health",
+      "CooldownReduction",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 3068,
+    "item_id": 3068,
+    "nome": "Égide de Fogo Solar",
+    "preco_unitario": 2800,
+    "descricao": "350 de Vida\n50 de Armadura\n10 de Aceleração de Habilidade\n\nImolar\nDepois de causar ou sofrer qualquer dano, você causa Dano Mágico por segundo a inimigos próximos por 3s.",
+    "categorias": [
+      "Health",
+      "Armor",
+      "Aura",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 3070,
+    "item_id": 3070,
+    "nome": "Lágrima da Deusa",
+    "preco_unitario": 400,
+    "descricao": "240 de Mana\n\nFluxo de Mana (8s, máximo de 4 cargas)\nAcertar Habilidades concede 3 de Mana máximo (dobrado contra Campeões), até 360.\n\nAjudinha\nAtaques causam 5 de Dano Físico adicional a tropas.",
+    "categorias": [
+      "Mana",
+      "ManaRegen"
+    ]
+  },
+  {
+    "_id": 3071,
+    "item_id": 3071,
+    "nome": "Cutelo Negro",
+    "preco_unitario": 3000,
+    "descricao": "45 de Dano de Ataque\n400 de Vida\n20 de Aceleração de Habilidade\n\nTalhar\nCausar Dano Físico a Campeões reduz a Armadura do alvo em 6% por 6s (acumula 5x).\n\nFervor\nCausar Dano Físico concede 0 de Velocidade de Movimento por 2s.",
+    "categorias": [
+      "Health",
+      "Damage",
+      "CooldownReduction",
+      "OnHit",
+      "NonbootsMovement",
+      "ArmorPenetration",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 3072,
+    "item_id": 3072,
+    "nome": "Sedenta por Sangue",
+    "preco_unitario": 3400,
+    "descricao": "80 de Dano de Ataque\n15% de Roubo de Vida\n\nÍcor-escudo\nConverte a cura excedente do Roubo de Vida em um Escudo.",
+    "categorias": [
+      "Damage",
+      "LifeSteal"
+    ]
+  },
+  {
+    "_id": 3073,
+    "item_id": 3073,
+    "nome": "Hexoplaca Experimental",
+    "preco_unitario": 3000,
+    "descricao": "40 de Dano de Ataque\n20% de Velocidade de Ataque\n450 de Vida\n\nHexcarregado\nRecebe 30 de Aceleração da Habilidade Ultimate.\n\nTurbo\nDepois de conjurar sua ultimate, recebe 0% de Velocidade de Ataque e 0% de Velocidade de Movimento por 8s.",
+    "categorias": [
+      "Health",
+      "Damage",
+      "AttackSpeed",
+      "CooldownReduction",
+      "NonbootsMovement",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 3074,
+    "item_id": 3074,
+    "nome": "Hidra Raivosa",
+    "preco_unitario": 3300,
+    "descricao": "65 de Dano de Ataque\n15 de Aceleração de Habilidade\n12% de Roubo de Vida\n\nFenda\nAtaques causam Dano Físico a inimigos próximos.Crescente Raivosa\nCausa Dano Físico a inimigos ao seu redor.\nSeu Roubo de Vida se aplica a esse dano.",
+    "categorias": [
+      "Damage",
+      "LifeSteal",
+      "CooldownReduction",
+      "OnHit",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 3075,
+    "item_id": 3075,
+    "nome": "Armadura de Espinhos",
+    "preco_unitario": 2450,
+    "descricao": "150 de Vida\n75 de Armadura\n\nEspinhos\nAo ser atingido por um Ataque, causa Dano Mágico ao atacante e aplica 40% de Ferimentos por 3s se ele for um Campeão.",
+    "categorias": [
+      "Health",
+      "Armor"
+    ]
+  },
+  {
+    "_id": 3076,
+    "item_id": 3076,
+    "nome": "Colete Espinhoso",
+    "preco_unitario": 800,
+    "descricao": "30 de Armadura\n\nEspinhos\nAo ser atingido por um Ataque, causa 0 de Dano Mágico ao atacante e aplica 40% de Ferimentos por 3s se ele for um Campeão.",
+    "categorias": [
+      "Armor"
+    ]
+  },
+  {
+    "_id": 3077,
+    "item_id": 3077,
+    "nome": "Tiamat",
+    "preco_unitario": 1200,
+    "descricao": "25 de Dano de Ataque\n\nFenda\nAtaques causam Dano Físico a inimigos próximos.\nCrescente\nCausa Dano Físico a inimigos ao seu redor.",
+    "categorias": [
+      "Damage",
+      "OnHit"
+    ]
+  },
+  {
+    "_id": 3078,
+    "item_id": 3078,
+    "nome": "Força da Trindade",
+    "preco_unitario": 3333,
+    "descricao": "36 de Dano de Ataque\n30% de Velocidade de Ataque\n333 de Vida\n15 de Aceleração de Habilidade\n\nLâmina Arcana\nApós usar uma Habilidade, seu próximo Ataque causa Dano Físico adicional ao contato.\n\nApressar\nAtaques concedem 20 de Velocidade de Movimento por 2s.",
+    "categorias": [
+      "Health",
+      "Damage",
+      "AttackSpeed",
+      "CooldownReduction",
+      "OnHit",
+      "NonbootsMovement",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 3082,
+    "item_id": 3082,
+    "nome": "Carapaça do Vigia",
+    "preco_unitario": 1000,
+    "descricao": "40 de Armadura\n\nDuro como Pedra\nReduz o dano sofrido de Ataques.",
+    "categorias": [
+      "Armor"
+    ]
+  },
+  {
+    "_id": 3083,
+    "item_id": 3083,
+    "nome": "Armadura de Warmog",
+    "preco_unitario": 3100,
+    "descricao": "1000 de Vida\n100% de Regeneração de Vida base\n\nCoração de Warmog\nCaso você tenha 2000 de Vida adicional e não tenha sofrido dano nos últimos 8s, restaura 0 de Vida por segundo.\n\nVitalidade de Warmog\nRecebe Vida adicional equivalente a 12% da sua Vida de itens (0).",
+    "categorias": [
+      "Health",
+      "HealthRegen"
+    ]
+  },
+  {
+    "_id": 3084,
+    "item_id": 3084,
+    "nome": "Coração de Aço",
+    "preco_unitario": 3000,
+    "descricao": "900 de Vida\n100% de Regeneração de Vida base\n\nConsumo Colossal (0s) por alvo\nSe um Campeão inimigo permanecer próximo por alguns segundos, seu próximo Ataque contra ele causará 70 mais 6% da sua Vida máxima como Dano Físico adicional e concederá 10% do dano como Vida máxima.\n\nGolias\nPara cada 1000 de Vida máxima, recebe 3% de aumento de tamanho, chegando a até 30%.",
+    "categorias": [
+      "Health",
+      "HealthRegen"
+    ]
+  },
+  {
+    "_id": 3085,
+    "item_id": 3085,
+    "nome": "Furacão de Runaan",
+    "preco_unitario": 2650,
+    "descricao": "40% de Velocidade de Ataque\n25% de Chance de Acerto Crítico\n5% de Velocidade de Movimento\n\nFúria do Vento\nAtaques disparam projéteis em 2 inimigos adicionais próximos ao alvo.\nCada projétil causa Dano Físico e aplica efeitos ao contato.",
+    "categorias": [
+      "CriticalStrike",
+      "AttackSpeed",
+      "OnHit",
+      "NonbootsMovement"
+    ]
+  },
+  {
+    "_id": 3086,
+    "item_id": 3086,
+    "nome": "Zelo",
+    "preco_unitario": 1200,
+    "descricao": "15% de Velocidade de Ataque\n15% de Chance de Acerto Crítico\n4% de Velocidade de Movimento",
+    "categorias": [
+      "CriticalStrike",
+      "AttackSpeed",
+      "NonbootsMovement"
+    ]
+  },
+  {
+    "_id": 3087,
+    "item_id": 3087,
+    "nome": "Faca de Statikk",
+    "preco_unitario": 3000,
+    "descricao": "45 de Dano de Ataque\n45 de Poder de Habilidade\n30% de Velocidade de Ataque\n4% de Velocidade de Movimento\n\nEletrocentelha\nSeus Ataques Energizados disparam uma cadeia de relâmpagos, aplicando efeitos ao contato e causando Dano Mágico aos alvos próximos.\n\nEletrochoque\nAtaques básicos concedem acúmulos de Energizado adicionais.",
+    "categorias": [
+      "Damage",
+      "AttackSpeed",
+      "SpellDamage",
+      "OnHit",
+      "NonbootsMovement"
+    ]
+  },
+  {
+    "_id": 3089,
+    "item_id": 3089,
+    "nome": "Capuz da Morte de Rabadon",
+    "preco_unitario": 3500,
+    "descricao": "130 de Poder de Habilidade\n\nApogeu Mágico\nAumenta o Poder de Habilidade total em 30%.",
+    "categorias": [
+      "SpellDamage"
+    ]
+  },
+  {
+    "_id": 3091,
+    "item_id": 3091,
+    "nome": "Limite da Razão",
+    "preco_unitario": 2800,
+    "descricao": "50% de Velocidade de Ataque\n45 de Resistência Mágica\n20% de Tenacidade\n\nDuelo\nSeus Ataques causam Dano Mágico adicional ao contato.",
+    "categorias": [
+      "SpellBlock",
+      "AttackSpeed",
+      "OnHit",
+      "Tenacity"
+    ]
+  },
+  {
+    "_id": 3094,
+    "item_id": 3094,
+    "nome": "Canhão Fumegante",
+    "preco_unitario": 2650,
+    "descricao": "35% de Velocidade de Ataque\n25% de Chance de Acerto Crítico\n4% de Velocidade de Movimento\n\nAtirador de Elite\nSeu Ataque Energizado causa 40 de Dano Mágico adicional e recebe 35% de Alcance de Ataque adicional.",
+    "categorias": [
+      "CriticalStrike",
+      "AttackSpeed",
+      "NonbootsMovement"
+    ]
+  },
+  {
+    "_id": 3095,
+    "item_id": 3095,
+    "nome": "Chuva de Canivete",
+    "preco_unitario": 3200,
+    "descricao": "50 de Dano de Ataque\n25% de Velocidade de Ataque\n25% de Chance de Acerto Crítico\n\nEnergizado\nMover-se e Atacar gera um Ataque Energizado.\n\nRaio\nSeu Ataque Energizado causa 0 de Dano Mágico adicional e concede 45% de Velocidade de Movimento por 1.5s.",
+    "categorias": [
+      "Damage",
+      "CriticalStrike",
+      "AttackSpeed",
+      "NonbootsMovement"
+    ]
+  },
+  {
+    "_id": 3100,
+    "item_id": 3100,
+    "nome": "Perdição de Lich",
+    "preco_unitario": 2900,
+    "descricao": "100 de Poder de Habilidade\n6% de Velocidade de Movimento\n10 de Aceleração de Habilidade\n\nLâmina Arcana\nApós usar uma Habilidade, seu próximo Ataque causa Dano Mágico adicional ao contato.",
+    "categorias": [
+      "SpellDamage",
+      "OnHit",
+      "NonbootsMovement",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 3102,
+    "item_id": 3102,
+    "nome": "Véu da Banshee",
+    "preco_unitario": 3000,
+    "descricao": "105 de Poder de Habilidade\n40 de Resistência Mágica\n\nAnular\nConcede um Escudo de Feitiço que bloqueia a próxima Habilidade inimiga.",
+    "categorias": [
+      "SpellBlock",
+      "SpellDamage"
+    ]
+  },
+  {
+    "_id": 3107,
+    "item_id": 3107,
+    "nome": "Redenção",
+    "preco_unitario": 2300,
+    "descricao": "30 de Poder de Habilidade\n15 de Aceleração de Habilidade\n100% de Regeneração de Mana base\n10% de Cura e Resistência do Escudo\n\nIntervenção\nDepois de 2,5s, restaura 150 - 350 da Vida das unidades aliadas e causa 10% da Vida máxima como Dano Verdadeiro a Campeões inimigos.",
+    "categorias": [
+      "SpellDamage",
+      "ManaRegen",
+      "CooldownReduction",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 3108,
+    "item_id": 3108,
+    "nome": "Códex Demoníaco",
+    "preco_unitario": 850,
+    "descricao": "25 de Poder de Habilidade\n10 de Aceleração de Habilidade",
+    "categorias": [
+      "SpellDamage",
+      "CooldownReduction",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 3109,
+    "item_id": 3109,
+    "nome": "Juramento do Cavaleiro",
+    "preco_unitario": 2300,
+    "descricao": "200 de Vida\n40 de Armadura\n10 de Aceleração de Habilidade\n100% de Regeneração de Vida base\n\nSacrifício\nEnquanto seu aliado Digno estiver próximo, você sofre 14% do dano sofrido por ele e se cura em 12% do dano causado por ele a Campeões.Pacto (0s)\nDesigna um aliado como Digno.",
+    "categorias": [
+      "Health",
+      "HealthRegen",
+      "Armor",
+      "Aura",
+      "Active",
+      "CooldownReduction",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 3110,
+    "item_id": 3110,
+    "nome": "Coração Congelado",
+    "preco_unitario": 2500,
+    "descricao": "75 de Armadura\n400 de Mana\n20 de Aceleração de Habilidade\n\nCarícia do Inverno\nReduz a Velocidade de Ataque dos Campeões próximos em 20%.",
+    "categorias": [
+      "Armor",
+      "Mana",
+      "Aura",
+      "CooldownReduction",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 3111,
+    "item_id": 3111,
+    "nome": "Passos de Mercúrio",
+    "preco_unitario": 1250,
+    "descricao": "20 de Resistência Mágica\n45 de Velocidade de Movimento\n30% de Tenacidade",
+    "categorias": [
+      "Boots",
+      "SpellBlock",
+      "Tenacity"
+    ]
+  },
+  {
+    "_id": 3112,
+    "item_id": 3112,
+    "nome": "Orbe do Guardião",
+    "preco_unitario": 950,
+    "descricao": "50 de Poder de Habilidade\n150 de Vida\n\nRecuperação: restaura 10 de Mana a cada 5s. Caso você não possa receber Mana, restaura 15 de Vida.",
+    "categorias": [
+      "Health",
+      "SpellDamage",
+      "ManaRegen",
+      "Lane"
+    ]
+  },
+  {
+    "_id": 3113,
+    "item_id": 3113,
+    "nome": "Cintilação Etérea",
+    "preco_unitario": 900,
+    "descricao": "30 de Poder de Habilidade\n4% de Velocidade de Movimento",
+    "categorias": [
+      "NonbootsMovement",
+      "SpellDamage"
+    ]
+  },
+  {
+    "_id": 3114,
+    "item_id": 3114,
+    "nome": "Ídolo Proibido",
+    "preco_unitario": 600,
+    "descricao": "50% de Regeneração de Mana base\n8% de Cura e Resistência do Escudo",
+    "categorias": [
+      "ManaRegen"
+    ]
+  },
+  {
+    "_id": 3115,
+    "item_id": 3115,
+    "nome": "Dente de Na'Shor",
+    "preco_unitario": 2900,
+    "descricao": "80 de Poder de Habilidade\n50% de Velocidade de Ataque\n15 de Aceleração de Habilidade\n\nMordida Icathiana\nSeus Ataques causam Dano Mágico adicional ao contato.",
+    "categorias": [
+      "AttackSpeed",
+      "SpellDamage",
+      "OnHit",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 3116,
+    "item_id": 3116,
+    "nome": "Cetro de Cristal de Rylai",
+    "preco_unitario": 2600,
+    "descricao": "65 de Poder de Habilidade\n400 de Vida\n\nGeada\nHabilidades de dano também causam 30% de Lentidão aos inimigos por 1s.",
+    "categorias": [
+      "Health",
+      "SpellDamage",
+      "Slow"
+    ]
+  },
+  {
+    "_id": 3118,
+    "item_id": 3118,
+    "nome": "Malevolência",
+    "preco_unitario": 2700,
+    "descricao": "90 de Poder de Habilidade\n600 de Mana\n15 de Aceleração de Habilidade\n\nEscárnio\nRecebe 20 de Aceleração de Habilidade da Ultimate.\n\nNévoa Odiosa\nCausar dano a um Campeão com sua Ultimate queima o chão abaixo dele por 3s, causando Dano Mágico por segundo e reduzindo-lhe a Resistência Mágica.",
+    "categorias": [
+      "SpellDamage",
+      "Mana",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 3119,
+    "item_id": 3119,
+    "nome": "Aproximação Invernal",
+    "preco_unitario": 2400,
+    "descricao": "550 de Vida\n500 de Mana\n15 de Aceleração de Habilidade\n\nFascínio\nRecebe 0 de Vida.\n\nFluxo de Mana (8s, máximo de 4 cargas)\nAcertar Ataques e Habilidades concede 3 de Mana máximo (dobrado contra Campeões).\nTransforma-se em Fimbulwinter com 360 de Mana máximo.",
+    "categorias": [
+      "Health",
+      "Mana",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 3123,
+    "item_id": 3123,
+    "nome": "Chamado do Carrasco",
+    "preco_unitario": 800,
+    "descricao": "15 de Dano de Ataque\n\nFeridas Dolorosas\nCausar Dano Físico a Campeões aplica 40% de Ferimentos por 3s.",
+    "categorias": [
+      "Damage"
+    ]
+  },
+  {
+    "_id": 3124,
+    "item_id": 3124,
+    "nome": "Lâmina da Fúria de Guinsoo",
+    "preco_unitario": 3000,
+    "descricao": "30 de Dano de Ataque\n30 de Poder de Habilidade\n25% de Velocidade de Ataque\n\nIra\nAtaques causam 30 de Dano Mágico adicional ao contato.\n\nGolpe Fervente\nAtaques concedem 8% de Velocidade de Ataque por 4s (acumula 4x).\nEnquanto estiver com o máximo de acúmulos, cada terceiro Ataque aplica efeitos ao contato duas vezes.",
+    "categorias": [
+      "Damage",
+      "AttackSpeed",
+      "SpellDamage",
+      "OnHit"
+    ]
+  },
+  {
+    "_id": 3133,
+    "item_id": 3133,
+    "nome": "Martelo de Guerra de Caulfield",
+    "preco_unitario": 1050,
+    "descricao": "20 de Dano de Ataque\n10 de Aceleração de Habilidade",
+    "categorias": [
+      "Damage",
+      "CooldownReduction",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 3134,
+    "item_id": 3134,
+    "nome": "Punhal Serrilhado",
+    "preco_unitario": 1000,
+    "descricao": "20 de Dano de Ataque\n10 de Letalidade",
+    "categorias": [
+      "Damage",
+      "ArmorPenetration"
+    ]
+  },
+  {
+    "_id": 3135,
+    "item_id": 3135,
+    "nome": "Cajado do Vazio",
+    "preco_unitario": 3000,
+    "descricao": "95 de Poder de Habilidade\n40% de Penetração Mágica",
+    "categorias": [
+      "MagicPenetration",
+      "SpellDamage"
+    ]
+  },
+  {
+    "_id": 3137,
+    "item_id": 3137,
+    "nome": "Criptoflora",
+    "preco_unitario": 3000,
+    "descricao": "75 de Poder de Habilidade\n30% de Penetração Mágica\n20 de Aceleração de Habilidade\n\nVida na Morte\nQuando um Campeão a quem você tenha causado dano nos últimos 3s for abatido, uma explosão de cura se propagará do cadáver.",
+    "categorias": [
+      "SpellDamage",
+      "MagicPenetration",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 3139,
+    "item_id": 3139,
+    "nome": "Cimitarra Mercurial",
+    "preco_unitario": 3200,
+    "descricao": "50 de Dano de Ataque\n35 de Resistência Mágica\n10% de Roubo de Vida\n\nATIVOS\nMercúrio\nRemove todos os efeitos negativos de Controle de Grupo (exceto Arremesso ao ar) e concede Velocidade de Movimento.",
+    "categorias": [
+      "SpellBlock",
+      "Damage",
+      "LifeSteal",
+      "Active",
+      "NonbootsMovement",
+      "Tenacity"
+    ]
+  },
+  {
+    "_id": 3140,
+    "item_id": 3140,
+    "nome": "Bandana de Mercúrio",
+    "preco_unitario": 1300,
+    "descricao": "30 de Resistência Mágica\n\nMercúrio\nRemove todos os efeitos de Controle de Grupo (exceto Arremesso ao ar).",
+    "categorias": [
+      "Active",
+      "SpellBlock"
+    ]
+  },
+  {
+    "_id": 3142,
+    "item_id": 3142,
+    "nome": "Lâmina Fantasma de Youmuu",
+    "preco_unitario": 2800,
+    "descricao": "55 de Dano de Ataque\n18 de Letalidade\n4% de Velocidade de Movimento\n\nAssombrar\nRecebe 0 de Velocidade de Movimento fora de combate.\n\nPasso Espectral\nRecebe Velocidade de Movimento e efeito Fantasma por 0s.",
+    "categorias": [
+      "Damage",
+      "Active",
+      "NonbootsMovement",
+      "ArmorPenetration"
+    ]
+  },
+  {
+    "_id": 3143,
+    "item_id": 3143,
+    "nome": "Presságio de Randuin",
+    "preco_unitario": 2700,
+    "descricao": "350 de Vida\n75 de Armadura\n\nResiliência\nSofre 30% a menos de dano de Acertos Críticos.\nHumildade\nCausa 70% de Lentidão a inimigos próximos por 2s.",
+    "categorias": [
+      "Health",
+      "Armor",
+      "Active",
+      "Slow"
+    ]
+  },
+  {
+    "_id": 3144,
+    "item_id": 3144,
+    "nome": "Estilingue do Patrulheiro",
+    "preco_unitario": 600,
+    "descricao": "20% de Velocidade de Ataque\n\nTiro Certeiro\nCausar dano a um Campeão causa Dano Mágico adicional.\nAtaques reduzem o Tempo de Recarga em 1s.",
+    "categorias": [
+      "AttackSpeed"
+    ]
+  },
+  {
+    "_id": 3145,
+    "item_id": 3145,
+    "nome": "Alternador Hextec",
+    "preco_unitario": 1100,
+    "descricao": "45 de Poder de Habilidade\n\nEntusiasmo\nCausar dano a um Campeão causa Dano Mágico adicional.",
+    "categorias": [
+      "SpellDamage"
+    ]
+  },
+  {
+    "_id": 3146,
+    "item_id": 3146,
+    "nome": "Pistola Laminar Hextec",
+    "preco_unitario": 3000,
+    "descricao": "80 de Poder de Habilidade\n40 de Dano de Ataque\n10% de Vampirismo Universal\n\nATIVOS (0s)\nDisparo Elétrico\nDá um choque no Campeão-alvo inimigo, causando 0 de Dano Mágico e 25% de Lentidão por 1.5s.",
+    "categorias": [
+      "Damage",
+      "LifeSteal",
+      "SpellDamage",
+      "Active",
+      "SpellVamp"
+    ]
+  },
+  {
+    "_id": 3147,
+    "item_id": 3147,
+    "nome": "Máscara Assustadora",
+    "preco_unitario": 1300,
+    "descricao": "30 de Poder de Habilidade\n200 de Vida\n\nLoucura\nPara cada segundo em combate contra Campeões inimigos, causa 2% de dano adicional, com limite de 6%.",
+    "categorias": [
+      "Health",
+      "SpellDamage"
+    ]
+  },
+  {
+    "_id": 3152,
+    "item_id": 3152,
+    "nome": "Explocinturão Hextec",
+    "preco_unitario": 2650,
+    "descricao": "60 de Poder de Habilidade\n350 de Vida\n20 de Aceleração de Habilidade\n\nSupersônico\nAvança na direção-alvo, disparando projéteis que causam Dano Mágico.",
+    "categorias": [
+      "Health",
+      "SpellDamage",
+      "Active",
+      "CooldownReduction",
+      "NonbootsMovement",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 3153,
+    "item_id": 3153,
+    "nome": "Espada do Rei Destruído",
+    "preco_unitario": 3200,
+    "descricao": "40 de Dano de Ataque\n25% de Velocidade de Ataque\n10% de Roubo de Vida\n\nGume da Névoa\nAtaques causam uma porcentagem da Vida atual do inimigo como Dano Físico adicional ao contato.\n\nSombras da Tirania\nAtacar um Campeão 3 vezes causa 30% de Lentidão por 1s.",
+    "categorias": [
+      "Damage",
+      "AttackSpeed",
+      "LifeSteal",
+      "Slow",
+      "OnHit"
+    ]
+  },
+  {
+    "_id": 3155,
+    "item_id": 3155,
+    "nome": "Hexdrinker",
+    "preco_unitario": 1300,
+    "descricao": "25 de Dano de Ataque\n25 de Resistência Mágica\n\nSalva-Vidas\nAo sofrer Dano Mágico suficiente para reduzir sua Vida a menos de 30%, recebe um Escudo contra Dano Mágico por 2.5s.",
+    "categorias": [
+      "Damage",
+      "SpellBlock"
+    ]
+  },
+  {
+    "_id": 3156,
+    "item_id": 3156,
+    "nome": "Mandíbula de Malmortius",
+    "preco_unitario": 3100,
+    "descricao": "60 de Dano de Ataque\n15 de Aceleração de Habilidade\n40 de Resistência Mágica\n\nSalva-Vidas\nAo sofrer Dano Mágico suficiente para reduzir sua Vida a menos de 30%, recebe um Escudo contra Dano Mágico por 3s e 10% de Vampirismo Universal até o fim do combate.",
+    "categorias": [
+      "SpellBlock",
+      "Damage",
+      "LifeSteal",
+      "SpellVamp",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 3157,
+    "item_id": 3157,
+    "nome": "Ampulheta de Zhonya",
+    "preco_unitario": 3250,
+    "descricao": "105 de Poder de Habilidade\n50 de Armadura\n\nTempo Paralisado\nEntra em Estase por 2.5s.",
+    "categorias": [
+      "Armor",
+      "SpellDamage",
+      "Active"
+    ]
+  },
+  {
+    "_id": 3158,
+    "item_id": 3158,
+    "nome": "Botas Ionianas da Lucidez",
+    "preco_unitario": 900,
+    "descricao": "10 de Aceleração de Habilidade\n45 de Velocidade de Movimento\n\nPerspicácia Ioniana\nRecebe 10 de Aceleração de Feitiços de Invocador.",
+    "categorias": [
+      "Boots",
+      "CooldownReduction"
+    ]
+  },
+  {
+    "_id": 3161,
+    "item_id": 3161,
+    "nome": "Lança de Shojin",
+    "preco_unitario": 3100,
+    "descricao": "45 de Dano de Ataque\n450 de Vida\n\nForça Dracônica\nRecebe 25 de Aceleração de Habilidade Básica.\n\nDeterminação Concentrada\nCausar dano com Habilidades aumenta o dano de Habilidade e o dano da Passiva do seu Campeão em 3% por 6s (acumula 4x).",
+    "categorias": [
+      "Health",
+      "Damage",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 3165,
+    "item_id": 3165,
+    "nome": "Morellonomicon",
+    "preco_unitario": 2850,
+    "descricao": "75 de Poder de Habilidade\n350 de Vida\n15 de Aceleração de Habilidade\n\nFeridas Dolorosas\nCausar Dano Mágico a Campeões aplica 40% de Ferimento por 3s.",
+    "categorias": [
+      "Health",
+      "SpellDamage",
+      "CooldownReduction",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 3168,
+    "item_id": 3168,
+    "nome": "Caminho Imortal",
+    "preco_unitario": 1000,
+    "descricao": "45 de Velocidade de Movimento\n4% de Vampirismo Universal\n\nEliminar\nRecebe 0.6% de Vampirismo Universal ao eliminar um Campeão. Acumula até 10 vezes.\n\nHoje e Sempre\nEnquanto está com mais da metade da Vida, causa 4% de dano aumentado.\n\nEnquanto está com menos da metade da Vida, recebe mais 12% de cura, Escudo e Regeneração.",
+    "categorias": [
+      "LifeSteal",
+      "SpellVamp",
+      "Boots"
+    ]
+  },
+  {
+    "_id": 3170,
+    "item_id": 3170,
+    "nome": "Marcha Célere",
+    "preco_unitario": 1000,
+    "descricao": "65 de Velocidade de Movimento\n\nPés Velozes\nReduz a eficácia dos efeitos de Lentidão em 25%.\n\nFervor Noxiano\nRecebe 5% da sua Velocidade de Movimento como Força Adaptativa.",
+    "categorias": [
+      "Boots"
+    ]
+  },
+  {
+    "_id": 3171,
+    "item_id": 3171,
+    "nome": "Lucidez Escarlate",
+    "preco_unitario": 900,
+    "descricao": "20 de Aceleração de Habilidade\n45 de Velocidade de Movimento\n\nPerspicácia Ioniana\nRecebe 20 de Aceleração de Feitiço de Invocador.\n\nAceleração Noxiana\nFortalecer ou proteger aliados com Habilidades, causar dano a Campeões inimigos com Habilidades ou conjurar um Feitiço de Invocador concede 0 de Velocidade de Movimento por 4s.\n\nAceleração Noxiana só pode ser acionada uma vez por conjuração de Habilidade.",
+    "categorias": [
+      "CooldownReduction",
+      "Boots"
+    ]
+  },
+  {
+    "_id": 3172,
+    "item_id": 3172,
+    "nome": "Grevas Bélicas",
+    "preco_unitario": 1100,
+    "descricao": "45% de Velocidade de Ataque\n45 de Velocidade de Movimento\n5% de Roubo de Vida",
+    "categorias": [
+      "AttackSpeed",
+      "LifeSteal",
+      "NonbootsMovement"
+    ]
+  },
+  {
+    "_id": 3173,
+    "item_id": 3173,
+    "nome": "Esmagadores Acorrentados",
+    "preco_unitario": 1250,
+    "descricao": "25 de Resistência Mágica\n45 de Velocidade de Movimento\n30% de Tenacidade\n\nPersistência Noxiana (0s)\nDepois de sofrer Dano Mágico de um Campeão, recebe 0 de Escudo contra Dano Mágico por 5s.",
+    "categorias": [
+      "SpellBlock",
+      "Boots",
+      "Tenacity",
+      "MagicResist"
+    ]
+  },
+  {
+    "_id": 3174,
+    "item_id": 3174,
+    "nome": "Mobilização Blindada",
+    "preco_unitario": 1200,
+    "descricao": "35 de Armadura\n45 de Velocidade de Movimento\n\nBarricada\nReduz o dano sofrido de Ataques em 10%.\n\nVigor Noxiano (0s)\nDepois de sofrer Dano Físico de um Campeão, recebe 0 de Escudo contra Dano Físico por 5s.",
+    "categorias": [
+      "Armor",
+      "Boots"
+    ]
+  },
+  {
+    "_id": 3175,
+    "item_id": 3175,
+    "nome": "Sapatos Enfeitiçados",
+    "preco_unitario": 1100,
+    "descricao": "20 de Penetração Mágica\n8% de Penetração Mágica\n45 de Velocidade de Movimento",
+    "categorias": [
+      "Boots",
+      "MagicPenetration"
+    ]
+  },
+  {
+    "_id": 3177,
+    "item_id": 3177,
+    "nome": "Lâmina do Guardião",
+    "preco_unitario": 950,
+    "descricao": "30 de Dano de Ataque\n150 de Vida\n15 de Aceleração de Habilidade",
+    "categorias": [
+      "Health",
+      "Damage",
+      "Lane",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 3179,
+    "item_id": 3179,
+    "nome": "Glaive Sombria",
+    "preco_unitario": 2800,
+    "descricao": "60 de Dano de Ataque\n18 de Letalidade\n15 de Aceleração de Habilidade\n\nPredador Noturno\nApós ficar oculto para inimigos por um breve período, seu próximo Ataque contra um Campeão causa Dano Verdadeiro adicional.\n\nBlecaute\nQuando você estiver perto de armadilhas ou Sentinelas Invisíveis inimigas, elas serão reveladas por um breve período. Ao revelar sentinelas, seus Ataques causam dano adicional a elas.",
+    "categorias": [
+      "Damage",
+      "Vision",
+      "CooldownReduction",
+      "ArmorPenetration",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 3181,
+    "item_id": 3181,
+    "nome": "Quebracascos",
+    "preco_unitario": 3000,
+    "descricao": "40 de Dano de Ataque\n500 de Vida\n4% de Velocidade de Movimento\n\nMarujo\nTodo quinto Ataque contra Campeões e monstros épicos causa Dano Físico adicional, aumentado contra estruturas.\n\nInvasão Pirata\nTropas de cerco e supertropas aliadas próximas recebem Armadura e Resistência Mágica.",
+    "categorias": [
+      "Health",
+      "Damage",
+      "NonbootsMovement"
+    ]
+  },
+  {
+    "_id": 3184,
+    "item_id": 3184,
+    "nome": "Martelo do Guardião",
+    "preco_unitario": 950,
+    "descricao": "25 de Dano de Ataque\n150 de Vida\n5% de Roubo de Vida",
+    "categorias": [
+      "Health",
+      "Damage",
+      "LifeSteal",
+      "Lane"
+    ]
+  },
+  {
+    "_id": 3190,
+    "item_id": 3190,
+    "nome": "Medalhão dos Solari de Ferro",
+    "preco_unitario": 2200,
+    "descricao": "200 de Vida\n30 de Armadura\n30 de Resistência Mágica\n10 de Aceleração de Habilidade\n\nDevoção\nConcede a aliados próximos 290 - 360 de Escudo, e esse valor decai ao longo de 2.5s.",
+    "categorias": [
+      "Health",
+      "SpellBlock",
+      "Armor",
+      "Aura",
+      "Active",
+      "MagicResist",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 3211,
+    "item_id": 3211,
+    "nome": "Capuz do Espectro",
+    "preco_unitario": 1250,
+    "descricao": "200 de Vida\n35 de Resistência Mágica\n100% de Regeneração de Vida base",
+    "categorias": [
+      "Health",
+      "HealthRegen",
+      "SpellBlock"
+    ]
+  },
+  {
+    "_id": 3222,
+    "item_id": 3222,
+    "nome": "Bênção de Mikael",
+    "preco_unitario": 2300,
+    "descricao": "250 de Vida\n100% de Regeneração de Mana base\n12% de Cura e Resistência do Escudo\n15 de Aceleração de Habilidade\n\nPurificar\nRemove todos os efeitos de Controle de Grupo de um Campeão aliado (exceto Arremesso ao Ar e Supressão) e restaura 100 - 250 de Vida.",
+    "categorias": [
+      "Health",
+      "ManaRegen",
+      "Active",
+      "CooldownReduction",
+      "Tenacity",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 3302,
+    "item_id": 3302,
+    "nome": "Terminus",
+    "preco_unitario": 3000,
+    "descricao": "30 de Dano de Ataque\n35% de Velocidade de Ataque\n\nSombra\nAtaques causam 0 de Dano Mágico adicional ao contato.\n\nJustaposição\nAlterna entre Luz e Sombra ao atacar Campeões: Ataques de Luz concedem Armadura e Resistência Mágica por 5s. Ataques de Sombra concedem 10% de Penetração de Armadura e Penetração Mágica por 5s.",
+    "categorias": [
+      "Damage",
+      "AttackSpeed",
+      "OnHit",
+      "MagicPenetration",
+      "ArmorPenetration"
+    ]
+  },
+  {
+    "_id": 3330,
+    "item_id": 3330,
+    "nome": "Efígie do Espantalho",
+    "preco_unitario": 150,
+    "descricao": "Não pode ser vendido\n\nAtivo – Amuleto: Posiciona uma efígie que dura 0s e aparece exatamente como Fiddlesticks para os inimigos. Armazena uma carga a cada 0s, com um máximo de 2 cargas.\n\nA efígie será ativada quando Campeões inimigos se aproximarem, simulando uma ação aleatória. Depois disso, ela se destruirá.",
+    "categorias": [
+      "Active",
+      "Jungle",
+      "Lane",
+      "Trinket",
+      "Vision"
+    ]
+  },
+  {
+    "_id": 3340,
+    "item_id": 3340,
+    "nome": "Sentinela Invisível",
+    "preco_unitario": 150,
+    "descricao": "Ativo (210s - 90s, máximo de 2 cargas)\nPosiciona uma Sentinela Invisível que concede visão por 90s - 120s.",
+    "categorias": [
+      "Active",
+      "Jungle",
+      "Lane",
+      "Trinket",
+      "Vision"
+    ]
+  },
+  {
+    "_id": 3363,
+    "item_id": 3363,
+    "nome": "Alteração Vidente",
+    "preco_unitario": 150,
+    "descricao": "Ativo (198s - 99s)\nRevela uma área distante por 2s e deixa uma Sentinela que expira ao avistar um Campeão inimigo.",
+    "categorias": [
+      "Active",
+      "Trinket",
+      "Vision"
+    ]
+  },
+  {
+    "_id": 3364,
+    "item_id": 3364,
+    "nome": "Lente do Oráculo",
+    "preco_unitario": 150,
+    "descricao": "Ativo (160s - 100s, máximo de 2 cargas)\nRevela Sentinelas Invisíveis inimigas e armadilhas ao seu redor por 8s.",
+    "categorias": [
+      "Active",
+      "Trinket",
+      "Vision"
+    ]
+  },
+  {
+    "_id": 3504,
+    "item_id": 3504,
+    "nome": "Turíbulo Ardente",
+    "preco_unitario": 2200,
+    "descricao": "45 de Poder de Habilidade\n10% de Cura e Resistência do Escudo\n125% de Regeneração de Mana base\n4% de Velocidade de Movimento\n\nSantificar\nCurar um aliado ou conceder-lhe Escudo fortalece vocês dois por 6s, concedendo 25% de Velocidade de Ataque e 20 de Dano Mágico ao contato.",
+    "categorias": [
+      "AttackSpeed",
+      "SpellDamage",
+      "ManaRegen",
+      "NonbootsMovement"
+    ]
+  },
+  {
+    "_id": 3508,
+    "item_id": 3508,
+    "nome": "Colhedor de Essência",
+    "preco_unitario": 3050,
+    "descricao": "50 de Dano de Ataque\n20 de Aceleração de Habilidade\n25% de Chance de Acerto Crítico\n\nLâmina Arcana\nApós usar uma habilidade, seu próximo ataque causa Dano Físico adicional e concede Mana ao contato.",
+    "categorias": [
+      "Damage",
+      "CriticalStrike",
+      "ManaRegen",
+      "CooldownReduction",
+      "OnHit",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 3599,
+    "item_id": 3599,
+    "nome": "Lança Negra da Kalista",
+    "preco_unitario": 150,
+    "descricao": "Ativo – Consumir: Vincula-se a um aliado até o fim da partida, o que os torna aliados em Juramento. O Juramento fortalece tanto você quanto o aliado quando estiverem próximos.",
+    "categorias": [
+      "Consumable"
+    ]
+  },
+  {
+    "_id": 3600,
+    "item_id": 3600,
+    "nome": "Lança Negra da Kalista",
+    "preco_unitario": 150,
+    "descricao": "Ativo – Consumir: Vincula-se a um aliado até o fim da partida, o que os torna aliados em Juramento. O Juramento fortalece tanto você quanto o aliado quando estiverem próximos.\n\nNecessária para utilizar a ultimate da Kalista.",
+    "categorias": [
+      "Consumable"
+    ]
+  },
+  {
+    "_id": 3742,
+    "item_id": 3742,
+    "nome": "Couraça do Defunto",
+    "preco_unitario": 2900,
+    "descricao": "350 de Vida\n55 de Armadura\n4% de Velocidade de Movimento\n\nNaufrágio\nEnquanto estiver se movendo, acumula até 20 de Velocidade de Movimento adicional. Seu próximo Ataque descarrega a Velocidade de Movimento acumulada para causar Dano Físico adicional.\n\nInafundável\nReduz a eficácia de efeitos de Lentidão em 15%.",
+    "categorias": [
+      "Health",
+      "Armor",
+      "Slow",
+      "NonbootsMovement"
+    ]
+  },
+  {
+    "_id": 3748,
+    "item_id": 3748,
+    "nome": "Hidra Titânica",
+    "preco_unitario": 3300,
+    "descricao": "40 de Dano de Ataque\n600 de Vida\n\nFenda\nAtaques causam Dano Físico ao contato e atingem os inimigos atrás do alvo.\nCrescente Titânica\nFortalece sua próxima Fenda para causar Dano Físico adicional ao contato, além de Dano Físico adicional aos inimigos atrás do alvo.",
+    "categorias": [
+      "Health",
+      "HealthRegen",
+      "Damage",
+      "OnHit"
+    ]
+  },
+  {
+    "_id": 3801,
+    "item_id": 3801,
+    "nome": "Braçadeira Cristalina",
+    "preco_unitario": 800,
+    "descricao": "200 de Vida\n100% de Regeneração de Vida base",
+    "categorias": [
+      "Health",
+      "HealthRegen"
+    ]
+  },
+  {
+    "_id": 3802,
+    "item_id": 3802,
+    "nome": "Capítulo Perdido",
+    "preco_unitario": 1200,
+    "descricao": "40 de Poder de Habilidade\n300 de Mana\n10 de Aceleração de Habilidade\n\nIluminar\nSubir de nível restaura 20% do Mana máximo ao longo de 3s.",
+    "categorias": [
+      "SpellDamage",
+      "Mana",
+      "ManaRegen",
+      "CooldownReduction",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 3803,
+    "item_id": 3803,
+    "nome": "Catalisador das Eras",
+    "preco_unitario": 1300,
+    "descricao": "300 de Vida\n375 de Mana\n\nEternidade\nRestaura 10% do dano sofrido de Campeões em forma de Mana.\nConjurar uma Habilidade cura 25% do Mana gasto.",
+    "categorias": [
+      "Health",
+      "HealthRegen",
+      "Mana",
+      "ManaRegen"
+    ]
+  },
+  {
+    "_id": 3814,
+    "item_id": 3814,
+    "nome": "Limiar da Noite",
+    "preco_unitario": 3000,
+    "descricao": "50 de Dano de Ataque\n15 de Letalidade\n250 de Vida\n\nAnular\nConcede um Escudo de Feitiço que bloqueia a próxima Habilidade inimiga.",
+    "categorias": [
+      "Health",
+      "Damage",
+      "ArmorPenetration"
+    ]
+  },
+  {
+    "_id": 3865,
+    "item_id": 3865,
+    "nome": "Atlas Mundial",
+    "preco_unitario": 400,
+    "descricao": "",
+    "categorias": [
+      "Health",
+      "ManaRegen",
+      "Vision",
+      "GoldPer",
+      "Lane"
+    ]
+  },
+  {
+    "_id": 3869,
+    "item_id": 3869,
+    "nome": "Oposição Celestial",
+    "preco_unitario": 400,
+    "descricao": "200 de Vida\n75% de Regeneração de Vida base\n75% de Regeneração de Mana base\n9 de ouro a cada 10s\n\nBênção da Montanha\nReduz o dano sofrido por Campeões por 2s após sofrer dano de um Campeão. Quando o efeito termina, causa 50% de Lentidão a inimigos próximos por 1.5s.\n\nAtivo (4 cargas)\nPosiciona uma Sentinela Invisível que concede visão.",
+    "categorias": [
+      "Health",
+      "HealthRegen",
+      "ManaRegen",
+      "Vision",
+      "GoldPer",
+      "Lane"
+    ]
+  },
+  {
+    "_id": 3870,
+    "item_id": 3870,
+    "nome": "Criassonhos",
+    "preco_unitario": 400,
+    "descricao": "200 de Vida\n75% de Regeneração de Vida base\n75% de Regeneração de Mana base\n9 de ouro a cada 10s\n\nCriassonhos\nConceder cura ou Escudo a um aliado sopra Bolhas do Sonho em direção a ele por 3s. O próximo Ataque dele causará Dano Mágico adicional ao contato e o próximo dano sofrido por ele será reduzido.\n\nAtivo (4 cargas)\nPosiciona uma Sentinela Invisível que concede visão.",
+    "categorias": [
+      "Health",
+      "HealthRegen",
+      "ManaRegen",
+      "Vision",
+      "GoldPer",
+      "Lane"
+    ]
+  },
+  {
+    "_id": 3871,
+    "item_id": 3871,
+    "nome": "Invadomínio de Zaz'Zak",
+    "preco_unitario": 400,
+    "descricao": "200 de Vida\n75% de Regeneração de Vida base\n75% de Regeneração de Mana base\n9 de ouro a cada 10s\n\nExplosão do Vazio\nCausar dano de Habilidade a um Campeão provoca uma explosão que causa Dano Mágico.\n\nAtivo (4 cargas)\nPosiciona uma Sentinela Invisível que concede visão.",
+    "categorias": [
+      "Health",
+      "HealthRegen",
+      "ManaRegen",
+      "Vision",
+      "GoldPer",
+      "Lane"
+    ]
+  },
+  {
+    "_id": 3876,
+    "item_id": 3876,
+    "nome": "Trenó do Solstício",
+    "preco_unitario": 400,
+    "descricao": "200 de Vida\n75% de Regeneração de Vida base\n75% de Regeneração de Mana base\n9 de ouro a cada 10s\n\nPasseio de Trenó\nCausar Lentidão a um Campeão inimigo ou Imobilizá-lo próximo a aliados restaura Vida e concede 20% de Velocidade de Movimento que decai ao longo de 2.5s para você e para um aliado próximo.\n\nAtivo (4 cargas)\nPosiciona uma Sentinela Invisível que concede visão.",
+    "categorias": [
+      "Health",
+      "HealthRegen",
+      "ManaRegen",
+      "Vision",
+      "GoldPer",
+      "Lane"
+    ]
+  },
+  {
+    "_id": 3877,
+    "item_id": 3877,
+    "nome": "Canção de Sangue",
+    "preco_unitario": 400,
+    "descricao": "200 de Vida\n75% de Regeneração de Vida base\n75% de Regeneração de Mana base\n9 de ouro a cada 10s\n\nLâmina Arcana\nApós usar uma Habilidade, seu próximo Ataque causa Dano Físico adicional ao contato. Se o alvo for um Campeão, ele sofrerá dano aumentado por 4s.\n\nAtivo (4 cargas)\nPosiciona uma Sentinela Invisível que concede visão.",
+    "categorias": [
+      "Health",
+      "HealthRegen",
+      "ManaRegen",
+      "Vision",
+      "GoldPer",
+      "Lane"
+    ]
+  },
+  {
+    "_id": 3916,
+    "item_id": 3916,
+    "nome": "Orbe do Oblívio",
+    "preco_unitario": 800,
+    "descricao": "25 de Poder de Habilidade\n\nFeridas Dolorosas\nCausar Dano Mágico a Campeões aplica 40% de Ferimento por 3s.",
+    "categorias": [
+      "SpellDamage"
+    ]
+  },
+  {
+    "_id": 4005,
+    "item_id": 4005,
+    "nome": "Mandato Imperial",
+    "preco_unitario": 2400,
+    "descricao": "60 de Poder de Habilidade\n15 de Aceleração de Habilidade\n150% de Regeneração de Mana base\n\nControle\nRecebe 20 de Aceleração de Habilidade para suas habilidades com efeitos de Imobilização.\n\nComando\nAo Imobilizar um Campeão inimigo, você aplica uma marca que o deixa 7% Vulnerável por 4s.",
+    "categorias": [
+      "SpellDamage",
+      "ManaRegen",
+      "CooldownReduction",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 4401,
+    "item_id": 4401,
+    "nome": "Força da Natureza",
+    "preco_unitario": 2800,
+    "descricao": "400 de Vida\n55 de Resistência Mágica\n4% de Velocidade de Movimento\n\nImpassível\nRecebe 70 de Resistência Mágica e 6% de Velocidade de Movimento adicional depois de sofrer Dano Mágico de Campeões 8x.",
+    "categorias": [
+      "Health",
+      "SpellBlock",
+      "NonbootsMovement"
+    ]
+  },
+  {
+    "_id": 4628,
+    "item_id": 4628,
+    "nome": "Foco do Horizonte",
+    "preco_unitario": 2700,
+    "descricao": "75 de Poder de Habilidade\n25 de Aceleração de Habilidade\n\nHiperdisparo\nCausar Dano de Habilidade a Campeões a 600 de alcance ou mais irá Revelá-los por 6s.\n\nFoco\nQuando Hiperdisparo é acionado, Revela todos os demais Campeões inimigos em até 1400 de alcance por 3s.",
+    "categorias": [
+      "SpellDamage",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 4629,
+    "item_id": 4629,
+    "nome": "Ímpeto Cósmico",
+    "preco_unitario": 3000,
+    "descricao": "70 de Poder de Habilidade\n350 de Vida\n25 de Aceleração de Habilidade\n4% de Velocidade de Movimento\n\nDança Enfeitiçada\nCausar Dano Mágico ou Dano Verdadeiro a Campeões concede Velocidade de Movimento por 4s.",
+    "categorias": [
+      "Health",
+      "SpellDamage",
+      "NonbootsMovement",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 4630,
+    "item_id": 4630,
+    "nome": "Joia da Ruína",
+    "preco_unitario": 1100,
+    "descricao": "25 de Poder de Habilidade\n13% de Penetração Mágica",
+    "categorias": [
+      "MagicPenetration",
+      "SpellDamage"
+    ]
+  },
+  {
+    "_id": 4632,
+    "item_id": 4632,
+    "nome": "Barreira Verdejante",
+    "preco_unitario": 1600,
+    "descricao": "40 de Poder de Habilidade\n25 de Resistência Mágica\n\nAnular\nConcede um Escudo de Feitiço que bloqueia a próxima Habilidade inimiga.",
+    "categorias": [
+      "SpellBlock",
+      "SpellDamage"
+    ]
+  },
+  {
+    "_id": 4633,
+    "item_id": 4633,
+    "nome": "Criafendas",
+    "preco_unitario": 3100,
+    "descricao": "70 de Poder de Habilidade\n350 de Vida\n15 de Aceleração de Habilidade\n\nCorrupção do Vazio\nPara cada segundo em combate contra Campeões inimigos, causa 2% de dano adicional, com limite de 8%. Com força máxima, recebe Vampirismo Universal.\n\nInfusão do Vazio\nRecebe 2% da sua Vida adicional como Poder de Habilidade.",
+    "categorias": [
+      "Health",
+      "SpellDamage",
+      "CooldownReduction",
+      "SpellVamp"
+    ]
+  },
+  {
+    "_id": 4642,
+    "item_id": 4642,
+    "nome": "Espelho de Bandópolis",
+    "preco_unitario": 900,
+    "descricao": "20 de Poder de Habilidade\n100% de Regeneração de Mana base\n10 de Aceleração de Habilidade",
+    "categorias": [
+      "SpellDamage",
+      "ManaRegen",
+      "CooldownReduction",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 4645,
+    "item_id": 4645,
+    "nome": "Chama Sombria",
+    "preco_unitario": 3200,
+    "descricao": "110 de Poder de Habilidade\n15 de Penetração Mágica\n\nFloregris\nDano Mágico e Dano Verdadeiro causam Acertos Críticos a inimigos com menos de 40% de Vida, causando 20% de dano aumentado.",
+    "categorias": [
+      "SpellDamage",
+      "MagicPenetration"
+    ]
+  },
+  {
+    "_id": 4646,
+    "item_id": 4646,
+    "nome": "Ápice da Tempestade",
+    "preco_unitario": 2800,
+    "descricao": "90 de Poder de Habilidade\n15 de Penetração Mágica\n6% de Velocidade de Movimento\n\nInvasor da Tempestade\nCausar dano equivalente a 25% da Vida máxima de um Campeão dentro de 2.5s aplica Dilúvio a ele.\n\nDilúvio\nDepois de 2s, causa Dano Mágico. Se o alvo morrer antes que Dilúvio seja acionado, causa dano a inimigos próximos.",
+    "categorias": [
+      "SpellDamage",
+      "GoldPer",
+      "NonbootsMovement",
+      "MagicPenetration"
+    ]
+  },
+  {
+    "_id": 6333,
+    "item_id": 6333,
+    "nome": "Dança da Morte",
+    "preco_unitario": 3300,
+    "descricao": "60 de Dano de Ataque\n50 de Armadura\n15 de Aceleração de Habilidade\n\nDor Ignorada\nUma porcentagem do dano sofrido é causada a você ao longo de 3s.\n\nDesafiar\nAo eliminar um Campeão inimigo a quem você tenha causado dano nos últimos 3s, purifica o restante do dano de Dor Ignorada e restaura Vida ao longo de 2s.",
+    "categorias": [
+      "Armor",
+      "Damage",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 6609,
+    "item_id": 6609,
+    "nome": "Serrespada Quimiopunk",
+    "preco_unitario": 3000,
+    "descricao": "45 de Dano de Ataque\n450 de Vida\n15 de Aceleração de Habilidade\n\nCisalhar\nCausar Dano Físico aplica 40% de Ferimentos a Campeões inimigos por 3s.",
+    "categorias": [
+      "Health",
+      "Damage",
+      "CooldownReduction",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 6610,
+    "item_id": 6610,
+    "nome": "Céu Dividido",
+    "preco_unitario": 3100,
+    "descricao": "40 de Dano de Ataque\n400 de Vida\n10 de Aceleração de Habilidade\n\nGolpe de Lumescudo\nSeu primeiro Ataque contra um Campeão causa Acerto Crítico e restaura Vida.",
+    "categorias": [
+      "Health",
+      "Damage",
+      "CooldownReduction",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 6616,
+    "item_id": 6616,
+    "nome": "Cajado Aquafluxo",
+    "preco_unitario": 2250,
+    "descricao": "35 de Poder de Habilidade\n10% de Cura e Resistência do Escudo\n125% de Regeneração de Mana base\n10 de Aceleração de Habilidade\n\nCorredeira\nConceder cura ou Escudo a um aliado concede a vocês dois 40 de Poder de Habilidade e 15 de Aceleração de Habilidade por 6s.",
+    "categorias": [
+      "SpellDamage",
+      "ManaRegen",
+      "CooldownReduction",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 6617,
+    "item_id": 6617,
+    "nome": "Regenerador de Pedra Lunar",
+    "preco_unitario": 2200,
+    "descricao": "25 de Poder de Habilidade\n200 de Vida\n20 de Aceleração de Habilidade\n125% de Regeneração de Mana base\n\nGraça Estrelada\nCurar um aliado ou conceder Escudo a ele ativa um efeito em cadeia em outro aliado (menos em si), curando-o em 30% ou concedendo a ele um Escudo de 35% do valor original.",
+    "categorias": [
+      "Health",
+      "SpellDamage",
+      "ManaRegen",
+      "CooldownReduction",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 6620,
+    "item_id": 6620,
+    "nome": "Ecos de Helia",
+    "preco_unitario": 2200,
+    "descricao": "35 de Poder de Habilidade\n200 de Vida\n20 de Aceleração de Habilidade\n125% de Regeneração de Mana base\n\nSifão da Alma\nRecebe 30% do dano pré-mitigação causado a Campeões como Cargas de Alma. Conceder curas ou Escudos a um aliado consome todas as Cargas de Alma para restaurar Vida.",
+    "categorias": [
+      "Health",
+      "SpellDamage",
+      "ManaRegen",
+      "CooldownReduction",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 6621,
+    "item_id": 6621,
+    "nome": "Auronúcleo",
+    "preco_unitario": 2500,
+    "descricao": "45 de Poder de Habilidade\n16% de Cura e Resistência do Escudo\n100% de Regeneração de Mana base\n\nPrimeira Luz\nRecebe 2% de cura e Resistência do Escudo e 10 de Poder de Habilidade a cada 100% de Regeneração de Mana base.",
+    "categorias": [
+      "SpellDamage",
+      "ManaRegen"
+    ]
+  },
+  {
+    "_id": 6631,
+    "item_id": 6631,
+    "nome": "Quebrapassos",
+    "preco_unitario": 3300,
+    "descricao": "40 de Dano de Ataque\n25% de Velocidade de Ataque\n450 de Vida\n\nFenda\nAtaques causam Dano Físico a inimigos próximos.\nOnda de Choque Estonteante\nCausa Dano Físico e 35% de Lentidão a inimigos próximos.\nRecebe 35% de Velocidade de Movimento que decai ao longo do tempo a cada Campeão atingido por 3s.",
+    "categorias": [
+      "Health",
+      "Damage",
+      "AttackSpeed",
+      "Slow"
+    ]
+  },
+  {
+    "_id": 6653,
+    "item_id": 6653,
+    "nome": "Tormento de Liandry",
+    "preco_unitario": 3000,
+    "descricao": "60 de Poder de Habilidade\n300 de Vida\n\nTormento\nHabilidades de dano queimam inimigos em 2% da Vida máxima como Dano Mágico por segundo durante 3s.\n\nSofrimento\nPara cada segundo em combate com Campeões inimigos, causa 2% de dano adicional, até um máximo de 6%.",
+    "categorias": [
+      "Health",
+      "SpellDamage"
+    ]
+  },
+  {
+    "_id": 6655,
+    "item_id": 6655,
+    "nome": "Eco de Luden",
+    "preco_unitario": 2750,
+    "descricao": "100 de Poder de Habilidade\n600 de Mana\n10 de Aceleração de Habilidade\n\nEco\nHabilidades de dano lançam 6 Ecos que causam Dano Mágico adicional ao alvo e a inimigos próximos. Ecos restantes atingem o alvo primeiro, causando 20% de dano.",
+    "categorias": [
+      "SpellDamage",
+      "Mana",
+      "CooldownReduction",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 6657,
+    "item_id": 6657,
+    "nome": "Bastão das Eras",
+    "preco_unitario": 2600,
+    "descricao": "45 de Poder de Habilidade\n350 de Vida\n500 de Mana\n\nAtemporal\nEste item ganha 10 de Vida, 30 de Mana e 3 de Poder de Habilidade a cada 60s até 10 vezes. Com o máximo de acúmulos, recebe um nível.\n\nEternidade\nSofrer dano de Campeões restaura 10% do dano como Mana.\nConjurar uma Habilidade cura o equivalente a 25% do Mana gasto.",
+    "categorias": [
+      "Health",
+      "HealthRegen",
+      "SpellDamage",
+      "Mana",
+      "ManaRegen"
+    ]
+  },
+  {
+    "_id": 6660,
+    "item_id": 6660,
+    "nome": "Brasa de Bami",
+    "preco_unitario": 900,
+    "descricao": "150 de Vida\n5 de Aceleração de Habilidade\n\nImolar\nDepois de causar ou sofrer qualquer dano, você causa Dano Mágico a inimigos próximos por 3s.",
+    "categorias": [
+      "Health",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 6662,
+    "item_id": 6662,
+    "nome": "Manopla dos Glacinatas",
+    "preco_unitario": 2900,
+    "descricao": "300 de Vida\n50 de Armadura\n15 de Aceleração de Habilidade\n\nLâmina Arcana\nDepois de usar uma Habilidade, seu próximo Ataque causará Dano Físico adicional ao contato e criará um campo congelado por 2s, causando Lentidão.",
+    "categorias": [
+      "Health",
+      "Armor",
+      "CooldownReduction",
+      "Slow",
+      "OnHit",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 6664,
+    "item_id": 6664,
+    "nome": "Resplendor Vazio",
+    "preco_unitario": 2800,
+    "descricao": "400 de Vida\n40 de Resistência Mágica\n10 de Aceleração de Habilidade\n100% de Regeneração de Vida base\n\nImolar\nDepois de causar ou sofrer qualquer dano, você causa Dano Mágico por segundo a inimigos próximos por 3s.\n\nDesolar\nAbater um inimigo causa Dano Mágico ao redor dele",
+    "categorias": [
+      "Health",
+      "SpellBlock",
+      "HealthRegen",
+      "Aura",
+      "MagicResist",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 6665,
+    "item_id": 6665,
+    "nome": "Jak'Sho, o Inconstante",
+    "preco_unitario": 3200,
+    "descricao": "350 de Vida\n45 de Armadura\n45 de Resistência Mágica\n\nResiliência do Vazio\nDepois de 5s de combate contra Campeões, aumenta sua Armadura e Resistência Mágica adicionais em 30% até o fim do combate.",
+    "categorias": [
+      "Health",
+      "SpellBlock",
+      "Armor",
+      "MagicResist"
+    ]
+  },
+  {
+    "_id": 6670,
+    "item_id": 6670,
+    "nome": "Aljava Vespertina",
+    "preco_unitario": 1300,
+    "descricao": "15 de Dano de Ataque\n20% de Chance de Acerto Crítico",
+    "categorias": [
+      "Damage",
+      "CriticalStrike"
+    ]
+  },
+  {
+    "_id": 6672,
+    "item_id": 6672,
+    "nome": "Mata-Cráquens",
+    "preco_unitario": 3000,
+    "descricao": "45 de Dano de Ataque\n40% de Velocidade de Ataque\n4% de Velocidade de Movimento\n\nDerrubar\nCada terceiro Ataque causa Dano Físico adicional ao contato, aumentado com base na Vida perdida do alvo.",
+    "categorias": [
+      "Damage",
+      "AttackSpeed",
+      "OnHit",
+      "NonbootsMovement"
+    ]
+  },
+  {
+    "_id": 6673,
+    "item_id": 6673,
+    "nome": "Arco-escudo Imortal",
+    "preco_unitario": 3000,
+    "descricao": "55 de Dano de Ataque\n25% de Chance de Acerto Crítico\n\nSalva-Vidas\nAo sofrer dano suficiente para reduzir sua Vida a menos de 30%, recebe um Escudo por 3s.",
+    "categorias": [
+      "Damage",
+      "CriticalStrike"
+    ]
+  },
+  {
+    "_id": 6675,
+    "item_id": 6675,
+    "nome": "Adaga Oscilante Navori",
+    "preco_unitario": 2650,
+    "descricao": "40% de Velocidade de Ataque\n25% de Chance de Acerto Crítico\n4% de Velocidade de Movimento\n\nTranscendência\nAtaques reduzem os Tempos de Recarga das Habilidades básicas em 15% do Tempo de Recarga restante.",
+    "categorias": [
+      "CriticalStrike",
+      "AttackSpeed",
+      "NonbootsMovement"
+    ]
+  },
+  {
+    "_id": 6676,
+    "item_id": 6676,
+    "nome": "A Coletora",
+    "preco_unitario": 3000,
+    "descricao": "50 de Dano de Ataque\n10 de Letalidade\n25% de Chance de Acerto Crítico\n\nMorte\nSeu dano executa Campeões com menos de 5% de Vida.\n\nAbrupta\nAbates de Campeões concedem 25 de ouro adicional.",
+    "categorias": [
+      "Damage",
+      "CriticalStrike",
+      "ArmorPenetration"
+    ]
+  },
+  {
+    "_id": 6690,
+    "item_id": 6690,
+    "nome": "Retriz",
+    "preco_unitario": 775,
+    "descricao": "15 de Dano de Ataque\n4% de Velocidade de Movimento",
+    "categorias": [
+      "Damage",
+      "NonbootsMovement"
+    ]
+  },
+  {
+    "_id": 6692,
+    "item_id": 6692,
+    "nome": "Eclipse",
+    "preco_unitario": 2900,
+    "descricao": "60 de Dano de Ataque\n15 de Aceleração de Habilidade\n\nLua Sempre Crescente\nAtingir um Campeão com 2 Ataques ou Habilidades separados dentro de 2s concede ao usuário um Escudo por 2s.",
+    "categorias": [
+      "Damage",
+      "CooldownReduction",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 6694,
+    "item_id": 6694,
+    "nome": "Rancor de Serylda",
+    "preco_unitario": 3000,
+    "descricao": "45 de Dano de Ataque\n35% de Penetração de Armadura\n15 de Aceleração de Habilidade\n\nFrio Agonizante\nHabilidades de dano causam 30% de Lentidão a inimigos com menos de 50% de Vida por 1s.",
+    "categorias": [
+      "Damage",
+      "CooldownReduction",
+      "ArmorPenetration",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 6695,
+    "item_id": 6695,
+    "nome": "Presa da Serpente",
+    "preco_unitario": 2500,
+    "descricao": "55 de Dano de Ataque\n15 de Letalidade\n\nCeifador de Escudos\nCausar dano a um Campeão inimigo reduz em 0% Escudos que ele receba por 3s.\nSe ele ainda não tiver sido afetado por Ceifador de Escudos, reduz os Escudos recebidos em 0%.",
+    "categorias": [
+      "Damage",
+      "ArmorPenetration"
+    ]
+  },
+  {
+    "_id": 6696,
+    "item_id": 6696,
+    "nome": "Arco do Axioma",
+    "preco_unitario": 2750,
+    "descricao": "55 de Dano de Ataque\n18 de Letalidade\n20 de Aceleração de Habilidade\n\nFluxo\nQuando um Campeão a quem você tenha causado dano nos últimos 3s for abatido, restaura parte do Tempo de Recarga total da ultimate do usuário.",
+    "categorias": [
+      "Damage",
+      "ArmorPenetration",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 6697,
+    "item_id": 6697,
+    "nome": "Húbris",
+    "preco_unitario": 2800,
+    "descricao": "55 de Dano de Ataque\n18 de Letalidade\n10 de Aceleração de Habilidade\n\nEminência\nQuando um Campeão a quem você tenha causado dano nos últimos 3s for abatido, recebe 12 de Dano de Ataque mais 3 por Campeão abatido por 90s.",
+    "categorias": [
+      "Damage",
+      "Active",
+      "CooldownReduction",
+      "ArmorPenetration",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 6698,
+    "item_id": 6698,
+    "nome": "Hidra Profana",
+    "preco_unitario": 2850,
+    "descricao": "55 de Dano de Ataque\n18 de Letalidade\n10 de Aceleração de Habilidade\n\nFenda\nAtaques causam Dano Físico a inimigos próximos.\n\nFenda Herege\nCausa Dano Físico ao seu redor.",
+    "categorias": [
+      "Damage",
+      "Active",
+      "CooldownReduction",
+      "ArmorPenetration",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 6699,
+    "item_id": 6699,
+    "nome": "Cicloespada Voltaica",
+    "preco_unitario": 3000,
+    "descricao": "55 de Dano de Ataque\n10 de Letalidade\n10 de Aceleração de Habilidade\n\nGalvanizar\nCausar dano a Campeões inimigos com uma habilidade ativa Energizado se o efeito estiver pronto.\n\nFirmamento\nSeu Ataque Energizado causa % da Vida atual do alvo como Dano Físico adicional e concede a você Letalidade adicional por 4s.",
+    "categorias": [
+      "Damage",
+      "Active",
+      "CooldownReduction",
+      "ArmorPenetration",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 8010,
+    "item_id": 8010,
+    "nome": "Maldição Sanguinária",
+    "preco_unitario": 2900,
+    "descricao": "65 de Poder de Habilidade\n400 de Vida\n15 de Aceleração de Habilidade\n\nDecadência Vil\nCausar Dano Mágico com habilidades ou passivas a Campeões reduz a Resistência Mágica deles em 7.5% por 6s (acumula 4x).",
+    "categorias": [
+      "Health",
+      "SpellDamage",
+      "CooldownReduction",
+      "MagicPenetration"
+    ]
+  },
+  {
+    "_id": 8020,
+    "item_id": 8020,
+    "nome": "Máscara Abissal",
+    "preco_unitario": 2650,
+    "descricao": "350 de Vida\n45 de Resistência Mágica\n15 de Aceleração de Habilidade\n\nDestroçar\nCampeões inimigos próximos sofrem 12% a mais de Dano Mágico.",
+    "categorias": [
+      "Health",
+      "SpellBlock",
+      "CooldownReduction",
+      "MagicResist",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 322065,
+    "item_id": 322065,
+    "nome": "Hino Bélico de Shurelya",
+    "preco_unitario": 2600,
+    "descricao": "65 de Poder de Habilidade\n15 de Aceleração de Habilidade\n6% de Velocidade de Movimento\n150% de Regeneração de Mana base\n\nDiscurso Inspirador\nConcede aos aliados próximos 30% de Velocidade de Movimento por 4s.",
+    "categorias": [
+      "SpellDamage",
+      "ManaRegen",
+      "Active",
+      "CooldownReduction",
+      "NonbootsMovement",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 322526,
+    "item_id": 322526,
+    "nome": "Tiara Sussurrante",
+    "preco_unitario": 2250,
+    "descricao": "200 de Vida\n8% de Cura e Resistência do Escudo\n75% de Regeneração de Mana base\n300 de Mana\n\nHarmonia\nRecebe 0% de Potência de Escudo e Cura.\n\nFluxo de Mana (8s, máx. de 5 cargas)\nAcertar Habilidades concede 4 de Mana máximo (dobrado contra Campeões).\nTransforma-se em Diadema de Canções com 360 de Mana máximo.",
+    "categorias": [
+      "Health",
+      "Mana",
+      "ManaRegen"
+    ]
+  },
+  {
+    "_id": 323003,
+    "item_id": 323003,
+    "nome": "Cajado do Arcanjo",
+    "preco_unitario": 2900,
+    "descricao": "70 de Poder de Habilidade\n600 de Mana\n25 de Aceleração de Habilidade\n\nFascínio\nRecebe Poder de Habilidade equivalente a 1% do Mana adicional.\n\nFluxo de Mana (8s, máximo de 5 cargas)\nAcertar Habilidades concede 9.5 de Mana máximo (dobrado contra Campeões).\nTransforma-se em Abraço de Seraph com 360 de Mana máximo.",
+    "categorias": [
+      "SpellDamage",
+      "Mana",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 323004,
+    "item_id": 323004,
+    "nome": "Manamune",
+    "preco_unitario": 2900,
+    "descricao": "35 de Dano de Ataque\n500 de Mana\n15 de Aceleração de Habilidade\n\nFascínio\nRecebe 0 de Dano de Ataque adicional.\n\nFluxo de Mana (8s, máximo de 4 cargas)\nAcertar Ataques e Habilidades concede 6.5 de Mana máximo (dobrado contra Campeões).\nTransforma-se em Muramana com 360 de Mana máximo.",
+    "categorias": [
+      "Damage",
+      "Mana",
+      "CooldownReduction",
+      "OnHit",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 323050,
+    "item_id": 323050,
+    "nome": "Convergência de Zeke",
+    "preco_unitario": 2300,
+    "descricao": "350 de Vida\n30 de Armadura\n30 de Resistência Mágica\n10 de Aceleração de Habilidade\n\nTempestade do Raio de Gelo\nConjurar sua ultimate invoca uma tempestade ao seu redor por 5s. A tempestade causa 30 de Dano Mágico por segundo e 30% de Lentidão a Campeões inimigos.",
+    "categorias": [
+      "Health",
+      "SpellBlock",
+      "Armor",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 323070,
+    "item_id": 323070,
+    "nome": "Lágrima da Deusa",
+    "preco_unitario": 400,
+    "descricao": "240 de Mana\n\nFluxo de Mana (8s, máximo de 4 cargas)\nAcertar Habilidades concede 6.5 de Mana máximo (dobrado contra Campeões), até 360.\n\nAjudinha\nAtaques causam 5 de Dano Físico adicional a tropas.",
+    "categorias": [
+      "Mana",
+      "ManaRegen"
+    ]
+  },
+  {
+    "_id": 323075,
+    "item_id": 323075,
+    "nome": "Armadura de Espinhos",
+    "preco_unitario": 2650,
+    "descricao": "200 de Vida\n85 de Armadura\n\nEspinhos\nAo ser atingido por um Ataque, causa Dano Mágico ao atacante e aplica 40% de Ferimentos por 3s se ele for um Campeão.",
+    "categorias": [
+      "Health",
+      "Armor"
+    ]
+  },
+  {
+    "_id": 323107,
+    "item_id": 323107,
+    "nome": "Redenção",
+    "preco_unitario": 2800,
+    "descricao": "30 de Poder de Habilidade\n15 de Aceleração de Habilidade\n100% de Regeneração de Mana base\n10% de Cura e Resistência do Escudo\n\nIntervenção\nDepois de 2,5s, restaura 150 - 350 da Vida das unidades aliadas e causa 10% da Vida máxima como Dano Verdadeiro a Campeões inimigos.",
+    "categorias": [
+      "SpellDamage",
+      "ManaRegen",
+      "CooldownReduction",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 323109,
+    "item_id": 323109,
+    "nome": "Juramento do Cavaleiro",
+    "preco_unitario": 2900,
+    "descricao": "300 de Vida\n50 de Armadura\n10 de Aceleração de Habilidade\n150% de Regeneração de Vida base\n\nSacrifício\nEnquanto seu aliado Digno estiver próximo, você sofre 14% do dano sofrido por ele e se cura em 12% do dano causado por ele a Campeões.Pacto (0s)\nDesigna um aliado como Digno.",
+    "categorias": [
+      "Health",
+      "HealthRegen",
+      "Armor",
+      "Aura",
+      "Active",
+      "CooldownReduction",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 323110,
+    "item_id": 323110,
+    "nome": "Coração Congelado",
+    "preco_unitario": 2700,
+    "descricao": "75 de Armadura\n500 de Mana\n25 de Aceleração de Habilidade\n\nCarícia do Inverno\nReduz a Velocidade de Ataque dos Campeões próximos em 20%.",
+    "categorias": [
+      "Armor",
+      "Mana",
+      "Aura",
+      "CooldownReduction",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 323119,
+    "item_id": 323119,
+    "nome": "Aproximação Invernal",
+    "preco_unitario": 2400,
+    "descricao": "550 de Vida\n500 de Mana\n15 de Aceleração de Habilidade\n\nFascínio\nRecebe 0 de Vida.\n\nFluxo de Mana (8s, máximo de 4 cargas)\nAcertar Ataques e Habilidades concede 6.5 de Mana máximo (dobrado contra Campeões).\nTransforma-se em Fimbulwinter com 360 de Mana máximo.",
+    "categorias": [
+      "Health",
+      "Mana",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 323190,
+    "item_id": 323190,
+    "nome": "Medalhão dos Solari de Ferro",
+    "preco_unitario": 2600,
+    "descricao": "250 de Vida\n30 de Armadura\n30 de Resistência Mágica\n10 de Aceleração de Habilidade\n\nDevoção\nConcede a aliados próximos 290 - 360 de Escudo, e esse valor decai ao longo de 2.5s.",
+    "categorias": [
+      "Health",
+      "SpellBlock",
+      "Armor",
+      "Aura",
+      "Active",
+      "MagicResist",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 323222,
+    "item_id": 323222,
+    "nome": "Bênção de Mikael",
+    "preco_unitario": 2800,
+    "descricao": "400 de Vida\n100% de Regeneração de Mana base\n15% de Cura e Resistência do Escudo\n15 de Aceleração de Habilidade\n\nPurificar\nRemove todos os efeitos de Controle de Grupo de um Campeão aliado (exceto Arremesso ao Ar e Supressão) e restaura 100 - 250 de Vida.",
+    "categorias": [
+      "Health",
+      "ManaRegen",
+      "Active",
+      "CooldownReduction",
+      "Tenacity",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 323504,
+    "item_id": 323504,
+    "nome": "Turíbulo Ardente",
+    "preco_unitario": 2600,
+    "descricao": "55 de Poder de Habilidade\n10% de Cura e Resistência do Escudo\n150% de Regeneração de Mana base\n6% de Velocidade de Movimento\n\nSantificar\nCurar um aliado ou conceder-lhe Escudo fortalece vocês dois por 6s, concedendo 25% de Velocidade de Ataque e 20 de Dano Mágico ao contato.",
+    "categorias": [
+      "AttackSpeed",
+      "SpellDamage",
+      "ManaRegen",
+      "NonbootsMovement"
+    ]
+  },
+  {
+    "_id": 324005,
+    "item_id": 324005,
+    "nome": "Mandato Imperial",
+    "preco_unitario": 2400,
+    "descricao": "65 de Poder de Habilidade\n15 de Aceleração de Habilidade\n150% de Regeneração de Mana base\n\nControle\nRecebe 20 de Aceleração de Habilidade para suas habilidades com efeitos de Imobilização.\n\nComando\nAo Imobilizar um Campeão inimigo, você aplica uma marca que o deixa 7% Vulnerável por 4s.",
+    "categorias": [
+      "SpellDamage",
+      "ManaRegen",
+      "CooldownReduction",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 326616,
+    "item_id": 326616,
+    "nome": "Cajado Aquafluxo",
+    "preco_unitario": 2600,
+    "descricao": "45 de Poder de Habilidade\n10% de Cura e Resistência do Escudo\n150% de Regeneração de Mana base\n10 de Aceleração de Habilidade\n\nCorredeira\nConceder cura ou Escudo a um aliado concede a vocês dois 40 de Poder de Habilidade e 15 de Aceleração de Habilidade por 6s.",
+    "categorias": [
+      "SpellDamage",
+      "ManaRegen",
+      "CooldownReduction",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 326617,
+    "item_id": 326617,
+    "nome": "Regenerador de Pedra Lunar",
+    "preco_unitario": 2900,
+    "descricao": "35 de Poder de Habilidade\n400 de Vida\n20 de Aceleração de Habilidade\n150% de Regeneração de Mana base\n\nGraça Estrelada\nCurar um aliado ou conceder Escudo a ele ativa um efeito em cadeia em outro aliado (menos em si), curando-o em 30% ou concedendo a ele um Escudo de 35% do valor original.",
+    "categorias": [
+      "Health",
+      "SpellDamage",
+      "ManaRegen",
+      "CooldownReduction",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 326620,
+    "item_id": 326620,
+    "nome": "Ecos de Helia",
+    "preco_unitario": 2600,
+    "descricao": "35 de Poder de Habilidade\n250 de Vida\n20 de Aceleração de Habilidade\n150% de Regeneração de Mana base\n\nSifão da Alma\nRecebe 30% do dano pré-mitigação causado a Campeões como Cargas de Alma. Conceder curas ou Escudos a um aliado consome todas as Cargas de Alma para restaurar Vida.",
+    "categorias": [
+      "Health",
+      "SpellDamage",
+      "ManaRegen",
+      "CooldownReduction",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 326621,
+    "item_id": 326621,
+    "nome": "Auronúcleo",
+    "preco_unitario": 2900,
+    "descricao": "50 de Poder de Habilidade\n20% de Cura e Resistência do Escudo\n150% de Regeneração de Mana base\n\nPrimeira Luz\nRecebe 2% de cura e Resistência do Escudo e 10 de Poder de Habilidade a cada 100% de Regeneração de Mana base.",
+    "categorias": [
+      "SpellDamage",
+      "ManaRegen"
+    ]
+  },
+  {
+    "_id": 326657,
+    "item_id": 326657,
+    "nome": "Bastão das Eras",
+    "preco_unitario": 2600,
+    "descricao": "45 de Poder de Habilidade\n350 de Vida\n500 de Mana\n\nAtemporal\nEste item ganha 10 de Vida, 30 de Mana e 3 de Poder de Habilidade a cada 60s até 10 vezes. Com o máximo de acúmulos, recebe um nível.\n\nEternidade\nSofrer dano de Campeões restaura 10% do dano como Mana.\nConjurar uma Habilidade cura o equivalente a 25% do Mana gasto.",
+    "categorias": [
+      "Health",
+      "HealthRegen",
+      "SpellDamage",
+      "Mana",
+      "ManaRegen"
+    ]
+  },
+  {
+    "_id": 328020,
+    "item_id": 328020,
+    "nome": "Máscara Abissal",
+    "preco_unitario": 2850,
+    "descricao": "350 de Vida\n50 de Resistência Mágica\n15 de Aceleração de Habilidade\n\nDestroçar\nCampeões inimigos próximos sofrem 12% a mais de Dano Mágico.",
+    "categorias": [
+      "Health",
+      "SpellBlock",
+      "CooldownReduction",
+      "MagicResist",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 663039,
+    "item_id": 663039,
+    "nome": "Acerto de Contas de Atma",
+    "preco_unitario": 2500,
+    "descricao": "500 de Vida\n20% de Chance de Acerto Crítico\n\nMonumental\nRecebe 0-30% de Chance de Acerto Crítico que escala com sua Vida adicional.",
+    "categorias": [
+      "Health",
+      "CriticalStrike",
+      "Lane"
+    ]
+  },
+  {
+    "_id": 663056,
+    "item_id": 663056,
+    "nome": "Coroa do Rei Demoníaco",
+    "preco_unitario": 2500,
+    "descricao": "Supremacia\nAumenta Vida, Armadura, Resistência Mágica, Dano de Ataque, Poder de Habilidade, Velocidade de Ataque e Aceleração de Habilidade em 20%, que aumenta em 0% por eliminação e em -3% por morte após a aquisição do item.",
+    "categorias": [
+      "Health",
+      "Armor",
+      "Damage",
+      "AttackSpeed",
+      "SpellDamage",
+      "MagicResist",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 663058,
+    "item_id": 663058,
+    "nome": "Escudo de Rocha Fundida",
+    "preco_unitario": 2500,
+    "descricao": "250 de Vida\n80 de Armadura\n\nInabalável como a Terra\nAumenta sua Armadura em 20% e concede Chance de Bloqueio com base na sua Armadura.",
+    "categorias": [
+      "Health",
+      "Armor"
+    ]
+  },
+  {
+    "_id": 663059,
+    "item_id": 663059,
+    "nome": "Manto da Noite Estrelada",
+    "preco_unitario": 2500,
+    "descricao": "250 de Vida\n60 de Resistência Mágica\n\nInesgotável como as Estrelas\nAumenta sua Resistência Mágica em 10%. Reduz todo o dano sofrido de fontes que não sejam ataques básicos em uma porcentagem, escalando com sua Resistência Mágica até 25%.",
+    "categorias": [
+      "Health",
+      "SpellBlock"
+    ]
+  },
+  {
+    "_id": 663060,
+    "item_id": 663060,
+    "nome": "Espada do Divino",
+    "preco_unitario": 2500,
+    "descricao": "90 de Força Adaptativa\n50% de Chance de Acerto Crítico\n\nTrucidar\nCada Acerto Crítico causa Dano de Acerto Crítico adicional aleatório, escalando até 50% da sua Chance de Acerto Crítico.",
+    "categorias": [
+      "Damage",
+      "CriticalStrike",
+      "SpellDamage"
+    ]
+  },
+  {
+    "_id": 663064,
+    "item_id": 663064,
+    "nome": "Talismã da Ascensão de Veigar",
+    "preco_unitario": 900,
+    "descricao": "Recebe 100% de experiência adicional\n\nNão concede atributos e não pode ser vendido...\n\nMas vale a pena se você chegar ao nível 30.",
+    "categorias": [
+      "Diversos"
+    ]
+  },
+  {
+    "_id": 663146,
+    "item_id": 663146,
+    "nome": "Pistola Laminar Hextec",
+    "preco_unitario": 2500,
+    "descricao": "90 de Poder de Habilidade\n45 de Dano de Ataque\n15% de Vampirismo Universal\n\nATIVOS (0s)\nDisparo Elétrico\nDá um choque no Campeão-alvo inimigo, causando 0 de Dano Mágico e 40% de Lentidão por 2s.",
+    "categorias": [
+      "Damage",
+      "LifeSteal",
+      "SpellDamage",
+      "Active",
+      "SpellVamp"
+    ]
+  },
+  {
+    "_id": 663172,
+    "item_id": 663172,
+    "nome": "Zéfiro",
+    "preco_unitario": 2500,
+    "descricao": "40% de Velocidade de Ataque\n8% de Velocidade de Movimento\n25 de Aceleração de Habilidade\n20% de Tenacidade\n\nTal Qual o Vento\nRecebe 5% de Velocidade de Movimento ao contato por 6s, acumulando até 25% de Velocidade de Movimento.",
+    "categorias": [
+      "AttackSpeed",
+      "CooldownReduction",
+      "OnHit",
+      "NonbootsMovement",
+      "Tenacity"
+    ]
+  },
+  {
+    "_id": 663193,
+    "item_id": 663193,
+    "nome": "Placa Gargolítica",
+    "preco_unitario": 2500,
+    "descricao": "55 de Armadura\n55 de Resistência Mágica\n10 de Aceleração de Habilidade\n8% de Velocidade de Movimento\n\nAtivo – Inquebrável: recebe um Escudo que decai e cresce em tamanho.",
+    "categorias": [
+      "SpellBlock",
+      "Armor",
+      "Active",
+      "CooldownReduction",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 664011,
+    "item_id": 664011,
+    "nome": "Espada da Alvorada Florescente",
+    "preco_unitario": 2500,
+    "descricao": "35 de Poder de Habilidade\n150 de Vida\n10% de Cura e Resistência do Escudo\n10 de Aceleração de Habilidade\n\nEfervescência\nRecebe +1% de Velocidade de Ataque a cada 1% de Resistência do Escudo e Cura que você tiver.\n\nRefrescância\nao contato, cura o Campeão aliado com a Vida mais baixa que está perto de você em 0 de Vida.",
+    "categorias": [
+      "Health",
+      "SpellDamage",
+      "CooldownReduction",
+      "OnHit",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 664644,
+    "item_id": 664644,
+    "nome": "Coroa da Rainha Despedaçada",
+    "preco_unitario": 2500,
+    "descricao": "65 de Poder de Habilidade\n250 de Vida\n600 de Mana\n15 de Aceleração de Habilidade\n\nProteção\nVocê recebe Proteção e sofre 40% a menos de dano de Campeões. A Proteção permanece por 3s depois de sofrer dano de Campeões. (0s).\n\nO Tempo de Recarga do item é reiniciado ao sofrer dano de Campeões.",
+    "categorias": [
+      "Health",
+      "SpellDamage",
+      "Mana",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 667101,
+    "item_id": 667101,
+    "nome": "Lâmina do Apostador",
+    "preco_unitario": 2500,
+    "descricao": "55 de Força Adaptativa\n10 de Aceleração de Habilidade\n15 de Letalidade\n15 de Penetração Mágica\n15% de Velocidade de Movimento\n\nGanhando Tempo\nEliminações de Campeões enquanto usa a Lâmina do Apostador atrasam a chegada do Veigar Chefão da Condenação em mais 10s. Morrer enquanto porta a Lâmina acelera a chegada dele em 10s (mas você não perderá tempo após a marca dos 14:30 minutos de partida).\n\nAposta Redobrada\nEliminações de Campeões geram um acúmulo, cada qual concedendo 10 de ouro adicional por abate. Você também sofre 5% a mais de dano por acúmulo. Perde todos os acúmulos ao morrer.",
+    "categorias": [
+      "Damage",
+      "NonbootsMovement",
+      "MagicPenetration",
+      "ArmorPenetration",
+      "AbilityHaste"
+    ]
+  },
+  {
+    "_id": 667109,
+    "item_id": 667109,
+    "nome": "Crueldade",
+    "preco_unitario": 2500,
+    "descricao": "60 de Poder de Habilidade\n25 de Armadura\n25 de Resistência Mágica\n\nTestemunhe a Queda\nAo Imobilizar ou Prender ao chão um Campeão inimigo, invoca um cometa sobre ele. O cometa atinge o alvo após 1s, causando 0 de Dano Mágico adicional na área. O efeito tem um Tempo de Recarga de 6s por alvo por conjuração.",
+    "categorias": [
+      "Armor",
+      "SpellDamage",
+      "MagicResist"
+    ]
+  },
+  {
+    "_id": 667112,
+    "item_id": 667112,
+    "nome": "Comecarne",
+    "preco_unitario": 2500,
+    "descricao": "55 de Força Adaptativa\n500 de Vida\n\nCarne Despedaçada\nCausar dano fragmenta 3 de Armadura e Resistência Mágica por 5s, acumulando até 10 vezes. A aplicação de acúmulos tem 1s de Tempo de Recarga por Habilidade.\n\nCanibalizar\nAo eliminar um Campeão, rouba 10% dos atributos e do tamanho dele pelo resto da rodada.",
+    "categorias": [
+      "Damage",
+      "SpellDamage",
+      "MagicPenetration",
+      "ArmorPenetration"
+    ]
+  },
+  {
+    "_id": 667666,
+    "item_id": 667666,
+    "nome": "A Coletora",
+    "preco_unitario": 3000,
+    "descricao": "50 de Dano de Ataque\n10 de Letalidade\n25% de Chance de Acerto Crítico\n\nMorte\nSeu dano executa Campeões com menos de 5% de Vida.\n\nAbrupta\nAbates de Campeões concedem 25 de ouro adicional.",
+    "categorias": [
+      "Damage",
+      "CriticalStrike",
+      "ArmorPenetration"
+    ]
+  }
+]

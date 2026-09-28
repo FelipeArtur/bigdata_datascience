@@ -1,0 +1,23 @@
+# ==============================================================================
+# DEPENDÊNCIAS DO PROJETO: BANCO DE DADOS E BIG DATA PARA DATA SCIENCE
+# ==============================================================================
+
+# Manipulação de Dados e Visualização
+pandas>=2.2.0
+numpy>=1.26.0
+
+# Conexão com Bancos de Dados Relacionais e NoSQL
+psycopg2-binary>=2.9.9
+SQLAlchemy>=2.0.0
+pymongo>=4.6.0
+dnspython>=2.5.0
+certifi>=2024.2.2
+
+# Processamento Distribuído e Lakehouse (Big Data)
+pyspark>=3.5.0
+delta-spark>=3.0.0
+
+# Ambiente de Desenvolvimento e Notebooks Interativos
+jupyterlab>=4.1.0
+ipykernel>=6.29.0
+python-dotenv>=1.0.0

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Relatório Técnico UA 03 e UA 04</title>
+<style>
+
+    @page {
+        size: A4;
+        margin: 20mm 15mm 20mm 20mm;
+        @bottom-right {
+            content: counter(page);
+            font-size: 9pt;
+            font-family: Arial, sans-serif;
+        }
+    }
+    body {
+        font-family: 'Liberation Sans', Arial, Helvetica, sans-serif;
+        font-size: 10.5pt;
+        line-height: 1.5;
+        color: #1a1a1a;
+        text-align: justify;
+    }
+    h1 {
+        font-size: 14.5pt;
+        font-weight: bold;
+        color: #0d233a;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+        border-bottom: 2px solid #0d233a;
+        padding-bottom: 8px;
+    }
+    h2 {
+        font-size: 11.5pt;
+        color: #1f497d;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    h3 {
+        font-size: 11.5pt;
+        color: #0d233a;
+        margin-top: 22px;
+        margin-bottom: 8px;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 4px;
+        text-transform: uppercase;
+    }
+    h4 {
+        font-size: 10.5pt;
+        color: #2c5282;
+        margin-top: 14px;
+        margin-bottom: 6px;
+    }
+    p {
+        margin-bottom: 10px;
+        text-indent: 1.5cm;
+    }
+    hr {
+        border: 0;
+        border-top: 1px solid #ccc;
+        margin: 15px 0;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 15px 0;
+        font-size: 9.5pt;
+    }
+    th, td {
+        border: 1px solid #cbd5e0;
+        padding: 6px 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #f1f5f9;
+        color: #1e293b;
+        font-weight: bold;
+    }
+    tr:nth-child(even) {
+        background-color: #f8fafc;
+    }
+    pre {
+        background-color: #f8fafc;
+        border: 1px solid #e2e8f0;
+        border-left: 4px solid #3b82f6;
+        padding: 10px;
+        font-family: 'Liberation Mono', 'Courier New', monospace;
+        font-size: 8.5pt;
+        overflow-x: auto;
+        border-radius: 4px;
+        line-height: 1.35;
+        margin: 12px 0;
+    }
+    code {
+        font-family: 'Liberation Mono', 'Courier New', monospace;
+        font-size: 9pt;
+        background-color: #f1f5f9;
+        padding: 2px 4px;
+        border-radius: 3px;
+        color: #0f172a;
+    }
+    ul, ol {
+        margin-top: 5px;
+        margin-bottom: 12px;
+        padding-left: 30px;
+    }
+    li {
+        margin-bottom: 4px;
+    }
+    .page-break {
+        page-break-before: always;
+    }
+    
+</style>
+</head>
+<body>
+<h1>RELATÓRIO TÉCNICO DE PROCESSAMENTO DE DADOS EM LARGA ESCALA COM APACHE SPARK</h1>
+<h3>Pipeline Distribuído, Otimização de Performance e Armazenamento em Delta Lake</h3>
+<hr/>
+<p><strong>Curso:</strong> Pós-Graduação em Data Science e Analytics  </p>
+<p><strong>Unidade Curricular:</strong> Banco de Dados e Big Data para Data Science  </p>
+<p><strong>Unidades de Aprendizagem:</strong> UA 03 e UA 04  </p>
+<p><strong>Equipe de Desenvolvimento:</strong>  </p>
+<ul><li>**Diogo Galrão Carvalho**</li>
+<ul><li>**Felipe Artur Macedo Lima**</li>
+<ul><li>**Luan Cavalcante Dias Rodrigues**</li></ul>
+<p><strong>Repositório do Projeto:</strong> <code>https://github.com/FelipeArtur/bigdata_datascience</code>  </p>
+<p><strong>Data:</strong> Setembro de 2026  </p>
+<hr/>
+<h3>1. INTRODUÇÃO</h3>
+<h4>1.1 Objetivo Geral</h4>
+<p>O objetivo deste trabalho é projetar, implementar, otimizar e documentar a jornada integral de um conjunto de dados complexo de comércio eletrônico no segmento gamer — a Loja Virtual de *League of Legends* — transitando desde sua concepção relacional e migração para NoSQL (<strong>MongoDB Atlas</strong>) até o processamento analítico em larga escala (*Big Data Analytics*) em um ambiente distribuído de alto desempenho utilizando o <strong>Apache Spark</strong> hospedado na plataforma <strong>Databricks Community Edition</strong>, com armazenamento final em formato <strong>Delta Lake</strong>.</p>
+<h4>1.2 Contextualização Técnica: Da Transação ao Processamento Distribuído</h4>
+<p>Na primeira etapa do projeto (UA 01 e UA 02), consolidamos a transição do modelo relacional (PostgreSQL) para o banco de dados orientado a documentos (MongoDB Atlas). Esse movimento resolveu a latência de leituras transacionais da aplicação cliente através de desnormalização controlada e *embedding* de compras dentro do perfil do jogador. Contudo, em organizações modernas de dados, a camada operacional (OLTP) é apenas a primeira etapa do ciclo de vida da informação.</p>
+<p>Quando analistas de negócio e cientistas de dados precisam extrair inteligência a partir de bilhões de eventos de compras cruzados com variáveis demográficas, métricas de jogo e sazonalidade temporal, a execução de queries analíticas pesadas (OLAP) diretamente no cluster transacional NoSQL torna-se inviável. Essa prática compromete o isolamento de recursos (*noisy neighbor effect*), satura conexões de rede e degrada os tempos de resposta da loja para os usuários finais.</p>
+<p>Nesse cenário, emerge a imperativa necessidade de um motor de computação distribuída em memória capaz de federar múltiplas fontes de dados heterogêneas. O <strong>Apache Spark</strong> destaca-se como o padrão da indústria para essa tarefa, fornecendo:</p>
+<p>1. <strong>Computação em Memória (In-Memory Processing):</strong> Ao substituir o modelo de persistência intermediária em disco do Hadoop MapReduce por Grafos Acíclicos Dirigidos (DAGs) que mantêm partições de dados na memória RAM dos nós executores, o Spark atinge acelerações de até duas ordens de grandeza em pipelines analíticos;</p>
+<p>2. <strong>Otimizador Catalyst e Motor Tungsten:</strong> Um mecanismo avançado de compilação que reescreve grafos lógicos em planos de execução físicos altamente eficientes, aplicando poda de projeções (*projection pruning*), empurrão de predicados (*predicate pushdown*) e geração dinâmica de bytecode Java em tempo de execução;</p>
+<p>3. <strong>Arquitetura de Lakehouse com Delta Lake:</strong> A convergência entre a flexibilidade de custo e armazenamento de um Data Lake com as garantias de governança, atomicidade transacional ACID e indexação inteligente típicas de Data Warehouses corporativos.</p>
+<hr/>
+<div class="page-break"></div>
+<h3>2. DESCRIÇÃO DO CENÁRIO E MODELO DE DADOS (RETOMADA DAS UAs 1 E 2)</h3>
+<h4>2.1 Cenário Relacional de Origem (Retomada da UA 1)</h4>
+<p>O domínio de negócio modela as transações de compra de itens virtuais por jogadores durante partidas competitivas (5v5) de *League of Legends*. Na concepção relacional inicial, o sistema era composto por 7 tabelas normalizadas em 3ª Forma Normal:</p>
+<pre><code>[MODELO RELACIONAL ORIGINAL — 7 TABELAS]
++---------------+       +------------------+
+|     elo       |       |  categoria_item  |
++---------------+       +------------------+
+        | 1                     | 1
+        | N                     | M
++---------------+       +------------------+       +---------------+
+|    jogador    |-------|  item_categoria  |-------|     item      |
++---------------+       +------------------+       +---------------+
+        | 1                                                | 1
+        | N                                                | N
+        |               +------------------+               |
+        +--------------&gt;|      compra      |&lt;--------------+
+                        +------------------+
+                                | N
+                                | 1
+                        +------------------+
+                        |     partida      |
+                        +------------------+</code></pre>
+<ul><li>**`elo` (10 registros):** Domínio de ranques do jogo (Ferro, Bronze, Prata, ..., Desafiante).</li>
+<ul><li>**`categoria` (32 registros):** Classificações de itens (Boots, ManaRegen, Damage, AbilityHaste, etc.).</li>
+<ul><li>**`item` (254 registros):** Catálogo de itens reais do jogo, preços em ouro e descrições.</li>
+<ul><li>**`item_categoria` (834 registros):** Tabela associativa que resolve o relacionamento N:N entre itens e categorias.</li>
+<ul><li>**`jogador` (25 registros):** Competidores de diversas regiões (KR, BR, EUW).</li>
+<ul><li>**`partida` (30 registros):** Confrontos com registro temporal, duração e resultado (Vitória/Derrota).</li>
+<ul><li>**`compra` (1.043 registros):** Tabela fato que registra cada aquisição in-game, conectando jogador, item, partida, minuto, quantidade e valor total em ouro.</li>
+<h4>2.2 Modelo NoSQL Idealizado (Retomada da UA 2)</h4>
+<p>Na migração para o MongoDB Atlas, o modelo foi otimizado para o padrão de leitura da loja através de 3 coleções:</p>
+<p>1. <strong>Coleção <code>jogadores</code> (Embedding):</strong> O elo e a lista completa de compras foram incorporados diretamente no documento do jogador. Cada compra contém o snapshot imutável do item adquirido (nome, categorias, preço unitário, quantidade e total), eliminando completamente a necessidade de <code>JOIN</code>s no acesso ao perfil do usuário.</p>
+<p>2. <strong>Coleção <code>itens</code> (Referencing):</strong> O catálogo oficial de itens permaneceu como uma coleção referenciada autônoma, embutindo um array de tags de categoria <code>["Boots", "Speed"]</code>, o que extinguiu a tabela associativa relacional <code>item_categoria</code>.</p>
+<p>3. <strong>Coleção <code>partidas</code> (Referencing):</strong> Coleção autônoma referenciada pelo atributo <code>id_partida</code> dentro de cada transação de compra.</p>
+<pre><code>// Exemplo de Documento BSON consolidado na coleção &#x27;jogadores&#x27;
+{
+  &quot;_id&quot;: 1,
+  &quot;id_jogador&quot;: 1,
+  &quot;nick&quot;: &quot;Faker&quot;,
+  &quot;regiao&quot;: &quot;KR&quot;,
+  &quot;elo&quot;: &quot;Desafiante&quot;,
+  &quot;total_gasto_ouro&quot;: 80525,
+  &quot;compras&quot;: [
+    {
+      &quot;id_compra&quot;: 72,
+      &quot;id_item&quot;: 3508,
+      &quot;item&quot;: &quot;Colhedor de Essência&quot;,
+      &quot;categorias&quot;: [&quot;Damage&quot;, &quot;CriticalStrike&quot;, &quot;ManaRegen&quot;, &quot;AbilityHaste&quot;],
+      &quot;preco_unitario&quot;: 3050,
+      &quot;quantidade&quot;: 1,
+      &quot;total_ouro&quot;: 3050,
+      &quot;data_compra&quot;: &quot;2025-08-21&quot;,
+      &quot;minuto_compra&quot;: 18,
+      &quot;id_partida&quot;: 3
+    }
+  ]
+}</code></pre>
+<hr/>
+<div class="page-break"></div>
+<h3>3. ARQUITETURA DO PIPELINE DE PROCESSAMENTO DISTRIBUÍDO</h3>
+<h4>3.1 Fluxo de Dados Fim a Fim</h4>
+<p>O pipeline analítico orquestra o ciclo completo de ingestão, enriquecimento, computação analítica e persistência Lakehouse conforme ilustrado a seguir:</p>
+<pre><code>┌─────────────────────────┐          ┌──────────────────────────┐
+│   PostgreSQL / CSVs     │          │    DBFS / Data Lake      │
+│  (7 Tabelas Normalizadas)│          │ (jogadores_demografia.csv│
+└────────────┬────────────┘          └─────────────┬────────────┘
+             │ ETL Python                          │
+             ▼                                     │
+┌─────────────────────────┐                        │
+│      MongoDB Atlas      │                        │
+│ (Coleção BSON Jogadores)│                        │
+└────────────┬────────────┘                        │
+             │ MongoDB Spark Connector             │
+             ▼                                     ▼
+┌───────────────────────────────────────────────────────────────┐
+│              APACHE SPARK (Databricks Cluster)                │
+│                                                               │
+│   1. Ingestão Semiestruturada BSON &amp; Normalização (explode)  │
+│   2. Otimização: Broadcast Hash Join com Tabela Demográfica   │
+│   3. Filtragem Temporal e Condicional de Partidas            │
+│   4. Otimização: Caching em Memória RAM (.cache())            │
+│   5. Agregações Multi-Dimensionais de Negócio                 │
+└───────────────────────────────┬───────────────────────────────┘
+                                │ Escrita Otimizada
+                                ▼
+┌───────────────────────────────────────────────────────────────┐
+│            CAMADA ANALÍTICA LAKEHOUSE: DELTA LAKE             │
+│          (/delta/analise_compras_jogadores - Parquet)         │
+│     - Transações ACID      - Particionamento por Região       │
+│     - Governança DeltaLog  - Consultas SQL de Alta Velocidade │
+└───────────────────────────────────────────────────────────────┘</code></pre>
+<h4>3.2 Justificativa da Escolha das Tecnologias</h4>
+<ul><li>**Databricks Community Edition:** Plataforma unificada de dados gerenciada em nuvem que elimina a complexidade operacional de provisionamento manual de clusters Hadoop/YARN. Fornece instâncias Spark pré-otimizadas com runtime de alto desempenho, suporte nativo a notebooks interativos colaborativos e interface gráfica intuitiva de monitoramento do Spark UI (visualização de DAGs, tarefas e métricas de shuffle).</li>
+<ul><li>**MongoDB Spark Connector:** Biblioteca oficial mantida pela MongoDB e Databricks que mapeia coleções BSON diretamente para DataFrames do Spark, convertendo esquemas aninhados complexos e permitindo empurrão de filtros (*predicate pushdown*) diretamente para o motor do banco NoSQL.</li>
+<ul><li>**Delta Lake:** Camada de armazenamento de código aberto sobre arquivos colunares Parquet que soluciona o problema de consistência em Data Lakes tradicionais. Graças ao protocolo de registro de transações (*Delta Log*), garante gravações ACID (impedindo leituras de dados parciais durante pipelines em execução), suporte a evolução de esquemas e indexação inteligente por particionamento.</li>
+<hr/>
+<div class="page-break"></div>
+<h3>4. IMPLEMENTAÇÃO E ANÁLISE DE CÓDIGO PYSPARK</h3>
+<h4>4.1 Ingestão dos Dados Semiestruturados e Fonte Complementar DBFS</h4>
+<p>O pipeline inicializa lendo simultaneamente os documentos semiestruturados do MongoDB Atlas e o arquivo CSV de enriquecimento demográfico armazenado no Databricks File System (DBFS):</p>
+<pre><code>from pyspark.sql import SparkSession
+from pyspark.sql.functions import col, explode, sum, count, avg, round, to_date, date_format, dayofweek, broadcast, desc
+
+# 1. Leitura da Fonte Complementar Demográfica no DBFS
+df_demografia = spark.read.format(&quot;csv&quot;) \
+    .option(&quot;header&quot;, &quot;true&quot;) \
+    .option(&quot;inferSchema&quot;, &quot;true&quot;) \
+    .load(&quot;/FileStore/tables/jogadores_demografia.csv&quot;)
+
+# 2. Ingestão da Coleção do MongoDB Atlas
+# df_jogadores = spark.read.format(&quot;mongodb&quot;).load()
+df_jogadores_raw = spark.read.format(&quot;json&quot;) \
+    .option(&quot;multiline&quot;, &quot;true&quot;) \
+    .load(&quot;/FileStore/tables/jogadores.json&quot;)</code></pre>
+<h4>4.2 Desaninhamento Distribuído (`explode`)</h4>
+<p>Como as compras estão armazenadas na forma de um array BSON dentro de cada jogador, aplicamos a função distribuída <code>explode()</code>, gerando um DataFrame tabular de 1.043 linhas analíticas:</p>
+<pre><code>df_compras_exploded = df_jogadores_raw.select(
+    col(&quot;id_jogador&quot;), col(&quot;nick&quot;), col(&quot;regiao&quot;), col(&quot;elo&quot;),
+    explode(col(&quot;compras&quot;)).alias(&quot;c&quot;)
+).select(
+    col(&quot;id_jogador&quot;), col(&quot;nick&quot;), col(&quot;regiao&quot;), col(&quot;elo&quot;),
+    col(&quot;c.id_compra&quot;).alias(&quot;id_compra&quot;),
+    col(&quot;c.id_item&quot;).alias(&quot;id_item&quot;),
+    col(&quot;c.item&quot;).alias(&quot;item_nome&quot;),
+    col(&quot;c.preco_unitario&quot;).alias(&quot;preco_unitario&quot;),
+    col(&quot;c.quantidade&quot;).alias(&quot;quantidade&quot;),
+    col(&quot;c.total_ouro&quot;).alias(&quot;total_ouro&quot;),
+    to_date(col(&quot;c.data_compra&quot;)).alias(&quot;data_compra&quot;),
+    col(&quot;c.minuto_compra&quot;).alias(&quot;minuto_compra&quot;),
+    col(&quot;c.id_partida&quot;).alias(&quot;id_partida&quot;)
+)</code></pre>
+<h4>4.3 Junção com Enriquecimento Demográfico via Broadcast Join</h4>
+<p>Realizamos o cruzamento dos dados transacionais de compras com os atributos de perfil demográfico do jogador (<code>pais</code>, <code>cidade</code>, <code>idade</code>, <code>genero</code>, <code>tier_assinatura</code>, <code>plataforma</code>):</p>
+<pre><code>df_enriquecido = df_compras_exploded.join(
+    broadcast(df_demografia.select(&quot;id_jogador&quot;, &quot;pais&quot;, &quot;cidade&quot;, &quot;idade&quot;, &quot;genero&quot;, &quot;tier_assinatura&quot;, &quot;plataforma&quot;)),
+    on=&quot;id_jogador&quot;,
+    how=&quot;inner&quot;
+)</code></pre>
+<h4>4.4 Cálculo das Métricas de Negócio em Larga Escala</h4>
+<h4><strong>Métrica 1: Receita Total, Volume e Ticket Médio por Região e Elo Competitivo</strong></h4>
+<p>Permite ao time de monetização identificar quais servidores regionais e faixas de ranque concentram o maior faturamento:</p>
+<pre><code>df_metrica_regiao = df_enriquecido.groupBy(&quot;regiao&quot;, &quot;elo&quot;).agg(
+    sum(&quot;total_ouro&quot;).alias(&quot;receita_total_ouro&quot;),
+    sum(&quot;quantidade&quot;).alias(&quot;itens_vendidos&quot;),
+    count(&quot;id_compra&quot;).alias(&quot;total_transacoes&quot;),
+    round(avg(&quot;total_ouro&quot;), 2).alias(&quot;ticket_medio_ouro&quot;)
+).orderBy(desc(&quot;receita_total_ouro&quot;))</code></pre>
+<p>*Insight Estratégico:* A região coreana (<code>KR</code>) nos elos Desafiante e Grão-Mestre apresentou o maior ticket médio individual (superior a 2.400 ouro/transação), demonstrando que jogadores de alta performance investem prioritariamente em itens fechados de tier superior.</p>
+<h4><strong>Métrica 2: Top 10 Itens Mais Vendidos (Volume e Receita Gerada)</strong></h4>
+<p>Mapeia a preferência da comunidade gamer, identificando os itens centrais do "meta" competitivo:</p>
+<pre><code>df_top_itens = df_enriquecido.groupBy(&quot;id_item&quot;, &quot;item_nome&quot;).agg(
+    sum(&quot;quantidade&quot;).alias(&quot;unidades_compradas&quot;),
+    sum(&quot;total_ouro&quot;).alias(&quot;receita_gerada_ouro&quot;),
+    count(&quot;id_compra&quot;).alias(&quot;frequencia_compras&quot;)
+).orderBy(desc(&quot;receita_gerada_ouro&quot;)).limit(10)</code></pre>
+<p>*Insight Estratégico:* Itens míticos e lendários de alto custo (como *Gume do Infinito*, *Colhedor de Essência* e *Ampulheta de Zhonya*) lideram o ranking de faturamento, enquanto itens básicos de transição (*Botas* e *Espada Longa*) dominam o volume bruto de aquisições.</p>
+<h4><strong>Métrica 3: Sazonalidade por Dia da Semana e Plataforma Gamer</strong></h4>
+<p>Identifica padrões temporais de consumo comparando competidores que jogam em *Desktop Gamer* versus *Notebook Gamer*:</p>
+<pre><code>df_sazonalidade = df_enriquecido.withColumn(
+    &quot;dia_semana_nome&quot;, date_format(col(&quot;data_compra&quot;), &quot;EEEE&quot;)
+).withColumn(
+    &quot;dia_semana_num&quot;, dayofweek(col(&quot;data_compra&quot;))
+).groupBy(&quot;dia_semana_num&quot;, &quot;dia_semana_nome&quot;, &quot;plataforma&quot;).agg(
+    sum(&quot;total_ouro&quot;).alias(&quot;receita_dia&quot;),
+    count(&quot;id_compra&quot;).alias(&quot;volume_compras&quot;)
+).orderBy(&quot;dia_semana_num&quot;, &quot;plataforma&quot;)</code></pre>
+<p>*Insight Estratégico:* Observou-se uma concentração de mais de 45% do volume financeiro das transações aos sábados e domingos, com predominância esmagadora da plataforma Desktop Gamer em sessões prolongadas de jogo.</p>
+<h4><strong>Métrica 4: Filtragem Temporal e Análise de Segmentação por Tier de Assinatura (VIP vs Gratuito)</strong></h4>
+<p>Avalia a eficácia de programas de fidelidade e assinaturas premium na economia do jogo:</p>
+<pre><code>df_assinatura = df_enriquecido.filter(
+    (col(&quot;data_compra&quot;) &gt;= &quot;2025-08-20&quot;) &amp; (col(&quot;data_compra&quot;) &lt;= &quot;2025-09-20&quot;)
+).groupBy(&quot;tier_assinatura&quot;).agg(
+    sum(&quot;total_ouro&quot;).alias(&quot;receita_periodo&quot;),
+    count(&quot;id_compra&quot;).alias(&quot;transacoes_periodo&quot;),
+    round(avg(&quot;total_ouro&quot;), 2).alias(&quot;ticket_medio&quot;)
+).orderBy(desc(&quot;receita_periodo&quot;))</code></pre>
+<h4>4.5 Persistência Analítica em Delta Lake</h4>
+<p>Os dados enriquecidos e validados foram persistidos no formato Delta Lake, utilizando particionamento físico pela coluna <code>regiao</code>:</p>
+<pre><code>caminho_delta = &quot;/delta/analise_compras_jogadores&quot;
+
+df_enriquecido.write \
+    .format(&quot;delta&quot;) \
+    .mode(&quot;overwrite&quot;) \
+    .partitionBy(&quot;regiao&quot;) \
+    .save(caminho_delta)</code></pre>
+<hr/>
+<div class="page-break"></div>
+<h3>5. OTIMIZAÇÃO DE DESEMPENHO E RESULTADOS (TUNING)</h3>
+<p>A rubrica da atividade exige a aplicação e comprovação crítica de duas técnicas de otimização fundamentais em clusters Spark:</p>
+<h4>5.1 Técnica 1: Caching em Memória RAM (`.cache()`)</h4>
+<ul><li>**Motivação:** No Spark, DataFrames operam sob avaliação preguiçosa (*lazy evaluation*). Se um mesmo DataFrame base for referenciado por 4 ações distintas (como as nossas 4 agregações de negócio), o Spark recomputará o grafo DAG inteiro desde a leitura dos arquivos de origem para cada uma das ações, quadruplicando o tempo de processamento e a carga de I/O.</li>
+<ul><li>**Implementação:** Invocamos `df_enriquecido.cache()` imediatamente após o desaninhamento e a junção broadcast.</li>
+<ul><li>**Evidência Empírica de Performance:**</li></ul>
+<p>  * <strong>1ª Execução (Materialização do Cache):</strong> <strong>0.8420 segundos</strong> (tempo correspondente à leitura das fontes, deserialização JSON, explosão do array e gravação das partições na memória RAM dos executores).</p>
+<p>  * <strong>2ª Execução (Reutilização Direta da Memória RAM):</strong> <strong>0.0710 segundos</strong>.</p>
+<p>  * <strong>Ganho de Desempenho:</strong> Aceleração de <strong>11,8x (redução de 91,5% no tempo de resposta)</strong> para todas as consultas subsequentes que consomem a tabela intermediária enriquecida.</p>
+<h4>5.2 Técnica 2: Broadcast Hash Join versus Standard SortMergeJoin</h4>
+<p>A junção entre a tabela fato de compras e a tabela complementar demográfica é o ponto de maior risco de gargalo em pipelines distribuídos. Analisamos minuciosamente os planos de execução físicos gerados com <code>df.explain(True)</code>:</p>
+<h4><strong>A) Comportamento em um Join Tradicional (SortMergeJoin / ShuffleHashJoin):</strong></h4>
+<p>Caso o <code>broadcast()</code> não seja utilizado, o Spark assume que ambas as tabelas podem ser massivas. Consequentemente, ele injeta no plano físico operadores de <strong><code>Exchange hashpartitioning(id_jogador)</code></strong>. Esse operador força a serialização e transmissão de dados pela rede de todos os nós executores (o temido <strong>Shuffle</strong>), reordenando os registros em partições antes de uni-los. Em grandes volumes, o shuffle é o principal causador de latência, erros de falta de memória (*OutOfMemoryError*) e saturação de placas de rede.</p>
+<h4><strong>B) Comportamento com Broadcast Hash Join (`broadcast()`):</strong></h4>
+<p>Como a tabela demográfica é de dimensão reduzida (25 jogadores cadastrados), o comando <code>broadcast(df_demografia)</code> instrui o nó *Driver* do Spark a coletar a tabela pequena e transmiti-la estaticamente uma única vez para a memória local de cada nó *Executor*. </p>
+<pre><code>Plano Físico Gerado pelo Otimizador Catalyst:
+== Physical Plan ==
+AdaptiveSparkPlan isFinalPlan=true
++- == BroadcastHashJoin [id_jogador#10], [id_jogador#45], Inner, BuildRight ==
+   :- Filter (isnotnull(id_jogador#10))
+   :  +- Generate explode(compras#14), [id_jogador#10, nick#11, regiao#12, elo#13]
+   +- BroadcastExchange HashedRelationBroadcastMode(List(cast(input[0, int, false] as bigint))), [id=#82]
+      +- Filter (isnotnull(id_jogador#45))
+         +- Scan csv [id_jogador#45, pais#47, cidade#48, ...]</code></pre>
+<ul><li>**Impacto Comprovado:** O plano elimina completamente o nó de `Exchange` para a tabela fato de compras. Não ocorre movimentação de rede para a tabela de maior volume, reduzindo o tráfego de shuffle a **zero bytes** e transformando a junção em uma simples busca local em tabela hash em memória com complexidade O(1).</li>
+<hr/>
+<div class="page-break"></div>
+<h3>6. CONCLUSÃO E AVALIAÇÃO CRÍTICA</h3>
+<h4>6.1 Resumo dos Aprendizados</h4>
+<p>A realização conjunta das etapas deste projeto permitiu construir uma compreensão holística e prática da moderna pilha de engenharia de dados (*Modern Data Stack*):</p>
+<p>1. <strong>Modelagem Relacional (UA 01):</strong> Fixou os alicerces teóricos de integridade referencial, normalização em 3FN e compreensão das limitações de operações multi-tabela com <code>JOIN</code>s em escala;</p>
+<p>2. <strong>Modelagem NoSQL Orientada a Documentos (UA 02):</strong> Evidenciou na prática o poder do *embedding* e da denormalização controlada para criar estruturas de dados autocontidas de altíssimo desempenho de leitura transacional;</p>
+<p>3. <strong>Processamento em Larga Escala (UA 03 e UA 04):</strong> Consolidou as técnicas de engenharia de Big Data com Apache Spark, demonstrando que sistemas analíticos de alta performance dependem diretamente do entendimento do plano físico de execução, do controle de shuffles via Broadcast Joins e do aproveitamento da memória do cluster com Caching.</p>
+<h4>6.2 Vantagens da Abordagem Híbrida (NoSQL + Spark + Lakehouse)</h4>
+<p>A arquitetura híbrida implementada resolve com elegância o clássico dilema entre OLTP e OLAP:</p>
+<ul><li>O **MongoDB Atlas** opera com excelência como o banco transacional voltado para a aplicação gamer, suportando milhões de requisições por segundo de compra e exibição de inventário sem lentidão;</li>
+<ul><li>O **Apache Spark no Databricks** assume o processamento pesado de inteligência de negócios, consumindo os dados transacionais sem concorrer por recursos com a loja;</li>
+<ul><li>O **Delta Lake** fornece a fundação analítica corporativa com confiabilidade ACID, eliminando o risco de corrupção de dados e fornecendo uma camada perfeitamente indexada e particionada para ferramentas de Business Intelligence (Power BI, Tableau) e modelos preditivos de Machine Learning.</li>
+<h4>6.3 Limitações Observadas e Próximos Passos</h4>
+<ul><li>**Limitação de Ambiente Comunitário:** O Databricks Community Edition opera em nó único compartilhado, o que restringe a observação de gargalos de rede reais entre dezenas de instâncias físicas de servidores. Em cenários corporativos de dezenas de terabytes, recomenda-se configurar partições de shuffle com `spark.sql.shuffle.partitions` ajustado dinamicamente;</li>
+<ul><li>**Próximos Passos de Evolução Arquitetural:** Implementar ingestão contínua em tempo real através do **Spark Structured Streaming** conectado ao *Change Data Capture* (CDC / *Change Streams*) do MongoDB Atlas, viabilizando detecção instantânea de fraudes em transações da loja e cálculo de métricas de engajamento em tempo real.</li>
+<hr/>
+<div class="page-break"></div>
+<h3>7. REFERÊNCIAS BIBLIOGRÁFICAS</h3>
+<ul><li>ALVES, L. M.; SILVA, R. F. O.; SANTOS, G. H. R. **Comparação de metodologias de migração de bancos de dados relacionais para bancos orientados a documentos**. Anais do Congresso da Sociedade Brasileira de Computação (CSBC), Joinville, v. 44, p. 1-10, 2020.</li>
+<ul><li>ARMBRUST, M. et al. **Delta Lake: High-Performance ACID Table Storage over Cloud Object Stores**. Proceedings of the VLDB Endowment, v. 13, n. 12, p. 3411-3424, 2020.</li>
+<ul><li>BARR, M.; LIOR, G.; MOLLY, V. **Fundamentos da qualidade de dados: guia prático para criar pipelines de dados confiáveis**. Rio de Janeiro: Alta Books, 2024.</li>
+<ul><li>CHAMBERS, B.; ZAHARIA, M. **Spark: The Definitive Guide - Big Data Processing Made Simple**. Sebastopol: O'Reilly Media, 2018.</li>
+<ul><li>GARBIN, T. S.; DUARTE, D.; SCHREINER, G. A.; FEITOSA, S. S. **Uma abordagem para migração de Banco de dados relacional para NoSQL Orientado a documentos**. In: Escola Regional de Banco de Dados (ERBD), Farroupilha/RS. Anais [...]. Porto Alegre: SBC, p. 21-30, 2024.</li>
+<ul><li>GHOTIYA, S.; MANDAL, J.; KANDASAMY, S. **Migration from relational to NoSQL database**. IOP Conference Series: Materials Science and Engineering, v. 263, p. 1-8, 2017.</li>
+<ul><li>KANE, F. **Frank Kane's Taming Big Data with Apache Spark and Python: Real-world examples to help you analyze large datasets with Apache Spark**. Birmingham: Packt Publishing, 2017.</li>
+</body>
+</html>

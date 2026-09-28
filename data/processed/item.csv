@@ -786,16 +786,16 @@ Ataques causam 0 de Dano Mágico adicional ao contato.
 
 Justaposição
 Alterna entre Luz e Sombra ao atacar Campeões: Ataques de Luz concedem Armadura e Resistência Mágica por 5s. Ataques de Sombra concedem 10% de Penetração de Armadura e Penetração Mágica por 5s."
-3330,Efígie do Espantalho,0,"Não pode ser vendido
+3330,Efígie do Espantalho,150,"Não pode ser vendido
 
 Ativo – Amuleto: Posiciona uma efígie que dura 0s e aparece exatamente como Fiddlesticks para os inimigos. Armazena uma carga a cada 0s, com um máximo de 2 cargas.
 
 A efígie será ativada quando Campeões inimigos se aproximarem, simulando uma ação aleatória. Depois disso, ela se destruirá."
-3340,Sentinela Invisível,0,"Ativo (210s - 90s, máximo de 2 cargas)
+3340,Sentinela Invisível,150,"Ativo (210s - 90s, máximo de 2 cargas)
 Posiciona uma Sentinela Invisível que concede visão por 90s - 120s."
-3363,Alteração Vidente,0,"Ativo (198s - 99s)
+3363,Alteração Vidente,150,"Ativo (198s - 99s)
 Revela uma área distante por 2s e deixa uma Sentinela que expira ao avistar um Campeão inimigo."
-3364,Lente do Oráculo,0,"Ativo (160s - 100s, máximo de 2 cargas)
+3364,Lente do Oráculo,150,"Ativo (160s - 100s, máximo de 2 cargas)
 Revela Sentinelas Invisíveis inimigas e armadilhas ao seu redor por 8s."
 3504,Turíbulo Ardente,2200,"45 de Poder de Habilidade
 10% de Cura e Resistência do Escudo
@@ -810,8 +810,8 @@ Curar um aliado ou conceder-lhe Escudo fortalece vocês dois por 6s, concedendo 
 
 Lâmina Arcana
 Após usar uma habilidade, seu próximo ataque causa Dano Físico adicional e concede Mana ao contato."
-3599,Lança Negra da Kalista,0,"Ativo – Consumir: Vincula-se a um aliado até o fim da partida, o que os torna aliados em Juramento. O Juramento fortalece tanto você quanto o aliado quando estiverem próximos."
-3600,Lança Negra da Kalista,0,"Ativo – Consumir: Vincula-se a um aliado até o fim da partida, o que os torna aliados em Juramento. O Juramento fortalece tanto você quanto o aliado quando estiverem próximos.
+3599,Lança Negra da Kalista,150,"Ativo – Consumir: Vincula-se a um aliado até o fim da partida, o que os torna aliados em Juramento. O Juramento fortalece tanto você quanto o aliado quando estiverem próximos."
+3600,Lança Negra da Kalista,150,"Ativo – Consumir: Vincula-se a um aliado até o fim da partida, o que os torna aliados em Juramento. O Juramento fortalece tanto você quanto o aliado quando estiverem próximos.
 
 Necessária para utilizar a ultimate da Kalista."
 3742,Couraça do Defunto,2900,"350 de Vida

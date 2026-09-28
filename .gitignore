@@ -1,3 +1,23 @@
+# Ambientes Virtuais e Gerenciadores de Pacote
 .venv/
-.ipynb_checkpoints/
+env/
+venv/
+.env
+.env.local
+
+# Python Cache
 __pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter & IPython
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Dados temporários gerados em tempo de execução
+data/delta/
+*.tmp
+
+# Sistema Operacional
+.DS_Store
+Thumbs.db
