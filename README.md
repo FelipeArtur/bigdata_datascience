@@ -102,12 +102,3 @@ python -m scripts.build_reports
 ```
 
 As dependências diretas estão em `requirements.txt`. Spark 3.5.3, Delta 3.2.0 e MongoDB Spark Connector 10.4.0/Scala 2.12 formam a combinação testada. As versões transitivas podem variar em uma construção futura; por isso, builds futuros podem não ser idênticos bit a bit.
-
-
-## Equipe e Autores
-
-Projeto desenvolvido no âmbito do curso de Pós-Graduação em **Data Science e Analytics**:
-
-- **Diogo Galrão Carvalho**: [GitHub](https://github.com/diogogalrao)
-- **Felipe Artur Macedo Lima**: [GitHub](https://github.com/FelipeArtur)
-- **Luan Cavalcante Dias Rodrigues**: [GitHub](https://github.com/luanzr4)
