@@ -23,6 +23,8 @@ table { width: 100%; border-collapse: collapse; margin: 2mm 0 3mm; font-size: 9p
 th, td { border-bottom: 0.4pt solid #c5d0d8; padding: 0.85mm; text-align: left; }
 th { background: #edf3f7; font-family: "DejaVu Sans", sans-serif; font-size: 8pt; }
 tr { break-inside: avoid; } thead { display: table-header-group; }
+.metrics-tables table { font-size: 8.5pt; line-height: 1.15; }
+.metrics-tables th, .metrics-tables td { padding: 0.4mm; }
 pre { background: #f2f5f7; padding: 3mm; font-size: 8pt; line-height: 1.25;
       white-space: pre-wrap; overflow-wrap: anywhere; break-inside: avoid; }
 code { font-family: "DejaVu Sans Mono", monospace; font-size: 0.86em; }
@@ -91,11 +93,11 @@ def main():
 
     region = table(['Região', 'Elo', 'Ouro', 'Transações', 'Ticket'],
                    [[r[k] for k in ('regiao', 'elo', 'total_ouro', 'transacoes', 'ticket_medio_ouro')] for r in metrics['region_elo']])
-    top = table(['Item (top 5 por unidades)', 'Unidades', 'Ouro'],
-                [[r['item'], r['unidades'], r['total_ouro']] for r in metrics['top_volume'][:5]])
+    top = table(['Item (top 10 por unidades)', 'Unidades', 'Ouro'],
+                [[r['item'], r['unidades'], r['total_ouro']] for r in metrics['top_volume'][:10]])
     results = (f'O pipeline processou {purchases} compras, com {metrics["units"]} unidades e {gold} ouro. '
                f'Sábados e domingos concentraram {metrics["weekend_gold"]} ouro ({metrics["weekend_percent"]:.2f}%).\n\n'
-               + region + '\n\n' + top)
+               + '<div class="metrics-tables">\n\n' + region + '\n\n' + top + '\n\n</div>')
     premium = sum(r['total_ouro'] for r in metrics['subscriptions'] if r['tier_assinatura'] in ('VIP', 'Pro'))
     period = sum(r['total_ouro'] for r in metrics['subscriptions'])
     segment = table(['Tier', 'Ouro no período', 'Transações', 'Ticket'],
@@ -107,8 +109,9 @@ def main():
     names = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado']
     segment += '\n\n' + table(['Dia', 'Ouro', 'Transações'], [[names[d-1], *v] for d, v in sorted(days.items())])
     segment += f'\n\nVIP e Pro somam **{premium} de {period} ouro ({100 * premium / period:.2f}%)** no período filtrado.'
-    segment += '\n\n' + table(['Item (top 5 por ouro)', 'Ouro', 'Unidades'],
-                              [[r['item'], r['total_ouro'], r['unidades']] for r in metrics['top_gold'][:5]])
+    segment += '\n\n' + table(['Item (top 10 por ouro)', 'Ouro', 'Unidades'],
+                              [[r['item'], r['total_ouro'], r['unidades']] for r in metrics['top_gold'][:10]])
+    segment = '<div class="metrics-tables">\n\n' + segment + '\n\n</div>'
     medians = bench['median_seconds']
     benchmark_text = table(['Variante', 'Mediana (s)'], [[k, f'{v:.6f}'] for k, v in medians.items()])
     benchmark_text += '\n\n' + table(['Repetição', 'Sort-merge', 'Broadcast', 'Sem cache', 'Com cache'],

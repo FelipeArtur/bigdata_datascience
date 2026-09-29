@@ -170,6 +170,8 @@ Quatro análises são implementadas: movimentação por região/elo; produtos po
 <!-- metrics:start -->
 O pipeline processou 1043 compras, com 1204 unidades e 2228821 ouro. Sábados e domingos concentraram 688491 ouro (30.89%).
 
+<div class="metrics-tables">
+
 | Região | Elo | Ouro | Transações | Ticket |
 | --- | --- | --- | --- | --- |
 | KR | Desafiante | 351612 | 170 | 2068.31 |
@@ -184,13 +186,20 @@ O pipeline processou 1043 compras, com 1204 unidades e 2228821 ouro. Sábados e 
 | BR | Grão-Mestre | 78000 | 31 | 2516.13 |
 | EUW | Grão-Mestre | 56908 | 26 | 2188.77 |
 
-| Item (top 5 por unidades) | Unidades | Ouro |
+| Item (top 10 por unidades) | Unidades | Ouro |
 | --- | --- | --- |
 | Lacre Sombrio | 14 | 4900 |
 | Broto de Esmagamusgo | 11 | 4950 |
 | Elixir de Ferro | 11 | 5500 |
 | Concretizador | 11 | 30800 |
 | Morellonomicon | 11 | 31350 |
+| Criassonhos | 11 | 4400 |
+| Elmo de Doran | 10 | 4500 |
+| Sapatos do Feiticeiro | 10 | 11000 |
+| Lança Negra da Kalista | 10 | 1500 |
+| Força da Natureza | 10 | 28000 |
+
+</div>
 <!-- metrics:end -->
 
 Esses valores descrevem a amostra gerada. Diferenças entre elos não demonstram que habilidade cause maior gasto. A predominância de um tier também pode refletir a composição manual dos perfis, e não o efeito de uma assinatura.
@@ -213,6 +222,8 @@ subscription = enriched.filter(
 ```
 
 <!-- segmentation:start -->
+<div class="metrics-tables">
+
 | Tier | Ouro no período | Transações | Ticket |
 | --- | --- | --- | --- |
 | VIP | 1185024 | 518 | 2287.69 |
@@ -231,13 +242,20 @@ subscription = enriched.filter(
 
 VIP e Pro somam **1460324 de 1890844 ouro (77.23%)** no período filtrado.
 
-| Item (top 5 por ouro) | Ouro | Unidades |
+| Item (top 10 por ouro) | Ouro | Unidades |
 | --- | --- | --- |
 | Morellonomicon | 31350 | 11 |
 | Concretizador | 30800 | 11 |
 | Força da Natureza | 28000 | 10 |
 | Colhedor de Essência | 27450 | 9 |
 | Cutelo Negro | 27000 | 9 |
+| Hexoplaca Experimental | 27000 | 9 |
+| Faca de Statikk | 27000 | 9 |
+| Placa Gargolítica | 25000 | 10 |
+| Armadura de Warmog | 24800 | 8 |
+| Coração de Aço | 24000 | 8 |
+
+</div>
 <!-- segmentation:end -->
 
 A participação de fins de semana usa como denominador todo o ouro da amostra. A participação de VIP e Pro usa apenas o período filtrado. As duas proporções, portanto, usam bases de cálculo diferentes.
