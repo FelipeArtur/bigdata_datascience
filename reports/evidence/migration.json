@@ -1,0 +1,64 @@
+{
+  "executed_at": "2026-09-29T00:05:02.650134+00:00",
+  "source": "postgres",
+  "source_counts": {
+    "elo": 10,
+    "categoria": 32,
+    "item": 254,
+    "item_categoria": 834,
+    "jogador": 25,
+    "partida": 30,
+    "compra": 1043
+  },
+  "input_sha256": {
+    "data/processed/categoria.csv": "015dd5ba54c07ff22abdde9c3b7793d58dbb088afb267b519a971b832644d6e3",
+    "data/processed/compra.csv": "7571f4a1c0300a461341e17ddadca05d79a4582e10b3c846d378afe90263ee5c",
+    "data/processed/elo.csv": "1993fd793488dbde1247c3e1d06d349ab80b99b2def1242bbcd307117de01a1f",
+    "data/processed/item.csv": "d37617b03ae33d5027573a7bfb630b5c4d97d9c7d4226f80a7b79025d29be489",
+    "data/processed/item_categoria.csv": "fe57e95e8a87f822e2f8f48b0f4b833d14611ca0d53ad59d4d04f022efad4629",
+    "data/processed/jogador.csv": "b41ac88e8d557171aba4346e3ef0e6ee857889193ac35690530475dfc1f0e926",
+    "data/processed/jogadores_demografia.csv": "f70edb90c79ef271bed7bdb4e6a78a63681daca2d426bbccbad272483a8e302d",
+    "data/processed/partida.csv": "c43a298bb999f8076ffdec92d7e7fb493dbf0263f0f7f125b3d0dccbd981ee07"
+  },
+  "collections": {
+    "itens": 254,
+    "partidas": 30,
+    "jogadores": 25,
+    "dominios": 1
+  },
+  "purchases": 1043,
+  "gold": 2228821,
+  "target": "mongodb",
+  "mongo_version": "7.0.43",
+  "database": "loja_lol",
+  "validation": "full_document_equality",
+  "max_player_bson_bytes": 11170,
+  "indexes": [
+    "_id_",
+    "regiao_1"
+  ],
+  "sample": {
+    "_id": 1,
+    "id_jogador": 1,
+    "nick": "Faker",
+    "id_elo": 10,
+    "regiao": "KR",
+    "elo": "Desafiante",
+    "compras": [
+      {
+        "id_compra": 72,
+        "id_item": 3508,
+        "id_partida": 3,
+        "data_compra": "2025-08-21",
+        "minuto_compra": 18,
+        "quantidade": 1,
+        "preco_unitario": 3050,
+        "item": "Colhedor de Essência",
+        "total_ouro": 3050
+      }
+    ],
+    "total_transacoes": 37,
+    "total_itens_adquiridos": 41,
+    "total_gasto_ouro": 80525
+  }
+}

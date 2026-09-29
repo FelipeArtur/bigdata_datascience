@@ -1,16 +1,7 @@
 -- ==============================================================================
 -- DDL DO BANCO DE DADOS RELACIONAL: LOJA LEAGUE OF LEGENDS (POSTGRESQL)
--- 7 TABELAS NORMALIZADAS EM 3ª FORMA NORMAL (3FN)
+-- 7 TABELAS RELACIONAIS; TOTAL_COMPRA É REDUNDÂNCIA VALIDADA
 -- ==============================================================================
-
--- Limpeza de tabelas prévias, se existirem
-DROP TABLE IF EXISTS compra CASCADE;
-DROP TABLE IF EXISTS item_categoria CASCADE;
-DROP TABLE IF EXISTS partida CASCADE;
-DROP TABLE IF EXISTS jogador CASCADE;
-DROP TABLE IF EXISTS item CASCADE;
-DROP TABLE IF EXISTS categoria CASCADE;
-DROP TABLE IF EXISTS elo CASCADE;
 
 -- 1. Domínio de Ranques (Elos)
 CREATE TABLE elo (
@@ -28,7 +19,7 @@ CREATE TABLE categoria (
 CREATE TABLE item (
     item_id INT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
-    preco_unitario INT NOT NULL,
+    preco_unitario INT NOT NULL CHECK (preco_unitario >= 0),
     descricao TEXT
 );
 
@@ -52,7 +43,7 @@ CREATE TABLE partida (
     id_partida INT PRIMARY KEY,
     data_partida DATE NOT NULL,
     hora_partida TIME NOT NULL,
-    duracao_minutos INT NOT NULL,
+    duracao_minutos INT NOT NULL CHECK (duracao_minutos > 0),
     resultado VARCHAR(20) NOT NULL
 );
 
@@ -63,10 +54,10 @@ CREATE TABLE compra (
     id_item INT NOT NULL REFERENCES item(item_id),
     id_partida INT NOT NULL REFERENCES partida(id_partida),
     data_compra DATE NOT NULL,
-    minuto_compra INT NOT NULL,
-    quantidade INT NOT NULL DEFAULT 1,
-    preco_unitario INT NOT NULL,
-    total_compra INT NOT NULL
+    minuto_compra INT NOT NULL CHECK (minuto_compra > 0),
+    quantidade INT NOT NULL DEFAULT 1 CHECK (quantidade > 0),
+    preco_unitario INT NOT NULL CHECK (preco_unitario >= 0),
+    total_compra INT NOT NULL CHECK (total_compra = quantidade * preco_unitario)
 );
 
 -- Índices B-Tree para aceleração de consultas frequentes

@@ -1,23 +1,15 @@
-# Ambientes Virtuais e Gerenciadores de Pacote
 .venv/
-env/
-venv/
 .env
-.env.local
-
-# Python Cache
+.env.*
+!.env.example
 __pycache__/
 *.py[cod]
-*$py.class
-
-# Jupyter & IPython
 .ipynb_checkpoints/
-*/.ipynb_checkpoints/*
-
-# Dados temporários gerados em tempo de execução
 data/delta/
+data/processed/mongo_export/
+spark-warehouse/
+metastore_db/
+derby.log
 *.tmp
-
-# Sistema Operacional
+*.tmp.pdf
 .DS_Store
-Thumbs.db

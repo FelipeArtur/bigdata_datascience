@@ -1,187 +1,175 @@
-#!/usr/bin/env python3
-"""
-scripts/migrate_to_mongodb.py
-Realiza a transformação dos dados relacionais (PostgreSQL/CSVs) para documentos NoSQL (MongoDB Atlas).
-Aplica as estratégias de Modelagem:
-1. Embedding: compras e elo embutidos dentro de cada jogador.
-2. Referencing: catálogo de itens e histórico de partidas mantidos como coleções referenciadas.
-3. Denormalização controlada: categorias embutidas como lista dentro de itens, eliminando a tabela associativa N:N.
-"""
-
-import os
+"""Migração validada de PostgreSQL (ou CSV offline) para MongoDB."""
+import argparse
 import csv
+from contextlib import closing
+from datetime import date, datetime, time, timezone
 import json
+from hashlib import sha256
+import os
+from pathlib import Path
 import sys
+from uuid import uuid4
 
-def carregar_csv(caminho):
-    with open(caminho, 'r', encoding='utf-8') as f:
-        return list(csv.DictReader(f))
+ROOT = Path(__file__).resolve().parents[1]
+TABLES = {'elo': 'id_elo', 'categoria': 'id_categoria', 'item': 'item_id',
+          'item_categoria': ('item_id', 'id_categoria'), 'jogador': 'id_jogador',
+          'partida': 'id_partida', 'compra': 'id_compra'}
+
+
+def input_hashes():
+    return {str(p.relative_to(ROOT)): sha256(p.read_bytes()).hexdigest()
+            for p in sorted((ROOT / 'data/processed').glob('*.csv'))}
+
+
+def load_tables(source='csv'):
+    if source == 'csv':
+        tables = {}
+        for table in TABLES:
+            with (ROOT / 'data/processed' / f'{table}.csv').open() as f:
+                tables[table] = list(csv.DictReader(f))
+        return tables
+    import psycopg2
+    from psycopg2.extras import RealDictCursor
+    # Nomes das tabelas vêm da constante acima, não da entrada do usuário.
+    with closing(psycopg2.connect('')) as conn:
+        conn.set_session(readonly=True, isolation_level='REPEATABLE READ')
+        with conn.cursor(cursor_factory=RealDictCursor) as cur:
+            tables = {}
+            for table in TABLES:
+                key = TABLES[table]
+                order = ', '.join(key) if isinstance(key, tuple) else key
+                cur.execute(f'SELECT * FROM {table} ORDER BY {order}')
+                tables[table] = [dict(r) for r in cur]
+            return tables
+
+
+def build_documents(tables):
+    """Valida todo o snapshot antes de produzir qualquer saída."""
+    numbers = {'id_elo', 'id_categoria', 'item_id', 'id_item', 'id_jogador',
+               'id_partida', 'id_compra', 'preco_unitario', 'quantidade',
+               'total_compra', 'minuto_compra', 'duracao_minutos'}
+    t = {name: [{k: int(v) if k in numbers else
+                v.isoformat() if isinstance(v, (date, time)) else v
+                for k, v in r.items()} for r in rows] for name, rows in tables.items()}
+    # COPY CSV representa campo vazio não-quotado como NULL no PostgreSQL.
+    for item in t['item']:
+        if item['descricao'] == '':
+            item['descricao'] = None
+    for name, key in TABLES.items():
+        keys = key if isinstance(key, tuple) else (key,)
+        t[name].sort(key=lambda r: tuple(r[k] for k in keys))
+        ids = [tuple(r[k] for k in keys) for r in t[name]]
+        if not ids or len(ids) != len(set(ids)):
+            raise ValueError(f'Tabela vazia ou chave duplicada: {name}')
+    indexed = {name: {r[key]: r for r in t[name]} for name, key in TABLES.items()
+               if isinstance(key, str)}
+    links = [('jogador', 'id_elo', 'elo'), ('item_categoria', 'item_id', 'item'),
+             ('item_categoria', 'id_categoria', 'categoria'),
+             ('compra', 'id_jogador', 'jogador'), ('compra', 'id_item', 'item'),
+             ('compra', 'id_partida', 'partida')]
+    for name, field, target in links:
+        if any(r[field] not in indexed[target] for r in t[name]):
+            raise ValueError(f'Referência inválida: {name}.{field}')
+    categories = {i: [] for i in indexed['item']}
+    for link in t['item_categoria']:
+        categories[link['item_id']].append(indexed['categoria'][link['id_categoria']])
+    items = [{'_id': r['item_id'], **r, 'categorias': categories[r['item_id']]}
+             for r in t['item']]
+    matches = [{'_id': r['id_partida'], **r} for r in t['partida']]
+    purchases = {i: [] for i in indexed['jogador']}
+    for r in t['compra']:
+        match = indexed['partida'][r['id_partida']]
+        if (r['quantidade'] <= 0 or r['preco_unitario'] < 0 or
+                r['total_compra'] != r['quantidade'] * r['preco_unitario'] or
+                r['data_compra'] != match['data_partida'] or
+                not 1 <= r['minuto_compra'] <= match['duracao_minutos']):
+            raise ValueError(f'Compra inconsistente: {r["id_compra"]}')
+        purchase = {k: v for k, v in r.items() if k not in ('id_jogador', 'total_compra')}
+        purchase.update(item=indexed['item'][r['id_item']]['nome'], total_ouro=r['total_compra'])
+        purchases[r['id_jogador']].append(purchase)
+    players = []
+    for r in t['jogador']:
+        buys = purchases[r['id_jogador']]
+        players.append({'_id': r['id_jogador'], **r, 'elo': indexed['elo'][r['id_elo']]['elo'],
+                        'compras': buys, 'total_transacoes': len(buys),
+                        'total_itens_adquiridos': sum(c['quantidade'] for c in buys),
+                        'total_gasto_ouro': sum(c['total_ouro'] for c in buys)})
+    # Domínios completos preservados, inclusive elos sem jogadores.
+    domain = [{'_id': 'dominios', 'elos': t['elo'], 'categorias': t['categoria']}]
+    return {'itens': items, 'partidas': matches, 'jogadores': players, 'dominios': domain}
+
+
+def migrate(source='postgres', export_only=False):
+    tables = load_tables(source)
+    docs = build_documents(tables)
+    summary = {'executed_at': datetime.now(timezone.utc).isoformat(), 'source': source,
+               'source_counts': {k: len(v) for k, v in tables.items()},
+               'input_sha256': input_hashes(),
+               'collections': {k: len(v) for k, v in docs.items()},
+               'purchases': sum(d['total_transacoes'] for d in docs['jogadores']),
+               'gold': sum(d['total_gasto_ouro'] for d in docs['jogadores'])}
+    if export_only:
+        path = ROOT / 'data/processed/mongo_export'
+        path.mkdir(exist_ok=True)
+        for name, rows in docs.items():
+            (path / f'{name}.json').write_text(json.dumps(rows, ensure_ascii=False, indent=2))
+        return {**summary, 'target': 'json_offline'}
+
+    from bson import BSON
+    from pymongo import MongoClient
+    uri = os.environ['MONGODB_URI']
+    # A URI define TLS; mongodb:// local não recebe parâmetros TLS forçados.
+    with MongoClient(uri, serverSelectionTimeoutMS=5000) as client:
+        client.admin.command('ping')
+        db = client[os.environ.get('MONGODB_DATABASE', 'loja_lol')]
+        stages = {name: f'_stage_{name}_{uuid4().hex}' for name in docs}
+        try:
+            for name, rows in docs.items():
+                collection = db[stages[name]]
+                collection.insert_many(rows)
+                if collection.count_documents({}) != len(rows):
+                    raise ValueError(f'Contagem divergente: {name}')
+                # Compara os documentos completos, não apenas as contagens.
+                loaded = sorted(collection.find(), key=lambda d: str(d['_id']))
+                if loaded != sorted(rows, key=lambda d: str(d['_id'])):
+                    raise ValueError(f'Conteúdo divergente: {name}')
+            db[stages['jogadores']].create_index('regiao')
+            # Troca atômica por coleção; não é uma transação entre coleções.
+            for name, stage in stages.items():
+                db[stage].rename(name, dropTarget=True)
+        finally:
+            for stage in stages.values():
+                db.drop_collection(stage)
+        summary.update(target='mongodb', mongo_version=client.server_info()['version'],
+                       database=db.name, validation='full_document_equality',
+                       max_player_bson_bytes=max(len(BSON.encode(d)) for d in docs['jogadores']),
+                       indexes=list(db.jogadores.index_information()),
+                       sample=db.jogadores.find_one({'_id': 1}, {'compras': {'$slice': 1}}))
+    path = ROOT / 'reports/evidence'
+    path.mkdir(parents=True, exist_ok=True)
+    (path / 'migration.json').write_text(json.dumps(summary, ensure_ascii=False, indent=2))
+    return summary
+
 
 def main():
-    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    data_dir = os.path.join(base_dir, 'data', 'processed')
-    output_dir = os.path.join(data_dir, 'mongo_export')
-    os.makedirs(output_dir, exist_ok=True)
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--source', choices=['csv', 'postgres'], default='postgres')
+    parser.add_argument('--export-only', action='store_true', help='Gera JSON offline sem carregar MongoDB')
+    args = parser.parse_args()
+    try:
+        from dotenv import load_dotenv
+        load_dotenv(ROOT / '.env')
+    except ImportError:
+        pass
+    try:
+        result = migrate(args.source, args.export_only)
+        print(json.dumps({k: v for k, v in result.items() if k != 'sample'}, ensure_ascii=False, indent=2))
+    except Exception as exc:
+        # Não vazar URI/credenciais em logs de falha.
+        print(f'Falha na migração ({type(exc).__name__}); confira dados, serviços e configuração.', file=sys.stderr)
+        return 1
+    return 0
 
-    print("==> 1. Carregando dados normalizados de data/processed/ ...")
-    elo_rows = carregar_csv(os.path.join(data_dir, 'elo.csv'))
-    cat_rows = carregar_csv(os.path.join(data_dir, 'categoria.csv'))
-    item_rows = carregar_csv(os.path.join(data_dir, 'item.csv'))
-    item_cat_rows = carregar_csv(os.path.join(data_dir, 'item_categoria.csv'))
-    jogador_rows = carregar_csv(os.path.join(data_dir, 'jogador.csv'))
-    partida_rows = carregar_csv(os.path.join(data_dir, 'partida.csv'))
-    compra_rows = carregar_csv(os.path.join(data_dir, 'compra.csv'))
-
-    # Mapeamento de auxílio
-    elo_map = {r['id_elo']: r['elo'] for r in elo_rows}
-    cat_map = {r['id_categoria']: r['nome_categoria'] for r in cat_rows}
-
-    # Mapeamento N:N de categorias por item
-    item_categorias_map = {}
-    for r in item_cat_rows:
-        it_id = r['item_id']
-        cat_nome = cat_map.get(r['id_categoria'], 'Diversos')
-        item_categorias_map.setdefault(it_id, []).append(cat_nome)
-
-    # 1. Coleção ITENS (Referencing - Catálogo de Produtos)
-    print("==> 2. Construindo coleção 'itens' (Referencing + categorias embutidas)...")
-    itens_docs = []
-    itens_info_map = {}
-    for r in item_rows:
-        it_id = r['item_id']
-        cats = item_categorias_map.get(it_id, ['Diversos'])
-        doc = {
-            '_id': int(it_id),
-            'item_id': int(it_id),
-            'nome': r['nome'],
-            'preco_unitario': int(r['preco_unitario']),
-            'descricao': r['descricao'],
-            'categorias': cats
-        }
-        itens_docs.append(doc)
-        itens_info_map[it_id] = doc
-
-    # 2. Coleção PARTIDAS (Referencing - Histórico de Partidas)
-    print("==> 3. Construindo coleção 'partidas' (Referencing)...")
-    partidas_docs = []
-    for r in partida_rows:
-        partidas_docs.append({
-            '_id': int(r['id_partida']),
-            'id_partida': int(r['id_partida']),
-            'data_partida': r['data_partida'],
-            'hora_partida': r['hora_partida'],
-            'duracao_minutos': int(r['duracao_minutos']),
-            'resultado': r['resultado']
-        })
-
-    # Indexar compras por jogador
-    compras_por_jogador = {}
-    for c in compra_rows:
-        compras_por_jogador.setdefault(c['id_jogador'], []).append(c)
-
-    # 3. Coleção JOGADORES (Embedding - Elo + Lista de Compras com Snapshot de Item)
-    print("==> 4. Construindo coleção 'jogadores' (Embedding)...")
-    jogadores_docs = []
-    for j in jogador_rows:
-        j_id = j['id_jogador']
-        compras_do_j = compras_por_jogador.get(j_id, [])
-        
-        compras_embutidas = []
-        total_gasto = 0
-        total_itens = 0
-
-        for c in compras_do_j:
-            it_info = itens_info_map.get(c['id_item'], {
-                'nome': 'Item Desconhecido',
-                'preco_unitario': int(c['preco_unitario']),
-                'categorias': ['Diversos']
-            })
-            qtd = int(c['quantidade'])
-            p_unit = int(c['preco_unitario'])
-            total_item = int(c['total_compra'])
-
-            total_gasto += total_item
-            total_itens += qtd
-
-            compras_embutidas.append({
-                'id_compra': int(c['id_compra']),
-                'id_item': int(c['id_item']),
-                'item': it_info['nome'],
-                'categorias': it_info['categorias'],
-                'preco_unitario': p_unit,
-                'quantidade': qtd,
-                'total_ouro': total_item,
-                'data_compra': c['data_compra'],
-                'minuto_compra': int(c['minuto_compra']),
-                'id_partida': int(c['id_partida'])
-            })
-
-        jogadores_docs.append({
-            '_id': int(j_id),
-            'id_jogador': int(j_id),
-            'nick': j['nick'],
-            'regiao': j['regiao'],
-            'elo': elo_map.get(j['id_elo'], 'Desconhecido'),
-            'total_gasto_ouro': total_gasto,
-            'total_itens_adquiridos': total_itens,
-            'total_transacoes': len(compras_embutidas),
-            'compras': compras_embutidas
-        })
-
-    # Exportar para arquivos JSON locais
-    print("==> 5. Exportando documentos JSON para data/processed/mongo_export/ ...")
-    arquivos_export = [
-        ('jogadores.json', jogadores_docs),
-        ('itens.json', itens_docs),
-        ('partidas.json', partidas_docs)
-    ]
-    for nome, docs in arquivos_export:
-        caminho = os.path.join(output_dir, nome)
-        with open(caminho, 'w', encoding='utf-8') as f:
-            json.dump(docs, f, ensure_ascii=False, indent=2)
-        print(f"    [OK] {nome:<16} ({len(docs):>4} documentos gerados)")
-
-    print("\n--- Exemplo de Documento de Jogador (Embedding) ---")
-    print(json.dumps(jogadores_docs[0], ensure_ascii=False, indent=2)[:800] + "\n  ... [compras truncadas no preview]\n}")
-
-    # Conexão opcional com MongoDB (Local em Docker ou Atlas em Nuvem)
-    mongo_uri = os.environ.get('MONGODB_URI')
-    if mongo_uri:
-        print(f"\n==> Conectando ao MongoDB configurado em MONGODB_URI...")
-        try:
-            from pymongo import MongoClient
-            kwargs = {}
-            if 'mongodb+srv' in mongo_uri:
-                try:
-                    import certifi
-                    kwargs['tlsCAFile'] = certifi.where()
-                except ImportError:
-                    pass
-            
-            client = MongoClient(mongo_uri, **kwargs)
-            try:
-                db = client.get_default_database()
-            except Exception:
-                db = client['loja_lol']
-            
-            if db is None or db.name == 'admin' or db.name == 'test':
-                db = client['loja_lol']
-                
-            for nome_col, docs in [('jogadores', jogadores_docs), ('itens', itens_docs), ('partidas', partidas_docs)]:
-                col = db[nome_col]
-                col.delete_many({})
-                col.insert_many(docs)
-                print(f"    [OK] Coleção '{nome_col}': {col.count_documents({})} documentos carregados no banco '{db.name}'.")
-            print("[OK] Carga no MongoDB concluída com sucesso!")
-        except Exception as e:
-            print(f"[AVISO] Erro ao conectar ou carregar no MongoDB: {e}")
-    else:
-        print("\n[INFO] Dica: Para carregar diretamente em um container ou no MongoDB Atlas:")
-        print("   Local (Docker):  export MONGODB_URI='mongodb://localhost:27017/loja_lol'")
-        print("   Nuvem (Atlas):   export MONGODB_URI='mongodb+srv://<user>:<pwd>@cluster0.abcd.mongodb.net/loja_lol'")
-        print("   Em seguida execute: python3 scripts/migrate_to_mongodb.py")
-
-    print("\n[OK] Processo de estruturação NoSQL finalizado com êxito!")
 
 if __name__ == '__main__':
-    main()
+    sys.exit(main())

@@ -1,0 +1,15 @@
+*(4) Sort [total_ouro#1398L DESC NULLS LAST, regiao#6 ASC NULLS FIRST, elo#2 ASC NULLS FIRST], true, 0
++- Exchange rangepartitioning(total_ouro#1398L DESC NULLS LAST, regiao#6 ASC NULLS FIRST, elo#2 ASC NULLS FIRST, 4), ENSURE_REQUIREMENTS, [plan_id=2585]
+   +- *(3) HashAggregate(keys=[regiao#6, elo#2], functions=[sum(total_ouro#954), sum(quantidade#953), count(1), avg(total_ouro#954)], output=[regiao#6, elo#2, total_ouro#1398L, unidades#1400L, transacoes#1402L, ticket_medio_ouro#1404])
+      +- Exchange hashpartitioning(regiao#6, elo#2, 4), ENSURE_REQUIREMENTS, [plan_id=2581]
+         +- *(2) HashAggregate(keys=[regiao#6, elo#2], functions=[partial_sum(total_ouro#954), partial_sum(quantidade#953), partial_count(1), partial_avg(total_ouro#954)], output=[regiao#6, elo#2, sum#1420L, sum#1421L, count#1422L, sum#1423, count#1424L])
+            +- *(2) Project [regiao#6, elo#2, quantidade#953, total_ouro#954]
+               +- *(2) BroadcastHashJoin [id_jogador#4], [id_jogador#20], Inner, BuildRight, false
+                  :- *(2) Project [id_jogador#4, regiao#6, elo#2, c#943.quantidade AS quantidade#953, c#943.total_ouro AS total_ouro#954]
+                  :  +- *(2) Generate explode(compras#1), [elo#2, id_jogador#4, regiao#6], false, [c#943]
+                  :     +- *(2) Project [compras#1, elo#2, id_jogador#4, regiao#6]
+                  :        +- *(2) Filter (size(compras#1, true) > 0)
+                  :           +- BatchScan MongoTable()[compras#1, elo#2, id_jogador#4, regiao#6] MongoScan{namespaceDescription=loja_lol.jogadores} RuntimeFilters: []
+                  +- BroadcastExchange HashedRelationBroadcastMode(List(cast(input[0, int, false] as bigint)),false), [plan_id=2575]
+                     +- *(1) Filter isnotnull(id_jogador#20)
+                        +- FileScan csv [id_jogador#20] Batched: false, DataFilters: [isnotnull(id_jogador#20)], Format: CSV, Location: InMemoryFileIndex(1 paths)[file:/app/data/processed/jogadores_demografia.csv], PartitionFilters: [], PushedFilters: [IsNotNull(id_jogador)], ReadSchema: struct<id_jogador:int>

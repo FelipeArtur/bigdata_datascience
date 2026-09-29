@@ -1,86 +1,43 @@
 services:
-  # ============================================================================
-  # 1. BANCO DE DADOS RELACIONAL: PostgreSQL 16
-  # Cria automaticamente o esquema em 3FN e popula as 7 tabelas com dados reais
-  # ============================================================================
   postgres:
     image: postgres:16-alpine
-    container_name: loja_lol_postgres
-    restart: unless-stopped
-    ports:
-      - "5432:5432"
     environment:
       POSTGRES_DB: loja_lol
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
+      POSTGRES_PASSWORD: local_academic
     volumes:
-      - ./docker/init-db/01-schema.sql:/docker-entrypoint-initdb.d/01-schema.sql:ro
-      - ./docker/init-db/02-load-data.sh:/docker-entrypoint-initdb.d/02-load-data.sh:ro
+      - ./docker/init-db:/docker-entrypoint-initdb.d:ro
       - ./data/processed:/data_processed:ro
       - postgres_data:/var/lib/postgresql/data
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U postgres -d loja_lol"]
-      interval: 5s
-      timeout: 5s
-      retries: 5
+      interval: 3s
+      timeout: 3s
+      retries: 20
 
-  # ============================================================================
-  # 2. BANCO DE DADOS NOSQL ORIENTADO A DOCUMENTOS: MongoDB Community 7.0
-  # Hospeda as coleções com embedding e referencing para a aplicação
-  # ============================================================================
   mongodb:
     image: mongo:7.0
-    container_name: loja_lol_mongodb
-    restart: unless-stopped
-    ports:
-      - "27017:27017"
-    environment:
-      MONGO_INITDB_DATABASE: loja_lol
     volumes:
       - mongo_data:/data/db
     healthcheck:
-      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
-      interval: 5s
-      timeout: 5s
-      retries: 5
+      test: ["CMD", "mongosh", "--quiet", "--eval", "db.adminCommand('ping')"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
 
-  # ============================================================================
-  # 3. INTERFACE VISUAL WEB PARA MONGODB: Mongo Express
-  # Permite ao avaliador inspecionar visualmente os documentos BSON no navegador
-  # ============================================================================
-  mongo-express:
-    image: mongo-express:latest
-    container_name: loja_lol_mongo_express
-    restart: unless-stopped
-    ports:
-      - "8081:8081"
-    environment:
-      ME_CONFIG_MONGODB_SERVER: mongodb
-      ME_CONFIG_MONGODB_PORT: 27017
-      ME_CONFIG_BASICAUTH: "false"
-    depends_on:
-      mongodb:
-        condition: service_healthy
-
-  # ============================================================================
-  # 4. AMBIENTE DE CIÊNCIA DE DADOS: JupyterLab, PySpark e Scripts
-  # Executa os notebooks e scripts Python isoladamente com Java e PySpark
-  # ============================================================================
   jupyter:
     build:
       context: .
       dockerfile: docker/Dockerfile
-    container_name: loja_lol_jupyter
-    restart: unless-stopped
     ports:
-      - "8888:8888"
+      - "127.0.0.1:8888:8888"
     environment:
-      POSTGRES_HOST: postgres
-      POSTGRES_PORT: 5432
-      POSTGRES_DB: loja_lol
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
-      MONGODB_URI: "mongodb://mongodb:27017/loja_lol"
+      PGHOST: postgres
+      PGDATABASE: loja_lol
+      PGUSER: postgres
+      PGPASSWORD: local_academic
+      MONGODB_URI: mongodb://mongodb:27017
+      MONGODB_DATABASE: loja_lol
     volumes:
       - .:/app
     depends_on:
@@ -91,6 +48,4 @@ services:
 
 volumes:
   postgres_data:
-    name: loja_lol_postgres_data
   mongo_data:
-    name: loja_lol_mongo_data

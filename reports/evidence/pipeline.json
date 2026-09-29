@@ -1,0 +1,421 @@
+{
+  "executed_at": "2026-09-29T00:05:37.792514+00:00",
+  "environment": {
+    "mode": "Docker local; não executado em Atlas/Databricks",
+    "python": "3.12.14",
+    "spark": "3.5.3",
+    "delta": "3.2.0",
+    "mongo_connector": "org.mongodb.spark:mongo-spark-connector_2.12:10.4.0",
+    "master": "local[2]",
+    "java": "17.0.20.1",
+    "shuffle_partitions": "4"
+  },
+  "input_sha256": {
+    "data/processed/categoria.csv": "015dd5ba54c07ff22abdde9c3b7793d58dbb088afb267b519a971b832644d6e3",
+    "data/processed/compra.csv": "7571f4a1c0300a461341e17ddadca05d79a4582e10b3c846d378afe90263ee5c",
+    "data/processed/elo.csv": "1993fd793488dbde1247c3e1d06d349ab80b99b2def1242bbcd307117de01a1f",
+    "data/processed/item.csv": "d37617b03ae33d5027573a7bfb630b5c4d97d9c7d4226f80a7b79025d29be489",
+    "data/processed/item_categoria.csv": "fe57e95e8a87f822e2f8f48b0f4b833d14611ca0d53ad59d4d04f022efad4629",
+    "data/processed/jogador.csv": "b41ac88e8d557171aba4346e3ef0e6ee857889193ac35690530475dfc1f0e926",
+    "data/processed/jogadores_demografia.csv": "f70edb90c79ef271bed7bdb4e6a78a63681daca2d426bbccbad272483a8e302d",
+    "data/processed/partida.csv": "c43a298bb999f8076ffdec92d7e7fb493dbf0263f0f7f125b3d0dccbd981ee07"
+  },
+  "source": "mongodb_connector",
+  "relational_reconciliation": "all_purchase_fields_equal",
+  "delta_rows": 1043,
+  "delta_reconciliation": "exceptAll_both_directions_empty",
+  "metrics": {
+    "purchases": 1043,
+    "gold": 2228821,
+    "units": 1204,
+    "weekend_gold": 688491,
+    "weekend_percent": 30.8904,
+    "region_elo": [
+      {
+        "regiao": "KR",
+        "elo": "Desafiante",
+        "total_ouro": 351612,
+        "unidades": 193,
+        "transacoes": 170,
+        "ticket_medio_ouro": 2068.31
+      },
+      {
+        "regiao": "BR",
+        "elo": "Mestre",
+        "total_ouro": 335025,
+        "unidades": 166,
+        "transacoes": 144,
+        "ticket_medio_ouro": 2326.56
+      },
+      {
+        "regiao": "BR",
+        "elo": "Diamante",
+        "total_ouro": 330861,
+        "unidades": 180,
+        "transacoes": 156,
+        "ticket_medio_ouro": 2120.9
+      },
+      {
+        "regiao": "KR",
+        "elo": "Grão-Mestre",
+        "total_ouro": 318825,
+        "unidades": 163,
+        "transacoes": 136,
+        "ticket_medio_ouro": 2344.3
+      },
+      {
+        "regiao": "KR",
+        "elo": "Mestre",
+        "total_ouro": 227783,
+        "unidades": 123,
+        "transacoes": 107,
+        "ticket_medio_ouro": 2128.81
+      },
+      {
+        "regiao": "BR",
+        "elo": "Esmeralda",
+        "total_ouro": 162374,
+        "unidades": 90,
+        "transacoes": 82,
+        "ticket_medio_ouro": 1980.17
+      },
+      {
+        "regiao": "BR",
+        "elo": "Platina",
+        "total_ouro": 160800,
+        "unidades": 99,
+        "transacoes": 89,
+        "ticket_medio_ouro": 1806.74
+      },
+      {
+        "regiao": "BR",
+        "elo": "Ouro",
+        "total_ouro": 116283,
+        "unidades": 67,
+        "transacoes": 59,
+        "ticket_medio_ouro": 1970.9
+      },
+      {
+        "regiao": "EUW",
+        "elo": "Mestre",
+        "total_ouro": 90350,
+        "unidades": 50,
+        "transacoes": 43,
+        "ticket_medio_ouro": 2101.16
+      },
+      {
+        "regiao": "BR",
+        "elo": "Grão-Mestre",
+        "total_ouro": 78000,
+        "unidades": 42,
+        "transacoes": 31,
+        "ticket_medio_ouro": 2516.13
+      },
+      {
+        "regiao": "EUW",
+        "elo": "Grão-Mestre",
+        "total_ouro": 56908,
+        "unidades": 31,
+        "transacoes": 26,
+        "ticket_medio_ouro": 2188.77
+      }
+    ],
+    "top_volume": [
+      {
+        "id_item": 1082,
+        "item": "Lacre Sombrio",
+        "unidades": 14,
+        "total_ouro": 4900,
+        "transacoes": 13
+      },
+      {
+        "id_item": 1105,
+        "item": "Broto de Esmagamusgo",
+        "unidades": 11,
+        "total_ouro": 4950,
+        "transacoes": 10
+      },
+      {
+        "id_item": 2138,
+        "item": "Elixir de Ferro",
+        "unidades": 11,
+        "total_ouro": 5500,
+        "transacoes": 11
+      },
+      {
+        "id_item": 2522,
+        "item": "Concretizador",
+        "unidades": 11,
+        "total_ouro": 30800,
+        "transacoes": 9
+      },
+      {
+        "id_item": 3165,
+        "item": "Morellonomicon",
+        "unidades": 11,
+        "total_ouro": 31350,
+        "transacoes": 9
+      },
+      {
+        "id_item": 3870,
+        "item": "Criassonhos",
+        "unidades": 11,
+        "total_ouro": 4400,
+        "transacoes": 9
+      },
+      {
+        "id_item": 1120,
+        "item": "Elmo de Doran",
+        "unidades": 10,
+        "total_ouro": 4500,
+        "transacoes": 7
+      },
+      {
+        "id_item": 3020,
+        "item": "Sapatos do Feiticeiro",
+        "unidades": 10,
+        "total_ouro": 11000,
+        "transacoes": 8
+      },
+      {
+        "id_item": 3599,
+        "item": "Lança Negra da Kalista",
+        "unidades": 10,
+        "total_ouro": 1500,
+        "transacoes": 8
+      },
+      {
+        "id_item": 4401,
+        "item": "Força da Natureza",
+        "unidades": 10,
+        "total_ouro": 28000,
+        "transacoes": 7
+      }
+    ],
+    "top_gold": [
+      {
+        "id_item": 3165,
+        "item": "Morellonomicon",
+        "unidades": 11,
+        "total_ouro": 31350,
+        "transacoes": 9
+      },
+      {
+        "id_item": 2522,
+        "item": "Concretizador",
+        "unidades": 11,
+        "total_ouro": 30800,
+        "transacoes": 9
+      },
+      {
+        "id_item": 4401,
+        "item": "Força da Natureza",
+        "unidades": 10,
+        "total_ouro": 28000,
+        "transacoes": 7
+      },
+      {
+        "id_item": 3508,
+        "item": "Colhedor de Essência",
+        "unidades": 9,
+        "total_ouro": 27450,
+        "transacoes": 8
+      },
+      {
+        "id_item": 3071,
+        "item": "Cutelo Negro",
+        "unidades": 9,
+        "total_ouro": 27000,
+        "transacoes": 6
+      },
+      {
+        "id_item": 3073,
+        "item": "Hexoplaca Experimental",
+        "unidades": 9,
+        "total_ouro": 27000,
+        "transacoes": 7
+      },
+      {
+        "id_item": 3087,
+        "item": "Faca de Statikk",
+        "unidades": 9,
+        "total_ouro": 27000,
+        "transacoes": 6
+      },
+      {
+        "id_item": 663193,
+        "item": "Placa Gargolítica",
+        "unidades": 10,
+        "total_ouro": 25000,
+        "transacoes": 10
+      },
+      {
+        "id_item": 3083,
+        "item": "Armadura de Warmog",
+        "unidades": 8,
+        "total_ouro": 24800,
+        "transacoes": 6
+      },
+      {
+        "id_item": 3084,
+        "item": "Coração de Aço",
+        "unidades": 8,
+        "total_ouro": 24000,
+        "transacoes": 6
+      }
+    ],
+    "weekday_platform": [
+      {
+        "dia_semana": 1,
+        "plataforma": "Desktop Gamer",
+        "total_ouro": 354333,
+        "transacoes": 154
+      },
+      {
+        "dia_semana": 1,
+        "plataforma": "Notebook Gamer",
+        "total_ouro": 35100,
+        "transacoes": 19
+      },
+      {
+        "dia_semana": 2,
+        "plataforma": "Desktop Gamer",
+        "total_ouro": 274275,
+        "transacoes": 124
+      },
+      {
+        "dia_semana": 2,
+        "plataforma": "Notebook Gamer",
+        "total_ouro": 54100,
+        "transacoes": 27
+      },
+      {
+        "dia_semana": 3,
+        "plataforma": "Desktop Gamer",
+        "total_ouro": 309290,
+        "transacoes": 148
+      },
+      {
+        "dia_semana": 3,
+        "plataforma": "Notebook Gamer",
+        "total_ouro": 34850,
+        "transacoes": 20
+      },
+      {
+        "dia_semana": 4,
+        "plataforma": "Desktop Gamer",
+        "total_ouro": 173250,
+        "transacoes": 92
+      },
+      {
+        "dia_semana": 4,
+        "plataforma": "Notebook Gamer",
+        "total_ouro": 35250,
+        "transacoes": 17
+      },
+      {
+        "dia_semana": 5,
+        "plataforma": "Desktop Gamer",
+        "total_ouro": 321041,
+        "transacoes": 139
+      },
+      {
+        "dia_semana": 5,
+        "plataforma": "Notebook Gamer",
+        "total_ouro": 47200,
+        "transacoes": 24
+      },
+      {
+        "dia_semana": 6,
+        "plataforma": "Desktop Gamer",
+        "total_ouro": 263874,
+        "transacoes": 127
+      },
+      {
+        "dia_semana": 6,
+        "plataforma": "Notebook Gamer",
+        "total_ouro": 27200,
+        "transacoes": 14
+      },
+      {
+        "dia_semana": 7,
+        "plataforma": "Desktop Gamer",
+        "total_ouro": 280158,
+        "transacoes": 127
+      },
+      {
+        "dia_semana": 7,
+        "plataforma": "Notebook Gamer",
+        "total_ouro": 18900,
+        "transacoes": 11
+      }
+    ],
+    "subscriptions": [
+      {
+        "tier_assinatura": "VIP",
+        "total_ouro": 1185024,
+        "transacoes": 518,
+        "ticket_medio_ouro": 2287.69
+      },
+      {
+        "tier_assinatura": "Gratuito",
+        "total_ouro": 430520,
+        "transacoes": 224,
+        "ticket_medio_ouro": 1921.96
+      },
+      {
+        "tier_assinatura": "Pro",
+        "total_ouro": 275300,
+        "transacoes": 127,
+        "ticket_medio_ouro": 2167.72
+      }
+    ]
+  },
+  "benchmark": {
+    "repetitions": 5,
+    "warmup": "uma execução por variante",
+    "query": "ouro, unidades, contagem e média por regiao/elo, ordenados",
+    "automatic_broadcast": false,
+    "aqe": false,
+    "rows_equal": true,
+    "samples_seconds": {
+      "sort_merge": [
+        0.32887741600279696,
+        0.28704291099711554,
+        0.2727936039955239,
+        0.33821136899496196,
+        0.27243916600127704
+      ],
+      "broadcast": [
+        0.2715098029948422,
+        0.2589130279957317,
+        0.26851373400131706,
+        0.2802325890006614,
+        0.23660725299851038
+      ],
+      "uncached": [
+        0.26294795599824283,
+        0.23144026700174436,
+        0.2525922319982783,
+        0.20761298800061923,
+        0.23001566300081322
+      ],
+      "cached": [
+        0.14141358099732315,
+        0.1548356600033003,
+        0.1647463629997219,
+        0.19762595200154465,
+        0.15306773599877488
+      ]
+    },
+    "median_seconds": {
+      "sort_merge": 0.28704291099711554,
+      "broadcast": 0.26851373400131706,
+      "uncached": 0.23144026700174436,
+      "cached": 0.1548356600033003
+    },
+    "cache_materialization_seconds": 0.3386609769950155,
+    "cache_speedup": 1.4947478313252338,
+    "join_speedup": 1.0690064404515993
+  }
+}
