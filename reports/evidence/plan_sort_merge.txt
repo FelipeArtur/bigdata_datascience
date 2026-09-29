@@ -1,0 +1,18 @@
+*(7) Sort [total_ouro#1281L DESC NULLS LAST, regiao#6 ASC NULLS FIRST, elo#2 ASC NULLS FIRST], true, 0
++- Exchange rangepartitioning(total_ouro#1281L DESC NULLS LAST, regiao#6 ASC NULLS FIRST, elo#2 ASC NULLS FIRST, 4), ENSURE_REQUIREMENTS, [plan_id=2461]
+   +- *(6) HashAggregate(keys=[regiao#6, elo#2], functions=[sum(total_ouro#954), sum(quantidade#953), count(1), avg(total_ouro#954)], output=[regiao#6, elo#2, total_ouro#1281L, unidades#1283L, transacoes#1285L, ticket_medio_ouro#1287])
+      +- Exchange hashpartitioning(regiao#6, elo#2, 4), ENSURE_REQUIREMENTS, [plan_id=2457]
+         +- *(5) HashAggregate(keys=[regiao#6, elo#2], functions=[partial_sum(total_ouro#954), partial_sum(quantidade#953), partial_count(1), partial_avg(total_ouro#954)], output=[regiao#6, elo#2, sum#1303L, sum#1304L, count#1305L, sum#1306, count#1307L])
+            +- *(5) Project [regiao#6, elo#2, quantidade#953, total_ouro#954]
+               +- *(5) SortMergeJoin [id_jogador#4], [id_jogador#20], Inner
+                  :- *(2) Sort [id_jogador#4 ASC NULLS FIRST], false, 0
+                  :  +- Exchange hashpartitioning(id_jogador#4, 4), ENSURE_REQUIREMENTS, [plan_id=2440]
+                  :     +- *(1) Project [id_jogador#4, regiao#6, elo#2, c#943.quantidade AS quantidade#953, c#943.total_ouro AS total_ouro#954]
+                  :        +- *(1) Generate explode(compras#1), [elo#2, id_jogador#4, regiao#6], false, [c#943]
+                  :           +- *(1) Project [compras#1, elo#2, id_jogador#4, regiao#6]
+                  :              +- *(1) Filter (size(compras#1, true) > 0)
+                  :                 +- BatchScan MongoTable()[compras#1, elo#2, id_jogador#4, regiao#6] MongoScan{namespaceDescription=loja_lol.jogadores} RuntimeFilters: []
+                  +- *(4) Sort [id_jogador#20 ASC NULLS FIRST], false, 0
+                     +- Exchange hashpartitioning(id_jogador#20, 4), ENSURE_REQUIREMENTS, [plan_id=2448]
+                        +- *(3) Filter isnotnull(id_jogador#20)
+                           +- FileScan csv [id_jogador#20] Batched: false, DataFilters: [isnotnull(id_jogador#20)], Format: CSV, Location: InMemoryFileIndex(1 paths)[file:/app/data/processed/jogadores_demografia.csv], PartitionFilters: [], PushedFilters: [IsNotNull(id_jogador)], ReadSchema: struct<id_jogador:int>

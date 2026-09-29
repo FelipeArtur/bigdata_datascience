@@ -1,0 +1,51 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: loja_lol
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: local_academic
+    volumes:
+      - ./docker/init-db:/docker-entrypoint-initdb.d:ro
+      - ./data/processed:/data_processed:ro
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d loja_lol"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+
+  mongodb:
+    image: mongo:7.0
+    volumes:
+      - mongo_data:/data/db
+    healthcheck:
+      test: ["CMD", "mongosh", "--quiet", "--eval", "db.adminCommand('ping')"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+
+  jupyter:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    ports:
+      - "127.0.0.1:8888:8888"
+    environment:
+      PGHOST: postgres
+      PGDATABASE: loja_lol
+      PGUSER: postgres
+      PGPASSWORD: local_academic
+      MONGODB_URI: mongodb://mongodb:27017
+      MONGODB_DATABASE: loja_lol
+    volumes:
+      - .:/app
+    depends_on:
+      postgres:
+        condition: service_healthy
+      mongodb:
+        condition: service_healthy
+
+volumes:
+  postgres_data:
+  mongo_data:

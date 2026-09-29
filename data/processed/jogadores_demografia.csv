@@ -1,0 +1,26 @@
+id_jogador,nick,regiao,pais,cidade,idade,genero,tier_assinatura,plataforma
+1,Faker,KR,Coreia do Sul,Seul,28,M,VIP,Desktop Gamer
+2,ShowMaker,KR,Coreia do Sul,Seul,24,M,VIP,Desktop Gamer
+3,Chovy,KR,Coreia do Sul,Seul,23,M,VIP,Desktop Gamer
+4,Caps,EUW,Dinamarca,Copenhague,25,M,VIP,Desktop Gamer
+5,Rekkles,EUW,Suécia,Estocolmo,27,M,VIP,Desktop Gamer
+6,BrTT,BR,Brasil,Rio de Janeiro,33,M,VIP,Desktop Gamer
+7,Kami,BR,Brasil,Pelotas,28,M,VIP,Desktop Gamer
+8,Tinowns,BR,Brasil,Campinas,27,M,VIP,Desktop Gamer
+9,Robo,BR,Brasil,São Paulo,26,M,VIP,Desktop Gamer
+10,Cariok,BR,Brasil,Rio de Janeiro,25,M,Pro,Desktop Gamer
+11,Titan,BR,Brasil,Manaus,24,M,VIP,Notebook Gamer
+12,Aegis,BR,Brasil,Curitiba,23,M,Gratuito,Desktop Gamer
+13,Ceos,BR,Brasil,Belo Horizonte,24,M,Gratuito,Desktop Gamer
+14,Route,KR,Coreia do Sul,Busan,26,M,VIP,Desktop Gamer
+15,Dynquedo,BR,Brasil,Florianópolis,27,M,Gratuito,Desktop Gamer
+16,Jojo,BR,Brasil,Porto Alegre,25,M,Gratuito,Notebook Gamer
+17,TitaN_Prime,BR,Brasil,Manaus,24,M,Pro,Desktop Gamer
+18,Gvoy,BR,Brasil,Salvador,22,M,Gratuito,Desktop Gamer
+19,Damage,BR,Brasil,Fortaleza,25,M,Gratuito,Notebook Gamer
+20,Wizer,KR,Coreia do Sul,Incheon,26,M,VIP,Desktop Gamer
+21,Crocodilo,BR,Brasil,Recife,22,M,Gratuito,Desktop Gamer
+22,Smeb,KR,Coreia do Sul,Seul,29,M,Pro,Desktop Gamer
+23,BeryL,KR,Coreia do Sul,Daegu,27,M,VIP,Desktop Gamer
+24,Deft,KR,Coreia do Sul,Seul,28,M,VIP,Desktop Gamer
+25,Keria,KR,Coreia do Sul,Seul,22,M,VIP,Desktop Gamer

@@ -1,0 +1,17 @@
+*(3) Sort [total_ouro#6989L DESC NULLS LAST, regiao#6 ASC NULLS FIRST, elo#2 ASC NULLS FIRST], true, 0
++- Exchange rangepartitioning(total_ouro#6989L DESC NULLS LAST, regiao#6 ASC NULLS FIRST, elo#2 ASC NULLS FIRST, 4), ENSURE_REQUIREMENTS, [plan_id=4780]
+   +- *(2) HashAggregate(keys=[regiao#6, elo#2], functions=[sum(total_ouro#954), sum(quantidade#953), count(1), avg(total_ouro#954)], output=[regiao#6, elo#2, total_ouro#6989L, unidades#6991L, transacoes#6993L, ticket_medio_ouro#6995])
+      +- Exchange hashpartitioning(regiao#6, elo#2, 4), ENSURE_REQUIREMENTS, [plan_id=4776]
+         +- *(1) HashAggregate(keys=[regiao#6, elo#2], functions=[partial_sum(total_ouro#954), partial_sum(quantidade#953), partial_count(1), partial_avg(total_ouro#954)], output=[regiao#6, elo#2, sum#7292L, sum#7293L, count#7294L, sum#7295, count#7296L])
+            +- InMemoryTableScan [regiao#6, elo#2, quantidade#953, total_ouro#954]
+                  +- InMemoryRelation [id_jogador#4, nick#5, regiao#6, elo#2, id_compra#949, id_item#950, item#951, preco_unitario#952, quantidade#953, total_ouro#954, minuto_compra#955, id_partida#956, data_compra#957, pais#23, cidade#24, idade#25, genero#26, tier_assinatura#27, plataforma#28], StorageLevel(disk, memory, deserialized, 1 replicas)
+                        +- *(2) Project [id_jogador#4, nick#5, regiao#6, elo#2, id_compra#949, id_item#950, item#951, preco_unitario#952, quantidade#953, total_ouro#954, minuto_compra#955, id_partida#956, data_compra#957, pais#23, cidade#24, idade#25, genero#26, tier_assinatura#27, plataforma#28]
+                           +- *(2) BroadcastHashJoin [id_jogador#4], [id_jogador#20], Inner, BuildRight, false
+                              :- *(2) Project [id_jogador#4, nick#5, regiao#6, elo#2, c#943.id_compra AS id_compra#949, c#943.id_item AS id_item#950, c#943.item AS item#951, c#943.preco_unitario AS preco_unitario#952, c#943.quantidade AS quantidade#953, c#943.total_ouro AS total_ouro#954, c#943.minuto_compra AS minuto_compra#955, c#943.id_partida AS id_partida#956, cast(c#943.data_compra as date) AS data_compra#957]
+                              :  +- *(2) Generate explode(compras#1), [elo#2, id_jogador#4, nick#5, regiao#6], false, [c#943]
+                              :     +- *(2) Project [compras#1, elo#2, id_jogador#4, nick#5, regiao#6]
+                              :        +- *(2) Filter (size(compras#1, true) > 0)
+                              :           +- BatchScan MongoTable()[compras#1, elo#2, id_jogador#4, nick#5, regiao#6] MongoScan{namespaceDescription=loja_lol.jogadores} RuntimeFilters: []
+                              +- BroadcastExchange HashedRelationBroadcastMode(List(cast(input[0, int, false] as bigint)),false), [plan_id=4460]
+                                 +- *(1) Filter isnotnull(id_jogador#20)
+                                    +- FileScan csv [id_jogador#20,pais#23,cidade#24,idade#25,genero#26,tier_assinatura#27,plataforma#28] Batched: false, DataFilters: [isnotnull(id_jogador#20)], Format: CSV, Location: InMemoryFileIndex(1 paths)[file:/app/data/processed/jogadores_demografia.csv], PartitionFilters: [], PushedFilters: [IsNotNull(id_jogador)], ReadSchema: struct<id_jogador:int,pais:string,cidade:string,idade:int,genero:string,tier_assinatura:string,pl...
